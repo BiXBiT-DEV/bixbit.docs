@@ -10,7 +10,7 @@ backend:
   name: github
   repo: AndrewMatsiash/site.ams.docs
   branch: main
-  base_url: https://site-ams-decap.bixbit-docs-oauth.workers.dev
+  base_url: https://decap-proxy.bixbit-docs-oauth.workers.dev
   auth_endpoint: /auth
 
 # Картинки из CMS → docs/public/images → на сайте /images/... (с учётом base VitePress)
