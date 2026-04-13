@@ -1,3 +1,7 @@
+---
+title: Technical requirements
+---
+
 # Technical requirements
 
 This page is a starter placeholder.

@@ -1,3 +1,7 @@
+---
+title: Connecting a device
+---
+
 # Connecting a device
 
 This page is a starter placeholder.

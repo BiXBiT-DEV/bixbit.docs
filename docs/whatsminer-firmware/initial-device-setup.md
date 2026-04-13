@@ -1,3 +1,7 @@
+---
+title: Initial device setup
+---
+
 # Initial device setup
 
 This page is a starter placeholder.

@@ -1,3 +1,7 @@
+---
+title: Miner identification on the network
+---
+
 # Miner identification on the network
 
 This page is a starter placeholder.

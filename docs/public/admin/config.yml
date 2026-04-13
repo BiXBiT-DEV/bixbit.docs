@@ -10,7 +10,7 @@ backend:
   name: github
   repo: AndrewMatsiash/site.ams.docs
   branch: main
-  base_url: https://decap-proxy.bixbit-docs-oauth.workers.dev
+  base_url: https://site-ams-decap.bixbit-docs-oauth.workers.dev
   auth_endpoint: /auth
 
 # Картинки из CMS → docs/public/images → на сайте /images/... (с учётом base VitePress)
@@ -25,8 +25,9 @@ collections:
     slug: '{{slug}}'
     extension: md
     format: frontmatter
+    identifier_field: title
     fields:
-      - { label: Заголовок, name: title, widget: string, required: false }
+      - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
   - name: whatsminer_firmware
@@ -36,8 +37,9 @@ collections:
     slug: '{{slug}}'
     extension: md
     format: frontmatter
+    identifier_field: title
     fields:
-      - { label: Заголовок, name: title, widget: string, required: false }
+      - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
   - name: antminer_firmware
@@ -47,8 +49,9 @@ collections:
     slug: '{{slug}}'
     extension: md
     format: frontmatter
+    identifier_field: title
     fields:
-      - { label: Заголовок, name: title, widget: string, required: false }
+      - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
   - name: automated
@@ -58,8 +61,9 @@ collections:
     slug: '{{slug}}'
     extension: md
     format: frontmatter
+    identifier_field: title
     fields:
-      - { label: Заголовок, name: title, widget: string, required: false }
+      - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
   - name: user_guide_whatsminer
@@ -69,6 +73,7 @@ collections:
     slug: '{{slug}}'
     extension: md
     format: frontmatter
+    identifier_field: title
     fields:
-      - { label: Заголовок, name: title, widget: string, required: false }
+      - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }

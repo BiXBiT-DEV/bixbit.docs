@@ -1,3 +1,7 @@
+---
+title: Data display setup
+---
+
 # Data display setup
 
 This page is a starter placeholder.
