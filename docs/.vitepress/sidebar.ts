@@ -1,9 +1,7 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const nav: DefaultTheme.NavItem[] = [
-  { text: 'Главная', link: '/' },
-  { text: 'Гайд', link: '/guide' },
-  { text: 'UI Kit', link: '/ui-kit' }
+  { text: 'Get in touch', link: '/' },
 ]
 
 export const sidebar: DefaultTheme.SidebarItem[] = [

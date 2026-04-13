@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
+import { VPNavBarSearch } from 'vitepress/theme'
 
 const brand1 = ref('#3451b2')
 const brand2 = ref('#3a5ccc')

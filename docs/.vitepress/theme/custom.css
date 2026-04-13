@@ -80,29 +80,63 @@
 /* --vp-backdrop-bg-color */
 
 :root {
-  /*
-   * Бренд — один цвет в трёх «силах» (как у дизайн-систем: main / hover / solid).
-   *
-   * --vp-c-brand-1 — главный акцент «как текст»: ссылки в параграфах, активный пункт
-   *   меню, цвет инлайн-кода, полоска активной вкладки code-group. Это то, что ты
-   *   видишь чаще всего глазами в доке.
-   *
-   * --vp-c-brand-2 — тот же акцент в состоянии hover (навёл на ссылку — чуть другой
-   *   оттенок), плюс hover у кнопок в стиле brand.
-   *
-   * --vp-c-brand-3 — самый насыщенный: заливка основной кнопки (brand), «плашки»
-   *   где нужен сплошной фон; поверх обычно белый текст.
-   *
-   * Ещё есть --vp-c-brand-soft (в vars.css) — полупрозрачный фон под мягкие блоки;
-   * если меняешь бренд, его тоже имеет смысл подстроить под ту же гамму.
-   *
-  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-1: #d9017a;
   --vp-c-brand-2: #3a5ccc;
   --vp-c-brand-3: #5672cd;
-  --vp-font-family-base: 'Inter', system-ui, sans-serif;
-  */
+  --vp-font-family-base: "Inter", system-ui, sans-serif;
+
+  /**
+   * Кастомные блоки Markdown (::: info | note | tip | important | warning | danger | caution | details).
+   * Фоны с макета Text panel — [Figma](https://www.figma.com/design/capnOaegcGInzqvSP9ZBAk/%3CDev%3E-Website---Mining-Solutions?node-id=4595-5128&m=dev).
+   */
+  --vp-custom-block-info-bg: #eaf2fd;
+  --vp-custom-block-info-code-bg: #eaf2fd;
+
+  --vp-custom-block-note-bg: #f6eefd;
+  --vp-custom-block-note-code-bg: #f6eefd;
+
+  /* В макете отдельный зелёный «success»; в MD — ближе всего ::: tip */
+  --vp-custom-block-tip-bg: #ebfff6;
+  --vp-custom-block-tip-code-bg: #ebfff6;
+
+  --vp-custom-block-important-bg: #f6eefd;
+  --vp-custom-block-important-code-bg: #f6eefd;
+
+  --vp-custom-block-warning-bg: #fff0dd;
+  --vp-custom-block-warning-code-bg: #fff0dd;
+
+  --vp-custom-block-danger-bg: #fceceb;
+  --vp-custom-block-danger-code-bg: #fceceb;
+
+  --vp-custom-block-caution-bg: #fceceb;
+  --vp-custom-block-caution-code-bg: #fceceb;
+
+  --vp-custom-block-details-bg: #eaf2fd;
+  --vp-custom-block-details-code-bg: #eaf2fd;
 }
 
 .dark {
-  /* Те же имена переменных — значения для тёмной темы */
+  --vp-custom-block-info-bg: rgba(234, 242, 253, 0.12);
+  --vp-custom-block-info-code-bg: rgba(234, 242, 253, 0.14);
+
+  --vp-custom-block-note-bg: rgba(246, 238, 253, 0.12);
+  --vp-custom-block-note-code-bg: rgba(246, 238, 253, 0.14);
+
+  --vp-custom-block-tip-bg: rgba(235, 255, 246, 0.1);
+  --vp-custom-block-tip-code-bg: rgba(235, 255, 246, 0.12);
+
+  --vp-custom-block-important-bg: rgba(246, 238, 253, 0.12);
+  --vp-custom-block-important-code-bg: rgba(246, 238, 253, 0.14);
+
+  --vp-custom-block-warning-bg: rgba(255, 240, 221, 0.12);
+  --vp-custom-block-warning-code-bg: rgba(255, 240, 221, 0.14);
+
+  --vp-custom-block-danger-bg: rgba(252, 236, 235, 0.1);
+  --vp-custom-block-danger-code-bg: rgba(252, 236, 235, 0.12);
+
+  --vp-custom-block-caution-bg: rgba(252, 236, 235, 0.1);
+  --vp-custom-block-caution-code-bg: rgba(252, 236, 235, 0.12);
+
+  --vp-custom-block-details-bg: rgba(234, 242, 253, 0.12);
+  --vp-custom-block-details-code-bg: rgba(234, 242, 253, 0.14);
 }
