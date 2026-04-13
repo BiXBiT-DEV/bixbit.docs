@@ -140,3 +140,12 @@
   --vp-custom-block-details-bg: rgba(234, 242, 253, 0.12);
   --vp-custom-block-details-code-bg: rgba(234, 242, 253, 0.14);
 }
+
+.vp-doc .doc-kicker {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.03px;
+  color: var(--vp-c-brand-1);
+}
