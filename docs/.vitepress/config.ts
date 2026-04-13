@@ -11,8 +11,24 @@ export default defineConfig({
     nav,
     sidebar,
     search: {
-      provider: 'local',
+      provider: 'algolia',
       options: {
+        appId: 'PMZUYBQDAK',
+        apiKey: '24b09689d5b4223813d9b8e48563c8f6',
+        indexName: 'docsearch',
+        askAi: {
+          assistantId: 'askAIDemo',
+          sidePanel: {
+            panel: {
+              variant: 'floating',
+              side: 'right',
+              width: '360px',
+              expandedWidth: '580px',
+              suggestedQuestions: true
+            }
+          }
+        },
+        placeholder: 'Поиск по документации',
         translations: {
           button: {
             buttonText: 'Поиск',

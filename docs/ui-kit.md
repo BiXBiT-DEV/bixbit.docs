@@ -6,6 +6,7 @@ title: UI Kit
 import AccordionItem from './.vitepress/theme/components/ui/AccordionItem.vue'
 import BackButtonDesktop from './.vitepress/theme/components/ui/BackButtonDesktop.vue'
 import BackButtonMobile from './.vitepress/theme/components/ui/BackButtonMobile.vue'
+import CopyCodePanel from './.vitepress/theme/components/ui/CopyCodePanel.vue'
 import DownloadFileButton from './.vitepress/theme/components/ui/DownloadFileButton.vue'
 import FeedbackButton from './.vitepress/theme/components/ui/FeedbackButton.vue'
 import StepButton from './.vitepress/theme/components/ui/StepButton.vue'
@@ -13,7 +14,6 @@ import StepButton from './.vitepress/theme/components/ui/StepButton.vue'
 
 # UI Kit
 
-Компоненты из Figma, реализованные через MCP.
 
 ## DownloadFileButton
 
@@ -52,4 +52,21 @@ import StepButton from './.vitepress/theme/components/ui/StepButton.vue'
 <div style="display: grid; gap: 16px;">
   <AccordionItem :expanded="false" />
   <AccordionItem :expanded="true" />
+</div>
+
+## CopyCodePanel
+
+<div style="display: grid; gap: 16px;">
+  <CopyCodePanel text="curl -sSL https://example.com/install.sh | sh">
+    <template #text>curl -sSL https://example.com/install.sh | sh</template>
+  </CopyCodePanel>
+  <CopyCodePanel hover-style="panel" text='hover-style="panel"'>
+    <template #text>hover-style="panel"</template>
+  </CopyCodePanel>
+  <CopyCodePanel hover-style="icon" text='hover-style="icon"'>
+    <template #text>hover-style="icon"</template>
+  </CopyCodePanel>
+  <CopyCodePanel :show-icon="false" text="без иконки копирования">
+    <template #text>без иконки копирования</template>
+  </CopyCodePanel>
 </div>

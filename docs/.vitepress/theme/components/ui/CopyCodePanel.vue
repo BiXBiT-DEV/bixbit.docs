@@ -9,7 +9,6 @@ const props = withDefaults(
     hoverStyle?: 'default' | 'icon' | 'panel'
   }>(),
   {
-    text: 'there will be a code here',
     showIcon: true,
     hoverStyle: 'default'
   }
@@ -28,7 +27,7 @@ const copyToClipboard = async () => {
 
 <template>
   <div class="copy-code-panel" :class="panelClass">
-    <p class="copy-code-panel__text">{{ text }}</p>
+    <p class="copy-code-panel__text"><slot name="text" /></p>
 
     <button
       v-if="showIcon"
