@@ -1,0 +1,108 @@
+/**
+ * Кастомизация темы VitePress через CSS-переменные.
+ * Полный список с англ. комментариями от авторов темы:
+ *   node_modules/vitepress/dist/client/theme-default/styles/vars.css
+ *
+ * Переопределяй значения в :root (светлая тема) и .dark (тёмная).
+ * -------------------------------------------------------------------------- */
+
+/* --- Палитра (кирпичики -1 / -2 / -3 / -soft) --- */
+/* --vp-c-gray-*     нейтральные серые */
+/* --vp-c-indigo-*   по умолчанию под бренд (--vp-c-brand-*) */
+/* --vp-c-purple-*   в т.ч. important */
+/* --vp-c-green-*    успех, diff «+» в коде */
+/* --vp-c-yellow-*   warning */
+/* --vp-c-red-*      danger, caution, diff «−» */
+/* --vp-c-white / --vp-c-black / --vp-c-neutral*  базовый контраст */
+
+/* --- Фон страницы --- */
+/* --vp-c-bg          основной фон экрана */
+/* --vp-c-bg-alt      сайдбар, фон fenced-блоков кода */
+/* --vp-c-bg-elv      «всплывающие» слои (модалки) */
+/* --vp-c-bg-soft     слегка отличающийся фон (таблицы и т.п.) */
+
+/* --- Границы и разделители --- */
+/* --vp-c-border      обводка кнопок/инпутов */
+/* --vp-c-divider     линии внутри компонентов (под H2 в контенте) */
+/* --vp-c-gutter      крупные разделители (шапка / контент) */
+
+/* --- Текст (контент .vp-doc в первую очередь) --- */
+/* --vp-c-text-1      основной текст */
+/* --vp-c-text-2      приглушённый (подписи, неактивное меню) */
+/* --vp-c-text-3      очень тихий (placeholder, мелкие иконки) */
+
+/* --- Смысловые акценты (ссылки, алерты, бейджи) --- */
+/* --vp-c-brand-1/2/3, --vp-c-brand-soft   бренд, ссылки, активные состояния */
+/* --vp-c-tip-*        подсказки (часто = brand) */
+/* --vp-c-note-*       NOTE */
+/* --vp-c-important-*  IMPORTANT */
+/* --vp-c-warning-*    WARNING */
+/* --vp-c-danger-*     DANGER, ошибки */
+/* --vp-c-caution-*    CAUTION */
+/* --vp-c-success-*    успех */
+/* --vp-c-default-*    нейтральные hover без «смысла» */
+
+/* --- Типографика --- */
+/* --vp-font-family-base  основной шрифт */
+/* --vp-font-family-mono  моноширинный (инлайн-код и часть UI) */
+
+/* --- Блоки кода в Markdown + кнопка копирования --- */
+/* --vp-code-font-size / --vp-code-line-height   инлайн-код */
+/* --vp-code-color / --vp-code-bg                инлайн `` `...` `` */
+/* --vp-code-block-color / --vp-code-block-bg    fenced-блок */
+/* --vp-code-block-divider-color */
+/* --vp-code-lang-color        подпись языка */
+/* --vp-code-line-highlight-color   подсветка строк {n} */
+/* --vp-code-line-number-color */
+/* --vp-code-line-diff-add-* / remove-*   diff ++ / -- */
+/* --vp-code-line-warning-color / error-color */
+/* --vp-code-copy-code-*       кнопка Copy */
+/* --vp-code-copy-copied-text-content   текст после копирования (:lang(ru) = «Скопировано») */
+/* --vp-code-tab-*             вкладки ::: code-group */
+
+/* --- Контейнеры ::: info | tip | warning | danger | details и GitHub alerts --- */
+/* --vp-custom-block-font-size / --vp-custom-block-code-font-size */
+/* Для каждого типа: --vp-custom-block-<type>-border|text|bg|code-bg */
+/*   <type>: info | note | tip | important | warning | danger | caution | details */
+
+/* --- Шапка, сайдбар, сетка --- */
+/* --vp-nav-height / --vp-nav-bg-color */
+/* --vp-sidebar-width / --vp-sidebar-bg-color */
+/* --vp-layout-max-width */
+/* --vp-local-nav-bg-color */
+
+/* --- Прочее --- */
+/* --vp-shadow-1 … --vp-shadow-5 */
+/* --vp-header-anchor-symbol   символ якоря у заголовка (по умолчанию #) */
+/* --vp-z-index-*              слои nav, sidebar, backdrop… */
+/* --vp-button-* / --vp-badge-* / --vp-input-* / --vp-home-hero-* */
+/* --vp-local-search-*         локальный поиск */
+/* --vp-backdrop-bg-color */
+
+:root {
+  /*
+   * Бренд — один цвет в трёх «силах» (как у дизайн-систем: main / hover / solid).
+   *
+   * --vp-c-brand-1 — главный акцент «как текст»: ссылки в параграфах, активный пункт
+   *   меню, цвет инлайн-кода, полоска активной вкладки code-group. Это то, что ты
+   *   видишь чаще всего глазами в доке.
+   *
+   * --vp-c-brand-2 — тот же акцент в состоянии hover (навёл на ссылку — чуть другой
+   *   оттенок), плюс hover у кнопок в стиле brand.
+   *
+   * --vp-c-brand-3 — самый насыщенный: заливка основной кнопки (brand), «плашки»
+   *   где нужен сплошной фон; поверх обычно белый текст.
+   *
+   * Ещё есть --vp-c-brand-soft (в vars.css) — полупрозрачный фон под мягкие блоки;
+   * если меняешь бренд, его тоже имеет смысл подстроить под ту же гамму.
+   *
+  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-2: #3a5ccc;
+  --vp-c-brand-3: #5672cd;
+  --vp-font-family-base: 'Inter', system-ui, sans-serif;
+  */
+}
+
+.dark {
+  /* Те же имена переменных — значения для тёмной темы */
+}
