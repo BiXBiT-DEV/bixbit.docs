@@ -3,21 +3,44 @@ import { navEn, navRu, sidebarEn, sidebarRu } from './sidebar'
 
 const base = '/site.ams.docs/'
 
-const algoliaSearch = {
-  provider: 'algolia' as const,
-  options: {
-    appId: 'PMZUYBQDAK',
-    apiKey: '24b09689d5b4223813d9b8e48563c8f6',
-    indexName: 'docsearch',
-    askAi: {
-      assistantId: 'askAIDemo',
-      sidePanel: {
-        panel: {
-          variant: 'floating' as const,
-          side: 'right' as const,
-          width: '360px',
-          expandedWidth: '580px',
-          suggestedQuestions: true
+/**
+ * Algolia DocSearch: общий блок для всего сайта.
+ * При i18n нельзя держать search только в locales.*.themeConfig — в теме для шапки
+ * берётся merge с корневым themeConfig; если он пустой, VPNavBarSearch не видит provider.
+ * Переводы кнопки/placeholder — через options.locales (см. resolveOptionsForLanguage в теме).
+ */
+const algoliaOptions = {
+  appId: 'PMZUYBQDAK',
+  apiKey: '24b09689d5b4223813d9b8e48563c8f6',
+  indexName: 'docsearch',
+  askAi: {
+    assistantId: 'askAIDemo',
+    sidePanel: {
+      panel: {
+        variant: 'floating' as const,
+        side: 'right' as const,
+        width: '360px',
+        expandedWidth: '580px',
+        suggestedQuestions: true
+      }
+    }
+  },
+  locales: {
+    root: {
+      placeholder: 'Поиск по документации',
+      translations: {
+        button: {
+          buttonText: 'Поиск',
+          buttonAriaLabel: 'Поиск по документации'
+        }
+      }
+    },
+    en: {
+      placeholder: 'Search documentation',
+      translations: {
+        button: {
+          buttonText: 'Search',
+          buttonAriaLabel: 'Search documentation'
         }
       }
     }
@@ -26,6 +49,12 @@ const algoliaSearch = {
 
 export default defineConfig({
   base,
+  themeConfig: {
+    search: {
+      provider: 'algolia',
+      options: algoliaOptions
+    }
+  },
   locales: {
     root: {
       label: 'Русский',
@@ -43,20 +72,7 @@ export default defineConfig({
         lightModeSwitchTitle: 'Светлая тема',
         darkModeSwitchTitle: 'Тёмная тема',
         langMenuLabel: 'Язык',
-        skipToContentLabel: 'Перейти к содержимому',
-        search: {
-          ...algoliaSearch,
-          options: {
-            ...algoliaSearch.options,
-            placeholder: 'Поиск по документации',
-            translations: {
-              button: {
-                buttonText: 'Поиск',
-                buttonAriaLabel: 'Поиск по документации'
-              }
-            }
-          }
-        }
+        skipToContentLabel: 'Перейти к содержимому'
       }
     },
     en: {
@@ -76,20 +92,7 @@ export default defineConfig({
         lightModeSwitchTitle: 'Switch to light theme',
         darkModeSwitchTitle: 'Switch to dark theme',
         langMenuLabel: 'Change language',
-        skipToContentLabel: 'Skip to content',
-        search: {
-          ...algoliaSearch,
-          options: {
-            ...algoliaSearch.options,
-            placeholder: 'Search documentation',
-            translations: {
-              button: {
-                buttonText: 'Search',
-                buttonAriaLabel: 'Search documentation'
-              }
-            }
-          }
-        }
+        skipToContentLabel: 'Skip to content'
       }
     }
   }
