@@ -39,7 +39,6 @@ const text = computed(() => (isLike.value ? 'Very useful' : "Didn't help"))
 }
 
 .feedback-button__label {
-  font-family: "DIN Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.35;

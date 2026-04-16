@@ -2,6 +2,20 @@
 title: UI Kit
 ---
 
+<script setup>
+import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileButton.vue'
+</script>
+
+## Components
+
+### DownloadFileButton
+
+<DownloadFileButton />
+
+<DownloadFileButton label="User manual.pdf" />
+
+---
+
 ## Markdown reference (VitePress)
 
 ### Оглавление вставки `[[toc]]`

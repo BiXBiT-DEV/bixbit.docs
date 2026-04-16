@@ -15,7 +15,7 @@ withDefaults(
   <button class="back-button-desktop" type="button">
     <span class="back-button-desktop__icon">
       <slot name="icon">
-        <ChevronLeftIcon />
+        <ChevronLeftIcon class="back-button-desktop__icon" />
       </slot>
     </span>
     <span class="back-button-desktop__label">{{ label }}</span>
@@ -52,16 +52,14 @@ withDefaults(
   filter: brightness(1.12);
 }
 
-/* Тёмная тема: чуть мягче «нажатие», чтобы не выбеливать */
 .dark .back-button-desktop:active {
   filter: brightness(1.06);
 }
 
 .back-button-desktop__label {
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 24px;
   letter-spacing: -0.03px;
 }
 
@@ -71,7 +69,7 @@ withDefaults(
   justify-content: center;
 }
 
-.back-button-desktop__icon :deep(svg) {
+.back-button-desktop__icon  {
   width: 24px;
   height: 24px;
   display: block;

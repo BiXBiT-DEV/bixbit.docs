@@ -2,6 +2,16 @@
 title: UI Kit
 ---
 
+<script setup>
+import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileButton.vue'
+</script>
+
+## Компоненты
+
+### DownloadFileButton
+
+<DownloadFileButton />
+
 ## Справочник Markdown (VitePress)
 
 
