@@ -2,18 +2,6 @@
 title: UI Kit
 ---
 
-<script setup lang="ts">
-import ThemeBrandColorControls from './.vitepress/theme/components/ui/ThemeBrandColorControls.vue'
-</script>
-
-## Цвета темы (`--vp-c-brand-*`)
-
-Инпуты ниже выставляют CSS-переменные на `<html>` — сразу видно эффект на ссылках и акцентах на этой странице.
-
-<ThemeBrandColorControls />
-
----
-
 ## Справочник Markdown (VitePress)
 
 Ниже — живые примеры того, что понимает VitePress поверх обычного Markdown. Полное описание: [Markdown Extensions](https://vitepress.dev/guide/markdown).
