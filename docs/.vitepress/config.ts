@@ -58,6 +58,11 @@ export default defineConfig(
   withLocalizedSidebar({
     base,
     rewrites: (id) => (id.startsWith('ru/') ? id.slice(3) : id),
+    head: [
+      ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon-512.png` }],
+      ['link', { rel: 'apple-touch-icon', href: `${base}favicon-512.png` }],
+      ['link', { rel: 'mask-icon', href: `${base}images/logo.svg`, color: '#d9017a' }]
+    ],
     themeConfig: {
       logo: {
         light: '/images/logo.svg',
