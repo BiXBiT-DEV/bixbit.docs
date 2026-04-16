@@ -9,6 +9,7 @@ backend:
   branch: main
   base_url: https://decap-proxy.bixbit-docs-oauth.workers.dev
   auth_endpoint: /auth
+  squash_merges: true
 
 publish_mode: editorial_workflow
 
