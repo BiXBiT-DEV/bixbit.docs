@@ -5,7 +5,7 @@
 
 backend:
   name: github
-  repo: AndrewMatsiash/site.ams.docs
+  repo: BiXBiT-DEV/bixbit.docs
   branch: main
   base_url: https://site-ams-decap.bixbit-docs-oauth.workers.dev
   auth_endpoint: /auth
