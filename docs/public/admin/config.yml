@@ -1,4 +1,4 @@
-# Decap CMS → коммиты в GitHub. После правок при необходимости обновите docs/.vitepress/sidebar.ts
+# Decap CMS → коммиты в GitHub. Sidebar собирается автоматически через vitepress-sidebar.
 #
 # Сайт: https://andrewmatsiash.github.io/site.ams.docs/
 # Админка: https://andrewmatsiash.github.io/site.ams.docs/admin/
@@ -30,6 +30,18 @@ collections:
       - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
+  - name: docs_root_en
+    label: Pages (docs/en root)
+    folder: docs/en
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Body, name: body, widget: markdown }
+
   - name: whatsminer_firmware
     label: Whatsminer Firmware
     folder: docs/whatsminer-firmware
@@ -41,6 +53,18 @@ collections:
     fields:
       - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
+
+  - name: whatsminer_firmware_en
+    label: Whatsminer Firmware (EN)
+    folder: docs/en/whatsminer-firmware
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Body, name: body, widget: markdown }
 
   - name: antminer_firmware
     label: Antminer Firmware
@@ -54,6 +78,18 @@ collections:
       - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
+  - name: antminer_firmware_en
+    label: Antminer Firmware (EN)
+    folder: docs/en/antminer-firmware
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Body, name: body, widget: markdown }
+
   - name: automated
     label: Automated
     folder: docs/automated
@@ -66,6 +102,18 @@ collections:
       - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
 
+  - name: automated_en
+    label: Automated (EN)
+    folder: docs/en/automated
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Body, name: body, widget: markdown }
+
   - name: user_guide_whatsminer
     label: User guide Whatsminer ASIC
     folder: docs/user-guide-whatsminer-asic
@@ -77,3 +125,15 @@ collections:
     fields:
       - { label: Заголовок, name: title, widget: string, required: true }
       - { label: Текст, name: body, widget: markdown }
+
+  - name: user_guide_whatsminer_en
+    label: User guide Whatsminer ASIC (EN)
+    folder: docs/en/user-guide-whatsminer-asic
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Body, name: body, widget: markdown }
