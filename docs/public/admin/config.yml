@@ -7,7 +7,7 @@ backend:
   name: github
   repo: BiXBiT-DEV/bixbit.docs
   branch: main
-  base_url: https://site-ams-decap.bixbit-docs-oauth.workers.dev
+  base_url: https://decap-proxy.bixbit-docs-oauth.workers.dev
   auth_endpoint: /auth
 
 publish_mode: editorial_workflow
