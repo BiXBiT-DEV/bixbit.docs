@@ -1,5 +1,6 @@
 ---
 title: Docs
+search: false
 ---
 
 <script setup>

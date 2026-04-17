@@ -7,7 +7,7 @@ import MiniSearch from "minisearch";
 import { u as useData, d as dataSymbol, p as pathToFile, a as useRouter, i as inBrowser, e as escapeRegExp } from "./app.js";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
 import "./HomeOutlineIcon.CNMiJIJe.js";
-const localSearchIndex = { "en": () => import("./@localSearchIndexen.BHDqYJJW.js"), "root": () => import("./@localSearchIndexroot.BjB0RgL0.js") };
+const localSearchIndex = { "en": () => import("./@localSearchIndexen.BgxrxIUh.js"), "root": () => import("./@localSearchIndexroot.B9Tu1O1g.js") };
 class LRUCache {
   max;
   cache;

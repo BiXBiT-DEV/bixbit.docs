@@ -4,7 +4,7 @@ import { D as DownloadFileButton } from "./DownloadFileButton.BLEN0QnQ.js";
 import { useSSRContext } from "vue";
 import "./HomeOutlineIcon.CNMiJIJe.js";
 import "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"Docs","description":"","frontmatter":{"title":"Docs"},"headers":[],"relativePath":"docs.md","filePath":"ru/docs.md"}');
+const __pageData = JSON.parse('{"title":"Docs","description":"","frontmatter":{"title":"Docs","search":false},"headers":[],"relativePath":"docs.md","filePath":"ru/docs.md"}');
 const __default__ = { name: "docs.md" };
 const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   __ssrInlineRender: true,
