@@ -2,6 +2,7 @@ import { defineComponent, mergeProps, unref, useSSRContext } from "vue";
 import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent } from "vue/server-renderer";
 import { D as DownloadIcon } from "./HomeOutlineIcon.CNMiJIJe.js";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
+const _imports_0 = "/bixbit.docs/images/logo.svg";
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "DownloadFileButton",
   __ssrInlineRender: true,
@@ -28,5 +29,6 @@ _sfc_main.setup = (props, ctx) => {
 };
 const DownloadFileButton = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-7079ee99"]]);
 export {
-  DownloadFileButton as D
+  DownloadFileButton as D,
+  _imports_0 as _
 };

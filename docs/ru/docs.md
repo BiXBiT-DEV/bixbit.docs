@@ -227,12 +227,12 @@ import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileBu
 **Markdown**
 
 ```md
-[UI Kit](./ui-kit.md)
+[Главная](./index.md)
 ```
 
 **Результат**
 
-[UI Kit](./ui-kit.md)
+[Главная](./index.md)
 
 ## Изображение
 

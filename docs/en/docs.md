@@ -227,12 +227,12 @@ Internal links point to other documentation pages.
 **Markdown**
 
 ```md
-[UI Kit](./ui-kit.md)
+[Home](./index.md)
 ```
 
 **Rendered result**
 
-[UI Kit](./ui-kit.md)
+[Home](./index.md)
 
 ## Image
 
