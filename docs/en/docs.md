@@ -17,6 +17,50 @@ Below is a fuller reference of Markdown and VitePress Markdown Extensions. Each 
 
 [[toc]]
 
+## **Editing Pages Through Decap CMS**
+
+This project includes a Decap CMS admin panel. You can use it to edit existing pages and create new ones without manually editing repository files.
+
+The admin panel is available at:
+
+- locally: `http://localhost:5173/bixbit.docs/admin/`
+- on the deployed site: `/bixbit.docs/admin/`
+
+Based on the current configuration, Decap works with the GitHub repository and uses `editorial_workflow`. That means changes go through draft and publish states instead of going live immediately.
+
+### How to edit an existing page
+
+1. Open the admin panel and sign in with GitHub.
+2. Open the `Documentation Pages` collection.
+3. Find the page you want to edit.
+4. Update the `Title` field or the page content in `Body`.
+5. Save it as a draft or move it forward for publishing, depending on the current status.
+
+### How to add a new page
+
+1. Open `Documentation Pages`.
+2. Click `New Documentation Page`.
+3. Fill in `Title`.
+4. Set the page location in the `Path` field.
+5. Add the page content in Markdown in the `Body` field.
+6. Save it as a draft or send it for publishing.
+
+### How to fill in the `Path` field
+
+The `Path` field defines where the page file will be created. In the current configuration, new pages use `index.md` inside the specified folder.
+
+Examples:
+
+- `ru/getting-started` -> `docs/ru/getting-started/index.md`
+- `en/getting-started` -> `docs/en/getting-started/index.md`
+- `ru/guides/setup` -> `docs/ru/guides/setup/index.md`
+
+If you need both Russian and English versions of the same page, the path should be created for both locales.
+
+### What can be edited through Decap
+
+With the current setup, the admin panel edits regular Markdown pages inside the `docs` folder. Custom Vue components, the VitePress theme, sidebar config, and files in `.vitepress` are not edited through this form.
+
 ## Frontmatter
 
 Frontmatter lives at the top of the file and controls page metadata such as title, description, sidebar title, and other page options. It does not render in the visible page body.
