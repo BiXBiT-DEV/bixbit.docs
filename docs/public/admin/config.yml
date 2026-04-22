@@ -23,7 +23,7 @@ i18n:
 
 collections:
   - name: docs_pages
-    label: Documentation Pages
+    label: Documentation Pages (EN default, RU localized)
     label_singular: Documentation Page
     folder: docs
     create: true
@@ -31,12 +31,13 @@ collections:
     slug: '{{slug}}'
     nested:
       depth: 10
-      summary: '{{title}}'
-      subfolders: true
+      summary: '{{path}} — {{title}}'
+      subfolders: false
     meta:
       path:
         widget: string
-        label: Path
+        label: Page path (without /, en, ru, .md)
+        hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
         index_file: index
     extension: md
     format: frontmatter
