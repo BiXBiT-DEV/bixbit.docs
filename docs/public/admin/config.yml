@@ -28,10 +28,6 @@ collections:
     folder: docs
     create: true
     i18n: true
-    nested:
-      depth: 10
-      summary: '{{title}}'
-      subfolders: true
     meta:
       path:
         widget: string
