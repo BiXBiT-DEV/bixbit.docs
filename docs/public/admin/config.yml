@@ -30,7 +30,7 @@ collections:
     i18n: true
     nested:
       depth: 10
-      summary: '{{path}} - {{title}}'
+      summary: '{{title}}'
       subfolders: true
     meta:
       path:
