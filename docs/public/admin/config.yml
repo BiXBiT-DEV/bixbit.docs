@@ -31,8 +31,8 @@ collections:
     slug: '{{slug}}'
     nested:
       depth: 10
-      summary: '{{path}} — {{title}}'
-      subfolders: false
+      summary: '{{title}}'
+      subfolders: true
     meta:
       path:
         widget: string
