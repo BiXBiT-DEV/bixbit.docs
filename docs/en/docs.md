@@ -4,7 +4,7 @@ search: false
 ---
 
 <script setup>
-import DownloadFileButton from './.vitepress/theme/components/ui/DownloadFileButton.vue'
+import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileButton.vue'
 </script>
 
 # Docs
@@ -124,7 +124,7 @@ This project already has a `DownloadFileButton` component. It accepts these prop
 
 ````md
 <script setup>
-import DownloadFileButton from './.vitepress/theme/components/ui/DownloadFileButton.vue'
+import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileButton.vue'
 </script>
 
 <DownloadFileButton
@@ -783,12 +783,12 @@ export default {
 **Markdown**
 
 ```md
-<<< ./.vitepress/config.ts{6-11}
+<<< ../.vitepress/config.ts{6-11}
 ```
 
 **Rendered result**
 
-<<< ./.vitepress/config.ts{6-11}
+<<< ../.vitepress/config.ts{6-11}
 
 ## Code block without a language
 
