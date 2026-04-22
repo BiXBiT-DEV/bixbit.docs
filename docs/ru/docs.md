@@ -48,15 +48,47 @@ import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileBu
 
 ### Как заполнять поле `Path`
 
-Поле `Path` определяет, где будет создан файл страницы. В вашей конфигурации для новых страниц используется `index.md` внутри указанной папки.
+Поле `Path` определяет адрес страницы внутри документации и место, где Decap создаст Markdown-файл.
+
+В этой админке включены локали `ru` и `en`, поэтому Decap сам раскладывает страницы по папкам `docs/ru` и `docs/en`. В поле `Path` нужно указывать путь страницы внутри выбранной локали.
+
+Правила для `Path`:
+
+- не добавляй `docs/` в начало
+- не добавляй `/bixbit.docs`
+- не добавляй `.md`
+- не добавляй `index.md`
+- не начинай путь со `/`
+- используй латиницу, цифры и дефисы
+- вместо пробелов используй дефис: `getting-started`, а не `getting started`
+- для вложенных страниц используй `/`: `whatsminer-firmware/initial-device-setup`
+
+Так как в конфиге указано `index_file: index`, новая страница создаётся как `index.md` внутри папки с таким путём.
 
 Примеры:
 
-- `ru/getting-started` -> `docs/ru/getting-started/index.md`
-- `en/getting-started` -> `docs/en/getting-started/index.md`
-- `ru/guides/setup` -> `docs/ru/guides/setup/index.md`
+| Что написать в `Path` | Где будет файл RU | Где будет файл EN | URL RU | URL EN |
+| --------------------- | ----------------- | ----------------- | ------ | ------ |
+| `getting-started` | `docs/ru/getting-started/index.md` | `docs/en/getting-started/index.md` | `/getting-started/` | `/en/getting-started/` |
+| `guides/setup` | `docs/ru/guides/setup/index.md` | `docs/en/guides/setup/index.md` | `/guides/setup/` | `/en/guides/setup/` |
+| `whatsminer-firmware/initial-device-setup` | `docs/ru/whatsminer-firmware/initial-device-setup/index.md` | `docs/en/whatsminer-firmware/initial-device-setup/index.md` | `/whatsminer-firmware/initial-device-setup/` | `/en/whatsminer-firmware/initial-device-setup/` |
 
-Если нужна русская и английская версия одной и той же страницы, путь нужно задавать для обеих локалей.
+Например, если нужна страница `Как начать`, лучше указать такой `Path`:
+
+```txt
+getting-started
+```
+
+А не так:
+
+```txt
+docs/ru/getting-started.md
+/getting-started
+getting started
+getting-started/index.md
+```
+
+Если нужна русская и английская версия одной и той же страницы, используй один и тот же `Path` для обеих локалей, а `Title` и `Body` заполняй отдельно для `ru` и `en`.
 
 ### Что можно редактировать через Decap
 

@@ -48,15 +48,47 @@ Based on the current configuration, Decap works with the GitHub repository and u
 
 ### How to fill in the `Path` field
 
-The `Path` field defines where the page file will be created. In the current configuration, new pages use `index.md` inside the specified folder.
+The `Path` field defines the page address inside the documentation and where Decap will create the Markdown file.
+
+This admin panel has `ru` and `en` locales enabled, so Decap places pages under `docs/ru` and `docs/en` automatically. In `Path`, enter the page path inside the selected locale.
+
+Rules for `Path`:
+
+- do not add `docs/` at the beginning
+- do not add `/bixbit.docs`
+- do not add `.md`
+- do not add `index.md`
+- do not start with `/`
+- use lowercase latin letters, numbers, and hyphens
+- use hyphens instead of spaces: `getting-started`, not `getting started`
+- use `/` for nested pages: `whatsminer-firmware/initial-device-setup`
+
+Because the config uses `index_file: index`, a new page is created as `index.md` inside the folder matching that path.
 
 Examples:
 
-- `ru/getting-started` -> `docs/ru/getting-started/index.md`
-- `en/getting-started` -> `docs/en/getting-started/index.md`
-- `ru/guides/setup` -> `docs/ru/guides/setup/index.md`
+| What to enter in `Path` | RU file location | EN file location | RU URL | EN URL |
+| ----------------------- | ---------------- | ---------------- | ------ | ------ |
+| `getting-started` | `docs/ru/getting-started/index.md` | `docs/en/getting-started/index.md` | `/getting-started/` | `/en/getting-started/` |
+| `guides/setup` | `docs/ru/guides/setup/index.md` | `docs/en/guides/setup/index.md` | `/guides/setup/` | `/en/guides/setup/` |
+| `whatsminer-firmware/initial-device-setup` | `docs/ru/whatsminer-firmware/initial-device-setup/index.md` | `docs/en/whatsminer-firmware/initial-device-setup/index.md` | `/whatsminer-firmware/initial-device-setup/` | `/en/whatsminer-firmware/initial-device-setup/` |
 
-If you need both Russian and English versions of the same page, the path should be created for both locales.
+For example, for a `Getting Started` page, use:
+
+```txt
+getting-started
+```
+
+Do not use:
+
+```txt
+docs/en/getting-started.md
+/getting-started
+getting started
+getting-started/index.md
+```
+
+If you need Russian and English versions of the same page, use the same `Path` for both locales and fill in `Title` and `Body` separately for `ru` and `en`.
 
 ### What can be edited through Decap
 
