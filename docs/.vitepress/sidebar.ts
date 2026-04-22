@@ -4,7 +4,7 @@ import { withSidebar } from 'vitepress-sidebar'
 export const sidebarOptions = [
   {
     documentRootPath: '/docs',
-    scanStartPath: 'ru',
+    scanStartPath: '/',
     resolvePath: '/',
     basePath: '/',
     collapsed: true,
@@ -13,13 +13,13 @@ export const sidebarOptions = [
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
     useFolderLinkFromIndexFile: true,
-    excludeByGlobPattern: ['**/test.md', '**/docs.md']
+    excludeByGlobPattern: ['**/test.md', '**/docs.md', 'ru/**']
   },
   {
     documentRootPath: '/docs',
-    scanStartPath: 'en',
-    resolvePath: '/en/',
-    basePath: '/en/',
+    scanStartPath: 'ru',
+    resolvePath: '/ru/',
+    basePath: '/ru/',
     collapsed: true,
     collapseDepth: 1,
     useTitleFromFrontmatter: true,

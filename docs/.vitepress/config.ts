@@ -8,29 +8,6 @@ const localSearchOptions = {
     root: {
       translations: {
         button: {
-          buttonText: 'Поиск',
-          buttonAriaLabel: 'Поиск по документации'
-        },
-        modal: {
-          noResultsText: 'Ничего не найдено',
-          resetButtonTitle: 'Сбросить',
-          backButtonTitle: 'Назад',
-          displayDetails: 'Показать подробности',
-          footer: {
-            selectText: 'перейти',
-            selectKeyAriaLabel: 'Enter',
-            navigateText: 'навигация',
-            navigateUpKeyAriaLabel: 'Стрелка вверх',
-            navigateDownKeyAriaLabel: 'Стрелка вниз',
-            closeText: 'закрыть',
-            closeKeyAriaLabel: 'Escape'
-          }
-        }
-      }
-    },
-    en: {
-      translations: {
-        button: {
           buttonText: 'Search',
           buttonAriaLabel: 'Search documentation'
         },
@@ -50,6 +27,29 @@ const localSearchOptions = {
           }
         }
       }
+    },
+    ru: {
+      translations: {
+        button: {
+          buttonText: 'Поиск',
+          buttonAriaLabel: 'Поиск по документации'
+        },
+        modal: {
+          noResultsText: 'Ничего не найдено',
+          resetButtonTitle: 'Сбросить',
+          backButtonTitle: 'Назад',
+          displayDetails: 'Показать подробности',
+          footer: {
+            selectText: 'перейти',
+            selectKeyAriaLabel: 'Enter',
+            navigateText: 'навигация',
+            navigateUpKeyAriaLabel: 'Стрелка вверх',
+            navigateDownKeyAriaLabel: 'Стрелка вниз',
+            closeText: 'закрыть',
+            closeKeyAriaLabel: 'Escape'
+          }
+        }
+      }
     }
   }
 }
@@ -57,7 +57,6 @@ const localSearchOptions = {
 export default defineConfig(
   withLocalizedSidebar({
     base,
-    rewrites: (id) => (id.startsWith('ru/') ? id.slice(3) : id),
     head: [
       ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon-512.png` }],
       ['link', { rel: 'apple-touch-icon', href: `${base}favicon-512.png` }],
@@ -76,27 +75,8 @@ export default defineConfig(
     },
     locales: {
       root: {
-        label: 'Русский',
-        lang: 'ru-RU',
-        title: 'Документация',
-        description: 'Документация',
-        themeConfig: {
-          nav: navRu,
-          outline: { label: 'На этой странице' },
-          docFooter: { prev: 'Назад', next: 'Далее' },
-          sidebarMenuLabel: 'Меню',
-          returnToTopLabel: 'Наверх',
-          darkModeSwitchLabel: 'Тема оформления',
-          lightModeSwitchTitle: 'Светлая тема',
-          darkModeSwitchTitle: 'Тёмная тема',
-          langMenuLabel: 'Язык',
-          skipToContentLabel: 'Перейти к содержимому'
-        }
-      },
-      en: {
         label: 'English',
         lang: 'en-US',
-        link: '/en/',
         title: 'Documentation',
         description: 'Documentation',
         themeConfig: {
@@ -110,6 +90,25 @@ export default defineConfig(
           darkModeSwitchTitle: 'Switch to dark theme',
           langMenuLabel: 'Change language',
           skipToContentLabel: 'Skip to content'
+        }
+      },
+      ru: {
+        label: 'Русский',
+        lang: 'ru-RU',
+        link: '/ru/',
+        title: 'Документация',
+        description: 'Документация',
+        themeConfig: {
+          nav: navRu,
+          outline: { label: 'На этой странице' },
+          docFooter: { prev: 'Назад', next: 'Далее' },
+          sidebarMenuLabel: 'Меню',
+          returnToTopLabel: 'Наверх',
+          darkModeSwitchLabel: 'Тема оформления',
+          lightModeSwitchTitle: 'Светлая тема',
+          darkModeSwitchTitle: 'Тёмная тема',
+          langMenuLabel: 'Язык',
+          skipToContentLabel: 'Перейти к содержимому'
         }
       }
     }

@@ -4,7 +4,7 @@ search: false
 ---
 
 <script setup>
-import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileButton.vue'
+import DownloadFileButton from './.vitepress/theme/components/ui/DownloadFileButton.vue'
 </script>
 
 # Docs
@@ -50,7 +50,7 @@ Based on the current configuration, Decap works with the GitHub repository and u
 
 The `Path` field defines the page address inside the documentation and where Decap will create the Markdown file.
 
-This admin panel has `ru` and `en` locales enabled, so Decap places pages under `docs/ru` and `docs/en` automatically. In `Path`, enter the page path inside the selected locale.
+This admin panel has `ru` and `en` locales enabled. English pages are stored directly under `docs/`, and Russian pages are stored under `docs/ru/`. In `Path`, enter the page path inside the selected locale.
 
 Rules for `Path`:
 
@@ -69,9 +69,9 @@ Examples:
 
 | What to enter in `Path` | RU file location | EN file location | RU URL | EN URL |
 | ----------------------- | ---------------- | ---------------- | ------ | ------ |
-| `getting-started` | `docs/ru/getting-started/index.md` | `docs/en/getting-started/index.md` | `/getting-started/` | `/en/getting-started/` |
-| `guides/setup` | `docs/ru/guides/setup/index.md` | `docs/en/guides/setup/index.md` | `/guides/setup/` | `/en/guides/setup/` |
-| `whatsminer-firmware/initial-device-setup` | `docs/ru/whatsminer-firmware/initial-device-setup/index.md` | `docs/en/whatsminer-firmware/initial-device-setup/index.md` | `/whatsminer-firmware/initial-device-setup/` | `/en/whatsminer-firmware/initial-device-setup/` |
+| `getting-started` | `docs/ru/getting-started/index.md` | `docs/getting-started/index.md` | `/ru/getting-started/` | `/getting-started/` |
+| `guides/setup` | `docs/ru/guides/setup/index.md` | `docs/guides/setup/index.md` | `/ru/guides/setup/` | `/guides/setup/` |
+| `whatsminer-firmware/initial-device-setup` | `docs/ru/whatsminer-firmware/initial-device-setup/index.md` | `docs/whatsminer-firmware/initial-device-setup/index.md` | `/ru/whatsminer-firmware/initial-device-setup/` | `/whatsminer-firmware/initial-device-setup/` |
 
 For example, for a `Getting Started` page, use:
 
@@ -82,7 +82,7 @@ getting-started
 Do not use:
 
 ```txt
-docs/en/getting-started.md
+docs/getting-started.md
 /getting-started
 getting started
 getting-started/index.md
@@ -124,7 +124,7 @@ This project already has a `DownloadFileButton` component. It accepts these prop
 
 ````md
 <script setup>
-import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileButton.vue'
+import DownloadFileButton from './.vitepress/theme/components/ui/DownloadFileButton.vue'
 </script>
 
 <DownloadFileButton
@@ -783,12 +783,12 @@ export default {
 **Markdown**
 
 ```md
-<<< ../.vitepress/config.ts{6-11}
+<<< ./.vitepress/config.ts{6-11}
 ```
 
 **Rendered result**
 
-<<< ../.vitepress/config.ts{6-11}
+<<< ./.vitepress/config.ts{6-11}
 
 ## Code block without a language
 
