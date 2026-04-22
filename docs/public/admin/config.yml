@@ -1,7 +1,7 @@
 # Decap CMS → коммиты в GitHub через editorial workflow.
-# Контент хранится в:
-#   docs/...      (en, default locale)
-#   docs/ru/...   (ru)
+# Контент хранится в (i18n: multiple_folders):
+#   docs/en/...   (EN, default locale)
+#   docs/ru/...   (RU)
 
 backend:
   name: github
@@ -28,11 +28,10 @@ collections:
     folder: docs
     create: true
     i18n: true
-    slug: '{{slug}}'
     nested:
       depth: 10
       summary: '{{title}}'
-      subfolders: false
+      subfolders: true
     meta:
       path:
         widget: string
@@ -41,7 +40,6 @@ collections:
         index_file: index
     extension: md
     format: frontmatter
-    identifier_field: title
     fields:
       - label: Title
         name: title
