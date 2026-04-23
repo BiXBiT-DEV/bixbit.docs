@@ -278,6 +278,71 @@ import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileBu
 
 ![Логотип AMS](/images/logo.svg)
 
+## GIF
+
+GIF вставляется так же, как обычное изображение.
+
+**Markdown**
+
+```md
+![Пример GIF](/images/demo.gif)
+```
+
+**Результат**
+
+![Пример GIF](https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif)
+
+## Видео
+
+Для видео в Markdown-странице используй HTML-тег `<video>`.  
+Обычно файл кладут в `docs/public/videos`, а в `src` указывают путь от корня сайта.
+
+**Markdown**
+
+```html
+<video controls width="720" preload="metadata">
+  <source src="/videos/demo.mp4" type="video/mp4" />
+  Ваш браузер не поддерживает встроенное видео.
+</video>
+```
+
+**Результат**
+
+<video controls width="720" preload="metadata">
+  <source src="/videos/demo.mp4" type="video/mp4" />
+  Ваш браузер не поддерживает встроенное видео.
+</video>
+
+### Видео с YouTube
+
+Для роликов YouTube используй `iframe` с `embed`-ссылкой.
+
+**Markdown**
+
+```html
+<iframe
+  width="720"
+  height="405"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+```
+
+**Результат**
+
+<iframe
+  width="720"
+  height="405"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+
 ## Маркированный список
 
 **Markdown**
