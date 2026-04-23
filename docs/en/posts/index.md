@@ -1,7 +1,4 @@
 ---
-title: Posts
+title: new
 ---
-
-# Posts
-
-Posts section index.
+new
