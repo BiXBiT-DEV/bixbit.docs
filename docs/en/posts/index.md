@@ -1,4 +1,5 @@
 ---
-title: new
+title: Posts
 ---
-new
+
+ posts
