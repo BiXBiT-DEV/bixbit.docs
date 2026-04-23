@@ -24,10 +24,6 @@ collections:
     label_singular: Documentation Page
     folder: docs/en
     create: true
-    nested:
-      depth: 10
-      summary: '{{title}}'
-      subfolders: true
     meta:
       path:
         widget: string
@@ -50,10 +46,6 @@ collections:
     label_singular: Documentation Page
     folder: docs/ru
     create: true
-    nested:
-      depth: 10
-      summary: '{{title}}'
-      subfolders: true
     meta:
       path:
         widget: string
@@ -76,10 +68,6 @@ collections:
     label_singular: Documentation Page
     folder: docs/es
     create: true
-    nested:
-      depth: 10
-      summary: '{{title}}'
-      subfolders: true
     meta:
       path:
         widget: string
@@ -102,10 +90,6 @@ collections:
     label_singular: Documentation Page
     folder: docs/zh
     create: true
-    nested:
-      depth: 10
-      summary: '{{title}}'
-      subfolders: true
     meta:
       path:
         widget: string
