@@ -2,4 +2,6 @@
 title: Posts
 ---
 
- posts
+# Posts
+
+Posts section index.
