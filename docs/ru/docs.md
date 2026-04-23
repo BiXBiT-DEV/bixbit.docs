@@ -301,7 +301,7 @@ GIF вставляется так же, как обычное изображен
 
 ```html
 <video controls width="720" preload="metadata">
-  <source src="/videos/demo.mp4" type="video/mp4" />
+  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
   Ваш браузер не поддерживает встроенное видео.
 </video>
 ```
