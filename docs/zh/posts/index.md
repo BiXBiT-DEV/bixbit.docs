@@ -1,5 +1,4 @@
 ---
-section: posts
 title: 文章
 ---
 
