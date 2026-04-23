@@ -1,7 +1,7 @@
 import { ssrRenderAttrs } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"文章","description":"","frontmatter":{"title":"文章"},"headers":[],"relativePath":"zh/posts/index.md","filePath":"zh/posts/index.md"}');
+const __pageData = JSON.parse('{"title":"文章","description":"","frontmatter":{"section":"posts","title":"文章"},"headers":[],"relativePath":"zh/posts/index.md","filePath":"zh/posts/index.md"}');
 const _sfc_main = { name: "zh/posts/index.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="文章" tabindex="-1">文章 <a class="header-anchor" href="#文章" aria-label="Permalink to “文章”">​</a></h1><p>文章栏目索引页。</p></div>`);

@@ -1,4 +1,5 @@
 ---
+section: posts
 title: Hola Mundo
 ---
 

@@ -1,7 +1,7 @@
 import { ssrRenderAttrs } from "vue/server-renderer";
 import { useSSRContext } from "vue";
 import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
-const __pageData = JSON.parse('{"title":"Hello World","description":"","frontmatter":{"title":"Hello World"},"headers":[],"relativePath":"posts/hello-world/index.md","filePath":"en/posts/hello-world/index.md"}');
+const __pageData = JSON.parse('{"title":"Hello World","description":"","frontmatter":{"section":"posts","title":"Hello World"},"headers":[],"relativePath":"posts/hello-world/index.md","filePath":"en/posts/hello-world/index.md"}');
 const _sfc_main = { name: "posts/hello-world/index.md" };
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="hello-world" tabindex="-1">Hello World <a class="header-anchor" href="#hello-world" aria-label="Permalink to “Hello World”">​</a></h1><p>First post page.</p></div>`);

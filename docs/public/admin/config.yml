@@ -24,6 +24,42 @@ i18n:
   default_locale: en
 
 collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: docs
+    create: true
+    i18n: true
+    filter: { field: "section", value: "posts" }
+    path: posts/{{slug}}/index
+    nested:
+      depth: 3
+      summary: '{{title}}'
+      subfolders: true
+    meta:
+      path:
+        widget: string
+        label: Post path
+        hint: 'Example: posts/hello-world'
+        index_file: index
+    extension: md
+    format: frontmatter
+    fields:
+      - label: Section
+        name: section
+        widget: hidden
+        default: posts
+        i18n: duplicate
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        i18n: true
+      - label: Body
+        name: body
+        widget: markdown
+        i18n: true
+
   - name: docs_pages
     label: Documentation Pages (EN default, RU/ES/ZH localized)
     label_singular: Documentation Page
