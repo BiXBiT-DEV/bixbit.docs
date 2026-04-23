@@ -33,7 +33,6 @@ collections:
     nested:
       depth: 10
       summary: '{{title}}'
-      subfolders: false
     meta:
       path:
         widget: string
