@@ -4,4 +4,4 @@ title: Home
 
 # Home
 
-Documentation prototype.
+English home page.
