@@ -1,7 +1,9 @@
 # Decap CMS → коммиты в GitHub через editorial workflow.
-# Контент хранится в (i18n: multiple_folders):
-#   docs/en/...   (EN, default locale)
-#   docs/ru/...   (RU)
+# Контент хранится по языкам:
+#   docs/en/...   (English)
+#   docs/ru/...   (Russian)
+#   docs/es/...   (Spanish)
+#   docs/zh/...   (Chinese)
 
 backend:
   name: github
@@ -16,18 +18,12 @@ publish_mode: editorial_workflow
 media_folder: docs/public/images
 public_folder: /images
 
-i18n:
-  structure: multiple_folders
-  locales: [ru, en]
-  default_locale: en
-
 collections:
-  - name: docs_pages
-    label: Documentation Pages (EN default, RU localized)
+  - name: docs_pages_en
+    label: Documentation Pages (EN)
     label_singular: Documentation Page
-    folder: docs
+    folder: docs/en
     create: true
-    i18n: true
     nested:
       depth: 10
       summary: '{{title}}'
@@ -35,7 +31,7 @@ collections:
     meta:
       path:
         widget: string
-        label: Page path (without /, en, ru, .md)
+        label: Page path (without / and .md)
         hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
         index_file: index
     extension: md
@@ -45,8 +41,84 @@ collections:
         name: title
         widget: string
         required: true
-        i18n: true
       - label: Body
         name: body
         widget: markdown
-        i18n: true
+
+  - name: docs_pages_ru
+    label: Documentation Pages (RU)
+    label_singular: Documentation Page
+    folder: docs/ru
+    create: true
+    nested:
+      depth: 10
+      summary: '{{title}}'
+      subfolders: true
+    meta:
+      path:
+        widget: string
+        label: Page path (without / and .md)
+        hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
+        index_file: index
+    extension: md
+    format: frontmatter
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Body
+        name: body
+        widget: markdown
+
+  - name: docs_pages_es
+    label: Documentation Pages (ES)
+    label_singular: Documentation Page
+    folder: docs/es
+    create: true
+    nested:
+      depth: 10
+      summary: '{{title}}'
+      subfolders: true
+    meta:
+      path:
+        widget: string
+        label: Page path (without / and .md)
+        hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
+        index_file: index
+    extension: md
+    format: frontmatter
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Body
+        name: body
+        widget: markdown
+
+  - name: docs_pages_zh
+    label: Documentation Pages (ZH)
+    label_singular: Documentation Page
+    folder: docs/zh
+    create: true
+    nested:
+      depth: 10
+      summary: '{{title}}'
+      subfolders: true
+    meta:
+      path:
+        widget: string
+        label: Page path (without / and .md)
+        hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
+        index_file: index
+    extension: md
+    format: frontmatter
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Body
+        name: body
+        widget: markdown
