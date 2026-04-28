@@ -35,11 +35,6 @@ collections:
       depth: 10
       summary: '{{title}}'
       subfolders: false
-    meta:
-      path:
-        widget: string
-        label: Page path (without /, locale prefix, .md)
-        hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
     extension: md
     format: frontmatter
     fields:
