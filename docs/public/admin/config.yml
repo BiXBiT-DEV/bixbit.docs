@@ -1,4 +1,4 @@
-# Decap CMS → коммиты в GitHub через editorial workflow.
+# Sveltia CMS → коммиты в GitHub через editorial workflow.
 # Контент хранится в (i18n: multiple_folders):
 #   docs/en/...   (EN, default locale)
 #   docs/ru/...   (RU)
