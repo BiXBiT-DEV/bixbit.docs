@@ -27,7 +27,7 @@ collections:
   - name: docs_pages
     label: Documentation Pages (EN default, RU/ES/ZH localized)
     label_singular: Documentation Page
-    summary: '{{dirname}}/{{filename}}'
+    summary: '{{title}}'
     folder: docs
     create: true
     i18n: true
