@@ -40,7 +40,6 @@ collections:
         widget: string
         label: Page path (without /, locale prefix, .md)
         hint: 'Examples: whatsminer-firmware | whatsminer-firmware/initial-device-setup'
-        index_file: index
     extension: md
     format: frontmatter
     fields:
