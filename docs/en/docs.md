@@ -18,7 +18,7 @@ This site uses **Markdown**; each `.md` file becomes a page. A **full Markdown +
 
 ## Editing pages in Pages CMS
 
-[Pages CMS](https://pagescms.org/) ([app.pagescms.org](https://app.pagescms.org/)) edits text in the UI and commits changes to **GitHub** with the same account you use for the repo.
+[Pages CMS](https://pagescms.org/) ([app.pagescms.org](https://app.pagescms.org/)) edits content and commits it to **GitHub**, using **the same GitHub identity** your repo trusts. Normally you browse to the app signed into GitHub; if you’ve just been added as a collaborator, GitHub sends an **invite link by email** — accept that **contributors / collaborator** invitation first, then open Pages CMS again with access to that repository.
 
 ### Steps (in order)
 
