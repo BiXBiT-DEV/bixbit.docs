@@ -2,8 +2,6 @@
 # Контент хранится в (i18n: multiple_folders):
 #   docs/en/...   (EN, default locale)
 #   docs/ru/...   (RU)
-#   docs/es/...   (ES)
-#   docs/zh/...   (ZH)
 
 backend:
   name: github
@@ -20,7 +18,7 @@ public_folder: /images
 
 i18n:
   structure: multiple_folders
-  locales: [en, ru, es, zh]
+  locales: [en, ru]
   default_locale: en
 
 collections:

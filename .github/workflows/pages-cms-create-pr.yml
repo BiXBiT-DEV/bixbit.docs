@@ -1,0 +1,52 @@
+# Triggered from Pages CMS: кнопка «Create PR to main» (.pages.yml → actions).
+# Ожидает JSON во входе payload (см. https://pagescms.org/docs/configuration/actions/).
+name: Pages CMS — Create PR to main
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: Pages CMS payload as JSON
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open pull request from current branch to main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAYLOAD: ${{ github.event.inputs.payload }}
+        run: |
+          set -euo pipefail
+          REF=$(echo "$PAYLOAD" | jq -r '.repository.ref // empty')
+          OWNER=$(echo "$PAYLOAD" | jq -r '.repository.owner // empty')
+          REPO=$(echo "$PAYLOAD" | jq -r '.repository.repo // empty')
+
+          if [ -z "$REF" ] || [ "$REF" = "null" ]; then
+            echo "::error::Payload missing repository.ref"
+            exit 1
+          fi
+
+          FULL_REPO="${OWNER}/${REPO}"
+
+          if [ "$REF" = "main" ]; then
+            echo "Ветка уже main — PR не нужен."
+            exit 0
+          fi
+
+          COUNT=$(gh pr list --repo "$FULL_REPO" --base main --head "$REF" --json number --jq 'length')
+          if [ "$COUNT" != "0" ]; then
+            echo "PR из «$REF» в main уже существует."
+            exit 0
+          fi
+
+          BODY="Открыто кнопкой **Create PR to main** в [Pages CMS](https://pagescms.org/)."$'\n\n'"Ветка: \`$REF\` → \`main\`."
+          gh pr create --repo "$FULL_REPO" --base main --head "$REF" \
+            --title "docs(cms): изменения из Pages CMS ($REF)" \
+            --body "$BODY"
