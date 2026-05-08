@@ -14,81 +14,80 @@ Documentation in this project is written in Markdown. Each `.md` file becomes it
 - Official VitePress Markdown guide: [vitepress.dev/guide/markdown](https://vitepress.dev/guide/markdown)
 - Basic Markdown syntax: [markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/)
 
-Below we cover Markdown and **VitePress Markdown Extensions**. For each item we first show syntax, then the rendered outcome. Multiple Markdown files can be composed into one page with VitePress’ include/snippet helpers when needed.
+Below we cover Markdown and **VitePress Markdown Extensions**. For each item syntax is shown first, then the outcome. Multiple Markdown files can be composed into one page with VitePress’ include mechanics when needed.
 
 [[toc]]
 
 ## Editing and creating pages in Pages CMS
 
-[Pages CMS](https://pagescms.org/) ([app.pagescms.org](https://app.pagescms.org/)) is where you edit text; saved files land in GitHub. Sign-in happens through **GitHub** with the **same identity** attached to your repository. When you’ve been invited as a **contributor** (repo collaborator or org member with repo access), the usual first step is to **open your GitHub email** and accept the invite; commits from the editor toward the repo will not succeed until access is settled. Afterwards open [app.pagescms.org](https://app.pagescms.org/) signed in with that GitHub account.
+[Pages CMS](https://pagescms.org/) ([app.pagescms.org](https://app.pagescms.org/)) is where you edit text; saved files go to GitHub. Sign-in is through **GitHub** using the **same profile** tied to your repository. If you were invited as a **contributor** (Collaborator or org member with repo access), the usual first step is to **open the invitation link from GitHub’s email** and accept; without this, commits from the editor toward the repo are blocked. Afterwards open [app.pagescms.org](https://app.pagescms.org/) under the same GitHub profile.
 
-### Always follow these steps first
+### Steps for creating a page in Pages CMS
 
-1. **Open admin UI:** document site path **`/bixbit.docs/admin/`** (deployed URL pattern: `https://<your-host>/bixbit.docs/admin/`). Local dev commonly `http://localhost:5173/bixbit.docs/admin/` — the port might differ.
-2. In the repo list pick **`bixbit.docs`**.
-3. Select the branch to save onto, commonly **`cms-edits`**. **Do not** land edits directly on **`main`** — that branch is reviewed “released” branch; merges happen after review via a GitHub Pull Request.
-4. In **Content**, open the locale you edit: **Документация RU** or **Documentation EN** (**Title** / **Content** labels on EN collections).
-5. Only then create a folder/page (below). Batch your edits → **Create PR to main** (see the workflow section).
+1. **Open admin:** on the documentation site path **`/bixbit.docs/admin/`** (deploy URL pattern: `https://<your-host>/bixbit.docs/admin/`). Local dev commonly `http://localhost:5173/bixbit.docs/admin/` — the port may vary.
+2. In the repo list choose **`bixbit.docs`**.
+3. Pick a save branch—usually **`cms-edits`**. **Do not** save straight to **`main`**; that branch is reviewed “released” code and changes reach it via a GitHub Pull Request after review.
+4. In **Content**, open **Документация RU** or **Documentation EN**.
+5. There are several ways to create pages in Pages CMS:
+   1. **Single page at this level** — one page without a new group.
+   2. **Section with a landing page** — a section introduction page exists.
+   3. **Only sub‑items**, **without** a section landing — subpages without a root article for that section.
 
-**Shortcut:** **`cms-edits`** = **draft**, **`main`** = **reads for everyone**, after merge on GitHub.
+### Form when creating a page (what goes where)
 
----
+| Field | What it affects for readers & URLs |
+| ----- | --------------------------------- |
+| **Filename** | Name in repo + **portion of browser URL**. No spaces—prefer Latin hyphenated slug: `kak-ustanovit.md`. |
+| **Заголовок** / **Title** (depends on locale) | **Sidebar + browser tab captions**. |
+| **Содержимое** / **Content** (depends on locale) | **Readable body.** Use rich **Editor** or switch **Source** for raw Markdown. |
 
-### Three form fields
+### When you need **a foldered section**, and when **just one page**
 
-| Field | What it means for URLs and UX |
-| ----- | -------------------------------- |
-| **Filename** | Stored path + **portion of browser URL**. No spaces—prefer Latin hyphenated slugs (`how-to-install.md`). |
-| **Title / Заголовок** (label depends on collection) | **Sidebar + tab captions**. |
-| **Content / Содержимое** | **Visible body.** Use rich **Editor** or switch **Source** for raw Markdown. |
+First decide **the outcome you want** (sidebar block shape + routed URLs), then **choose matching actions in Pages CMS**.
 
----
+**Needs a folder** — several linked pages inside one conceptual topic/chapter hierarchy.
 
-### When to use **folder vs single page**
+**A single page is enough** — one file beside peers without a grouping folder.
 
-Decide **the outcome** (sidebar silhouette + routed URLs), then mirror it in Pages CMS actions.
+#### 1. One page at this level — **this is what we want**
 
-Folders help **clusters** of sibling pages beneath one conceptual topic—one page is enough when you avoid creating a grouping.
+**What we want.** **One extra item** beside others—no enclosing section folder.
 
-#### 1. One page here — **desired layout**
+**How we create it.** Select the CMS tree depth you need (locale root or folder already open). **Add an entry**, fill **Filename**, title/text (**Заголовок** / **Содержимое** on RU, **Title** / **Content** on EN) → **Save**. **Don’t** add a folder.
 
-**What we want.** A **new lone page** sibling to existing sidebar nodes—no enclosing section folder.
-
-**How we create it.** On the CMS tree wherever you intend the page (locale root already opened vs nested folder row) tap **Add an entry**, populate **Filename**, **Title** / **Заголовок**, **Content / Содержимое** → **Save**. **Do not** create a folder.
-
-Readers see captions similar to:
+Sidebar labels follow the illustration below (**`title`** in frontmatter gives names):
 
 ```text
 Sidebar (diagram)
 sidebar:
-  ├── … other sibling pages …
-  └── kak-ustanovit.md     ← lone page appended at same depth
+  ├── … other pages …
+  └── kak-ustanovit.md     ← one new article at same depth
 ```
 
-The repository path becomes `docs/<locale>/kak-ustanovit.md`.
+File path lands as `docs/<locale>/kak-ustanovit.md`.
 
-#### 2. Section with **landing** (`index`) page — **desired layout**
+#### 2. Section with **landing** (`index`) page — **what we want**
 
-**What we want.** A **collapsible group** showing an **introductory** article plus descendants (and optionally nested folders).
+**What we want.** A sidebar **group** (topic folder): reader can open a **landing** article at the root of the branch, listing subpages (nested folders optionally).
 
-**How we create it.** **Folder-plus icon → Create a folder** → latin slug (`ustanovka` or similar) → **Create**. On that folder row, **plus →** add **`index.md`** (landing copy). Add **`trebovaniya.md`**, optionally nested **`zapusk/`**, again maybe its own **`index.md`** + **`parametri.md`**—reuse the same layering pattern indefinitely.
+**How we create it.** **Folder-plus** → **Create a folder** → Latin slug/no spaces agree with team → **Create**. Beside the new folder’s row use **plus** → add **`index.md`** (landing prose). Repeat for **`trebovaniya.md`**, optional nested **`zapusk/`** with its **`index.md`** + **`parametri.md`**—same layering pattern onward.
 
 ```text
 Sidebar (diagram)
 sidebar:
   └── ustanovka/
-        ├── index.md         ← landing at section root
+        ├── index.md         ← landing at branch root URL
         ├── trebovaniya.md
         └── zapusk/
               ├── index.md
               └── parametri.md
 ```
 
-#### 3. Only **child pages**, **no** root article — **desired layout**
+#### 3. Only **nested items**, **no** landing for the branch — **what we want**
 
-**What we want.** **Sidebar grouping** without a dedicated article on the section’s own URL—only inner pages (and maybe subfolders).
+**What we want.** Sidebar grouping behaves like an envelope yet **no** dedicated article sits on URL root—only inner docs (possibly foldered).
 
-**How we create it.** **Create a folder** as usual but **skip** root **`index.md`**. Immediately add **`trebovaniya.md`**, optional nested **`zapusk/`** with **`parametri.md`**, etc.
+**How we create it.** Perform **Create a folder** normally but skip root **`index.md`**. Immediately add **`trebovaniya.md`**, optional nested **`zapusk/`** with **`parametri.md`**, etc.
 
 ```text
 Sidebar (diagram)
@@ -99,52 +98,33 @@ sidebar:
               └── parametri.md
 ```
 
-The `ustanovka` root URL may not render a page—only child routes remain.
+The **`ustanovka`** root segment may expose no page—children URLs only.
 
-Sidebar labels + ordering still come from **`title`** in frontmatter plus defaults in **`sidebar.ts`** / `vitepress-sidebar`.
+Sidebar labels/order still hinge on **`title`** plus defaults in **`sidebar.ts`** / `vitepress-sidebar`.
 
 ---
 
-**Tip.** If the tree did not refresh, reload (**F5**). When hitting **plus**, match the **indent** so new files land under the correct parent row.
+**Tip.** If sidebar tree didn’t update, reload (**F5**). Respect **indent** when hitting **plus**—new files anchor under whichever row owns that depth.
 
-### After saving: why production still shows old copy
+### After saving—why readers still see “old copy”?
 
-While you only **Save** in admin, drafts live on **`cms-edits`**—the **`main`** branch **does not** auto-advance.
+While pressing **Save** in admin commits to draft branch **`cms-edits`**, merges into **`main`** **do not** happen automatically.
 
-**After editing**
+**After your editing round**
 
-1. Click **Create PR to main**. GitHub opens/updates merge proposal into **`main`** (abbreviated PR).
-2. Reviewers iterate. More edits→still **`cms-edits`**, rerun **Create PR to main**.
-3. Approve **`merge`** on GitHub→deploy rebuild→readers consume merged content.
+1. Click **Create PR to main**. GitHub opens/refreshes a merge proposal (**pull request**/PR).
+2. Reviewers iterate. Retain **`cms-edits`** as your working branch→issue **Create PR to main** again when needed.
+3. When merged on GitHub (**merge**→**`main`**), rebuilt site distributes text to everybody else.
 
-For review policy/`main` protection see your repo settings or team playbook.
-
-
-## Frontmatter
-
-Frontmatter is the YAML head of each Markdown file—it controls sidebar titles, descriptions, layouts, etc., but **never** renders as visible body prose.
-
-**Markdown**
-
-```yaml
----
-title: Docs
-description: Sample documentation metadata
----
-```
-
-**Result**
-
-The block configures the page silently.
 
 ## Vue components embedded in Markdown
 
-VitePress allows importing custom Vue widgets inside Markdown: wrap them with `<script setup>` imports then drop tags inline.
+VitePress permits embedding Vue widgets inside Markdown: import via `<script setup>`, then tag them like ordinary components.
 
-Example project widget: `DownloadFileButton`.
+Built-in showcase component: **`DownloadFileButton`**:
 
 - **`label`** – button caption
-- **`href`** – file URL
+- **`href`** – file hyperlink
 
 **Markdown**
 
@@ -166,9 +146,9 @@ import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileBu
   href="/files/user-manual.pdf"
 />
 
-## Custom component defaults
+## Custom component without props
 
-Skipping props restores component defaults.
+Leaving props untouched uses bundled defaults.
 
 **Markdown**
 
@@ -180,9 +160,9 @@ Skipping props restores component defaults.
 
 <DownloadFileButton />
 
-## Custom component with another label
+## Same component with a different label
 
-Reuse the same Vue tag with differing `label` text.
+Reuse the tag with differing `label` text.
 
 **Markdown**
 
@@ -196,7 +176,7 @@ Reuse the same Vue tag with differing `label` text.
 
 ## Table of contents
 
-`[[toc]]` auto-assembles headings for this page.
+`[[toc]]` auto-links headings belonging to this Markdown page.
 
 **Markdown**
 
@@ -206,11 +186,11 @@ Reuse the same Vue tag with differing `label` text.
 
 **Result**
 
-See the TOC near the top of this page—that’s `[[toc]]` live.
+Live sample already occupies the upper region of **this doc page**.
 
 ## Headings & anchors {#docs-headings}
 
-Headings auto-anchor; custom ids use `{#id}` syntax after title text.
+Markdown headings auto-assign anchors—you can suffix custom ids.
 
 **Markdown**
 
@@ -226,11 +206,11 @@ Headings auto-anchor; custom ids use `{#id}` syntax after title text.
 ### Level-three heading
 ### Custom slug {#custom-anchor-demo}
 
-Link to custom slug: [#custom-anchor-demo](#custom-anchor-demo)
+Navigate custom slug **[#custom-anchor-demo](#custom-anchor-demo)**
 
 ## Paragraphs
 
-Separate paragraphs with a blank spacer line.
+Separate paragraphs via blank spacer line between blocks.
 
 **Markdown**
 
@@ -246,7 +226,7 @@ First paragraph.
 
 Second paragraph.
 
-## Bold, italics & inline code
+## Bold, italics, inline code
 
 **Markdown**
 
@@ -254,7 +234,7 @@ Second paragraph.
 **Bold**
 *Italic*
 ***Bold italic***
-~~Strike~~
+~~Strikethrough~~
 `inline code`
 ```
 
@@ -263,7 +243,7 @@ Second paragraph.
 **Bold**
 *Italic*
 ***Bold italic***
-~~Strike~~
+~~Strikethrough~~
 `inline code`
 
 ## External hyperlink
@@ -280,9 +260,19 @@ Second paragraph.
 
 ## Internal link
 
-Markdown links traverse other shipped routes.
+Markdown internal routes link internal documentation pages together.
 
 **Markdown**
+
+```md
+[RU home](/ru/)
+```
+
+**Result**
+
+[RU home](/ru/)
+
+Root English URL after rewriting locale `en`:
 
 ```md
 [Home](/)
@@ -291,14 +281,6 @@ Markdown links traverse other shipped routes.
 **Result**
 
 [Home](/)
-
-Russian variant for parity:
-
-```md
-[Russian Docs](/ru/docs)
-```
-
-[Russian Docs](/ru/docs)
 
 ## Image
 
@@ -314,21 +296,21 @@ Russian variant for parity:
 
 ## GIF
 
-GIF behaves like static images—reference file or remote URL.
+GIF references mirror static images (`![alt](url)` syntax).
 
 **Markdown**
 
 ```md
-![GIF sample](/images/demo.gif)
+![GIF demo](/images/demo.gif)
 ```
 
 **Result**
 
-![GIF sample](https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif)
+![GIF demo](https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif)
 
 ## Video
 
-Prefer native `<video>` tags for uploads under `docs/public/videos`; `src` is site-root-relative.
+For HTML-capable snippets inside Markdown leverage `<video>`. Hosted assets reside under something like **`docs/public/videos`**; `src` is site-relative.
 
 **Markdown**
 
@@ -346,9 +328,9 @@ Prefer native `<video>` tags for uploads under `docs/public/videos`; `src` is si
   Your browser does not support embedded video.
 </video>
 
-### YouTube iframe
+### YouTube video
 
-Paste the **embed** host URL inside `iframe`.
+Leverage **`iframe`** with YouTube **`embed`** URL variants.
 
 **Markdown**
 
@@ -381,16 +363,16 @@ Paste the **embed** host URL inside `iframe`.
 **Markdown**
 
 ```md
-- First item
-- Second item
-- Third item
+- First bullet
+- Second bullet
+- Third bullet
 ```
 
 **Result**
 
-- First item
-- Second item
-- Third item
+- First bullet
+- Second bullet
+- Third bullet
 
 ## Ordered list
 
@@ -414,69 +396,69 @@ Paste the **embed** host URL inside `iframe`.
 
 ```md
 - [x] Done
-- [ ] Still TODO
+- [ ] Still todo
 ```
 
 **Result**
 
 - [x] Done
-- [ ] Still TODO
+- [ ] Still todo
 
 ## Blockquote
 
 **Markdown**
 
 ```md
-> Sample quote line.
+> Quote text line #1.
 >
-> Another line in the same quote.
+> Another line stacked within same quote shell.
 ```
 
 **Result**
 
-> Sample quote line.
+> Quote text line #1.
 >
-> Another line in the same quote.
+> Another line stacked within same quote shell.
 
 ## Horizontal rule
 
-Three hyphens on their own line render a thematic separator between paragraphs:
+Three hyphens occupying their own spacer line denote thematic separators between paragraphs:
 
 **Markdown**
 
 ```md
-Paragraph before rule.
+Before boundary paragraph.
 
 ---
 
-Paragraph after rule.
+After boundary paragraph.
 ```
 
 **Result**
 
-Paragraph before rule.
+Before boundary paragraph.
 
 ---
 
-Paragraph after rule.
+After boundary paragraph.
 
 ## Table
 
 **Markdown**
 
 ```md
-| Column A | Column B | Alignment |
-| -------- | :------: | --------: |
-| text     |  center  |    right |
-| number   |    42    |       99 |
+| Col A | Col B   | Align  |
+| ----- | :-----: | -----: |
+| text  | center  | right  |
+| qty   | 42      | 99     |
 ```
 
 **Result**
 
-| Column A | Column B | Alignment |
-| -------- | :------: | --------: |
-| text     |  center  |    right |
-| number   |    42    |       99 |
+| Col A | Col B   | Align  |
+| ----- | :-----: | -----: |
+| text  | center  | right  |
+| qty   | 42      | 99     |
 
 ## Emoji
 
@@ -490,100 +472,100 @@ Paragraph after rule.
 
 :tada: :rocket: :+1:
 
-## `info` container
+## `info` block
 
 **Markdown**
 
 ```md
 ::: info
-Informational container.
+Informational capsule.
 :::
 ```
 
 **Result**
 
 ::: info
-Informational container.
+Informational capsule.
 :::
 
-## `tip` container
+## `tip` block
 
 **Markdown**
 
 ```md
 ::: tip
-Helpful tip copy.
+Supplementary shortcut knowledge.
 :::
 ```
 
 **Result**
 
 ::: tip
-Helpful tip copy.
+Supplementary shortcut knowledge.
 :::
 
-## `warning` container
+## `warning` block
 
 **Markdown**
 
 ```md
 ::: warning
-Important warning.
+Operational caution copy.
 :::
 ```
 
 **Result**
 
 ::: warning
-Important warning.
+Operational caution copy.
 :::
 
-## `danger` container
+## `danger` block
 
 **Markdown**
 
 ```md
 ::: danger
-Critical warning body.
+Critical alert style text.
 :::
 ```
 
 **Result**
 
 ::: danger
-Critical warning body.
+Critical alert style text.
 :::
 
-## `details` accordion
+## `details` block
 
 **Markdown**
 
 ````md
-::: details Expand me
-Hidden copy.
+::: details Toggle label
+Masked content here.
 
 ```js
-console.log('inside details')
+console.log('inside details accordion')
 ```
 :::
 ````
 
 **Result**
 
-::: details Expand me
-Hidden copy.
+::: details Toggle label
+Masked content here.
 
 ```js
-console.log('inside details')
+console.log('inside details accordion')
 ```
 :::
 
-## Default-open `details`
+## `details` open by default
 
 **Markdown**
 
 ````md
-::: details Expanded by default {open}
+::: details Expanded default chunk {open}
 ```js
 console.log('opened by default')
 ```
@@ -592,99 +574,99 @@ console.log('opened by default')
 
 **Result**
 
-::: details Expanded by default {open}
+::: details Expanded default chunk {open}
 ```js
 console.log('opened by default')
 ```
 :::
 
-## Container with custom title
+## Danger block titled **STOP**
 
 **Markdown**
 
 ```md
 ::: danger STOP
-Do not continue without verifying.
+Do **not** continue without validating checklist.
 :::
 ```
 
 **Result**
 
 ::: danger STOP
-Do not continue without verifying.
+Do **not** continue without validating checklist.
 :::
 
-## GitHub alert `NOTE`
+## GitHub Alert `NOTE`
 
 **Markdown**
 
 ```md
 > [!NOTE]
-> Handy reminders live here.
+> Notes land here succinctly for operators.
 ```
 
 **Result**
 
 > [!NOTE]
-> Handy reminders live here.
+> Notes land here succinctly for operators.
 
-## GitHub alert `TIP`
+## GitHub Alert `TIP`
 
 **Markdown**
 
 ```md
 > [!TIP]
-> Share quick wins with readers.
+> Quick-win guidance lives nearby.
 ```
 
 **Result**
 
 > [!TIP]
-> Share quick wins with readers.
+> Quick-win guidance lives nearby.
 
-## GitHub alert `IMPORTANT`
+## GitHub Alert `IMPORTANT`
 
 **Markdown**
 
 ```md
 > [!IMPORTANT]
-> Must-know compliance details belong here.
+> Compliance-level attention required.
 ```
 
 **Result**
 
 > [!IMPORTANT]
-> Must-know compliance details belong here.
+> Compliance-level attention required.
 
-## GitHub alert `WARNING`
+## GitHub Alert `WARNING`
 
 **Markdown**
 
 ```md
 > [!WARNING]
-> Call out risky operations.
+> Describes operational risk exposures.
 ```
 
 **Result**
 
 > [!WARNING]
-> Call out risky operations.
+> Describes operational risk exposures.
 
-## GitHub alert `CAUTION`
+## GitHub Alert `CAUTION`
 
 **Markdown**
 
 ```md
 > [!CAUTION]
-> Describe undesirable outcomes.
+> Describes negative downstream outcomes.
 ```
 
 **Result**
 
 > [!CAUTION]
-> Describe undesirable outcomes.
+> Describes negative downstream outcomes.
 
-## Fenced code with language
+## Highlighted fenced code
 
 **Markdown**
 
@@ -708,16 +690,16 @@ export default defineConfig({
 })
 ```
 
-## Line highlighting
+## Line emphasis inside fenced code
 
 **Markdown**
 
 ````md
 ```ts {2,4}
 const ignored = 1
-const highlighted = 2
-const alsoIgnored = 3
-const alsoHighlighted = 4
+const spotlight = 2
+const skip = 3
+const another = 4
 ```
 ````
 
@@ -725,12 +707,12 @@ const alsoHighlighted = 4
 
 ```ts {2,4}
 const ignored = 1
-const highlighted = 2
-const alsoIgnored = 3
-const alsoHighlighted = 4
+const spotlight = 2
+const skip = 3
+const another = 4
 ```
 
-## Comment-driven highlight
+## Comment-driven spotlight
 
 **Markdown**
 
@@ -739,7 +721,7 @@ const alsoHighlighted = 4
 export default {
   data() {
     return {
-      msg: 'highlighted' // [!code highlight]
+      msg: 'highlighted-token' // [!code highlight]
     }
   }
 }
@@ -752,13 +734,13 @@ export default {
 export default {
   data() {
     return {
-      msg: 'highlighted' // [!code highlight]
+      msg: 'highlighted-token' // [!code highlight]
     }
   }
 }
 ```
 
-## Focused line emphasis
+## Focus line highlight
 
 **Markdown**
 
@@ -767,7 +749,7 @@ export default {
 export default {
   data() {
     return {
-      msg: 'focused' // [!code focus]
+      msg: 'focus-line-demo' // [!code focus]
     }
   }
 }
@@ -780,13 +762,13 @@ export default {
 export default {
   data() {
     return {
-      msg: 'focused' // [!code focus]
+      msg: 'focus-line-demo' // [!code focus]
     }
   }
 }
 ```
 
-## Diff markup inside code
+## Diff markers inside fenced code
 
 **Markdown**
 
@@ -795,8 +777,8 @@ export default {
 export default {
   data() {
     return {
-      old: 'removed' // [!code --]
-      neu: 'added' // [!code ++]
+      oldChunk: 'deleted' // [!code --]
+      newChunk: 'inserted' // [!code ++]
     }
   }
 }
@@ -809,14 +791,14 @@ export default {
 export default {
   data() {
     return {
-      old: 'removed' // [!code --]
-      neu: 'added' // [!code ++]
+      oldChunk: 'deleted' // [!code --]
+      newChunk: 'inserted' // [!code ++]
     }
   }
 }
 ```
 
-## `warning` / `error` line annotations
+## `warning`/`error` line annotations inside code
 
 **Markdown**
 
@@ -826,7 +808,7 @@ export default {
   data() {
     return {
       err: 'fatal', // [!code error]
-      warn: 'Heads-up', // [!code warning]
+      warn: 'heads-up copy', // [!code warning]
     }
   }
 }
@@ -840,13 +822,13 @@ export default {
   data() {
     return {
       err: 'fatal', // [!code error]
-      warn: 'Heads-up', // [!code warning]
+      warn: 'heads-up copy', // [!code warning]
     }
   }
 }
 ```
 
-## Tabbed `code-group`
+## Tabbed **`code-group`**
 
 **Markdown**
 
@@ -886,7 +868,7 @@ export default {
 
 :::
 
-## Snippet includes
+## Snippet import operator
 
 **Markdown**
 
@@ -898,14 +880,14 @@ export default {
 
 <<< ../.vitepress/config.ts{6-11}
 
-## Plain fenced block
+## Plain fenced code (no linguist hints)
 
 **Markdown**
 
 ````md
 ```
 Multi-line plaintext
-without language hint
+without syntax tagging
 ```
 ````
 
@@ -913,7 +895,7 @@ without language hint
 
 ```
 Multi-line plaintext
-without language hint
+without syntax tagging
 ```
 
 ## Line numbering
@@ -934,14 +916,14 @@ const second = 2
 const third = 3
 ```
 
-## Raw HTML snippet
+## Raw HTML via **`raw`** wrapper
 
 **Markdown**
 
 ````md
 ::: raw
 <div style="padding: 12px 16px; border: 1px dashed #d9017a; border-radius: 12px;">
-  HTML lives inside Markdown.
+  HTML escapes Markdown constraints here.
 </div>
 :::
 ````
@@ -950,13 +932,13 @@ const third = 3
 
 ::: raw
 <div style="padding: 12px 16px; border: 1px dashed #d9017a; border-radius: 12px;">
-  HTML lives inside Markdown.
+  HTML escapes Markdown constraints here.
 </div>
 :::
 
 ## Math
 
-Expressions stay disabled unless you toggle `markdown: { math: true }` plus `markdown-it-mathjax3`. Syntax preview:
+Math rendering stays disabled globally. Syntax preview if you someday enable **`markdown: { math: true }`** with **`markdown-it-mathjax3`**:
 
 **Markdown**
 
@@ -966,4 +948,4 @@ When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$.
 
 **Result**
 
-This project skips math rendering because `math` remains off inside `defineConfig`.
+This project still suppresses formulae—the flag remains off inside `defineConfig`.
