@@ -4,4 +4,4 @@ title: Home
 
 # Home
 
-English home page — see **[Docs](/docs)** for editing workflow and Markdown.
+English home — full Markdown & **Pages CMS** guide: **[Docs](/docs)**. Mirror in Russian: **[Docs (RU)](/ru/docs)**.

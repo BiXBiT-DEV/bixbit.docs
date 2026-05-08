@@ -4,4 +4,4 @@ title: Главная
 
 # Главная
 
-Русская главная — полный справочник по Markdown и **Pages CMS**: **[Docs](/ru/docs)**.
+Главная RU — полный справочник по Markdown и **Pages CMS**: **[Docs](/ru/docs)**. Зеркало на английском: **[Docs (EN)](/docs)**.
