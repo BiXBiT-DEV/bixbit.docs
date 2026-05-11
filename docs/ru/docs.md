@@ -1,6 +1,21 @@
 ---
 title: Docs
+description: Справочник по Markdown и расширениям VitePress, редактирование контента через Pages CMS в проекте bixbit.docs.
+titleTemplate: ':title — Markdown, расширения VitePress и Pages CMS | Документация'
 search: false
+head:
+  - - meta
+    - name: keywords
+      content: документация, VitePress, Pages CMS, Markdown, bixbit.docs, AMS Docs
+  - - meta
+    - property: og:title
+      content: Docs — Markdown, расширения VitePress и Pages CMS
+  - - meta
+    - property: og:description
+      content: Синтаксис Markdown и расширения VitePress, поток работы через Pages CMS.
+  - - meta
+    - name: twitter:card
+      content: summary
 ---
 
 <script setup>
@@ -17,6 +32,40 @@ import DownloadFileButton from '../.vitepress/theme/components/ui/DownloadFileBu
 Ниже собраны основные варианты Markdown и VitePress Markdown Extensions. Для каждого пункта сначала показан синтаксис, затем результат. При необходимости одну страницу можно собирать из нескольких Markdown-файлов через include-механику VitePress.
 
 [[toc]]
+
+## Frontmatter, описание и meta-теги
+
+Файлы `.md` в VitePress могут начинаться с **YAML frontmatter** — блок между первыми строками `---`. Он задаёт параметры страницы и не показывается читателю как обычный текст.
+
+- **`title`** — короткий заголовок страницы (виден в результатах локального поиска, в оглавлении/навигации там, где ярлык берётся из страницы, и входит в шаблон **`<title>`**).
+- **`titleTemplate`** — шаблон **только для тега** **`<title>`** (текст во вкладке браузера). Поддерживается плейсхолдер **`:title`**, куда подставляется заголовок из **`title`** (или заголовка из контента по правилам VitePress). Видимый **`#`**‑заголовок в тексте можно оставить коротким, а развёрнутую подпись — сюда. См. [Frontmatter · titleTemplate](https://vitepress.dev/reference/frontmatter-config#titletemplate).
+- **`description`** — краткое описание; движок использует его для связанных **meta description** и превью.
+- **`head`** — дополнительные теги в `<head>` только для этой страницы: чаще всего элементы **`meta`** (ключевые слова, Open Graph и т.д.). Формат такой же, как у [`siteConfig.head`](https://vitepress.dev/reference/site-config#head).
+
+**На этой странице** задан **`titleTemplate`** с **`:title`**, чтобы вкладка была развёрнутой, при этом заголовок в тексте остаётся «Docs».
+
+**Пример другого документа:**
+
+```yaml
+---
+title: Название страницы
+titleTemplate: ':title — дополнительный текст только для вкладки | Документация'
+description: Одно–два предложения для поисковых сниппетов и превью.
+search: false
+head:
+  - - meta
+    - name: keywords
+      content: слово один, слово два
+  - - meta
+    - property: og:title
+      content: Заголовок для карточки в соцсетях
+  - - meta
+    - property: og:description
+      content: Текст описания при расшаривании ссылки.
+---
+```
+
+Для превью с картинкой обычно добавляют **`og:image`** с **полным** URL вашего домена после публикации. См. [Frontmatter · head](https://vitepress.dev/reference/frontmatter-config#head).
 
 ## Редактирование и создание страниц через Pages CMS
 

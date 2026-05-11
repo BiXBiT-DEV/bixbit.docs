@@ -1,6 +1,21 @@
 ---
 title: Docs
+description: Markdown reference, VitePress extensions, and Pages CMS authoring for the bixbit.docs project.
+titleTemplate: ':title — Markdown, VitePress extensions & Pages CMS | Documentation'
 search: false
+head:
+  - - meta
+    - name: keywords
+      content: documentation, VitePress, Pages CMS, Markdown, bixbit.docs, AMS Docs
+  - - meta
+    - property: og:title
+      content: Docs — Markdown, VitePress extensions & Pages CMS
+  - - meta
+    - property: og:description
+      content: Markdown and VitePress syntax reference and Pages CMS editing workflow.
+  - - meta
+    - name: twitter:card
+      content: summary
 ---
 
 <script setup>
@@ -17,6 +32,40 @@ Documentation in this project is written in Markdown. Each `.md` file becomes it
 Below we cover Markdown and **VitePress Markdown Extensions**. For each item syntax is shown first, then the outcome. Multiple Markdown files can be composed into one page with VitePress’ include mechanics when needed.
 
 [[toc]]
+
+## Frontmatter, descriptions, and meta tags
+
+Every VitePress `.md` file can start with **YAML frontmatter** between opening `---` lines. Visitors never see those keys as prose—they configure the renderer.
+
+- **`title`** is the terse page heading label (shows up wherever VitePress surfaces the page title, and feeds the **`<title>`** template alongside your locale suffix).
+- **`titleTemplate`** only shapes the **`head` `<title>` string** tab chrome. `:title` is replaced with whatever VitePress resolved as the active title (normally your frontmatter **`title`** / first **`#`**). Keep the Markdown `# Docs` concise while stuffing the explanatory clause here. Docs: [**Frontmatter → `titleTemplate`**](https://vitepress.dev/reference/frontmatter-config#titletemplate).
+- **`description`** powers page summary copy and downstream meta summaries.
+- **`head`** declares extra `<head>` tags for **this route only**. Most entries are **`meta`** (keywords, Open Graph, analytics verification, etc.). The tuple syntax matches [`site.head`](https://vitepress.dev/reference/site-config#head).
+
+**This handbook wires up a `:title`-based `titleTemplate` so the browser tab stretches out while on-page headings stay slim.**
+
+**Template for another page:**
+
+```yaml
+---
+title: Page title for the tab chrome
+titleTemplate: ':title — extra wording that only reaches <title> | Documentation'
+description: One or two sentences for SERP/snippet previews.
+search: false
+head:
+  - - meta
+    - name: keywords
+      content: keyword one, keyword two
+  - - meta
+    - property: og:title
+      content: Social-share headline
+  - - meta
+    - property: og:description
+      content: Supporting copy whenever the URL is pasted into chat apps.
+---
+```
+
+Add **`meta[property="og:image"]`** once you know the canonical absolute URL of hero art on production. Documentation: [**Frontmatter → `head`**](https://vitepress.dev/reference/frontmatter-config#head).
 
 ## Editing and creating pages in Pages CMS
 
