@@ -6,4 +6,4 @@ title: Home
 
 Documentation prototype.
 
-Russian documentation: [/docs](/docs).
+Documentation: [/docs](/docs).
