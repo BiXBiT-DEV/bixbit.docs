@@ -12,8 +12,7 @@ export const sidebarOptions = [
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    useFolderLinkFromIndexFile: true,
-    excludeByGlobPattern: ['**/test.md']
+    useFolderLinkFromIndexFile: true
   },
   {
     documentRootPath: '/docs',
@@ -25,8 +24,7 @@ export const sidebarOptions = [
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    useFolderLinkFromIndexFile: true,
-    excludeByGlobPattern: ['**/test.md']
+    useFolderLinkFromIndexFile: true
   }
 ] 
 
