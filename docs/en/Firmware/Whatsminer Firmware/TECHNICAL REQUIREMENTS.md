@@ -1,7 +1,7 @@
 ---
 title: Technical Requirements
 ---
-## Required Hardware:
+## Required Hardware
 
 - A power supply network, wiring, and circuit breakers (protective breakers) corresponding to the device's specifications.
 - A router with internet access.
@@ -15,7 +15,7 @@ Important: your computer must be on the same local network as the ASIC miner.
 :::
 
 
-## Required Software:
+## Required Software
 
 - WhatsMinerTool. Download the latest version of WhatsMinerTool at the following **[LINK](https://www.whatsminer.com/src/views/firmware-download.html#Tool. "WhatsMinerTool download")**. Using outdated versions may lead to unsuccessful firmware installation.
 - **[BiXBiT FIRMWARE](https://bixbit.io/en/firmwares#firmware-whatsminer "Download BiXBiT Firmware")** compatible with the device.
