@@ -5,9 +5,12 @@ title: Miner Identification on the Network
 
 - Run the **WhatsMinerTool** utility
 - Click the **[IP Monitor]** button ①
-- In the opened **“Detect and Bind IP”** window, click the **[Start]** button ②
-- On the device panel, press the **[IP found]** button and hold it until the green and red LEDs blink together several times.
-- At this point, a line corresponding to your miner should appear in the **"Detect and Bind IP"** window. Pay attention to the **Source IP** column (for example, 192.168.10.142) — this is the address you need to note
+- In the opened **“Detect and Bind IP”** window, click the **[Start]** button ②  
+![Detect And Bind IP](</images/MINER IDENTIFICATION ON THE NETWORK/detect-and-bind-ip.png>)
+- On the device panel, press the **[IP found]** button and hold it until the green and red LEDs blink together several times.  
+![IP Found ASIC Button](</images/MINER IDENTIFICATION ON THE NETWORK/ip-found-asic-button.png>)
+- At this point, a line corresponding to your miner should appear in the **"Detect and Bind IP"** window. Pay attention to the **Source IP** column (for example, 192.168.10.142) — this is the address you need to note  
+![IP Found ASIC Button](</images/MINER IDENTIFICATION ON THE NETWORK/detect-and-bind-ip-source-ip.png>)
 - Close this window and confirm closing it by clicking **[OK**] in the pop-up dialog.
 
 ## Adding a network scanning range in the WhatsMinerTool utility
@@ -23,5 +26,7 @@ If there are already any entries in this window, you can delete them, modify the
 ## Run a network scan
 
 - In the main window of the utility, click [Start] button ①  
-The button name will change to **“Monitoring”**, the scan will begin, and after a short time the detected devices will appear in the list.
+![Detect And Bind IP](</images/MINER IDENTIFICATION ON THE NETWORK/start-scanning.png>)  
+The button name will change to **“Monitoring”**, the scan will begin, and after a short time the detected devices will appear in the list.  
+![Detect And Bind IP](</images/MINER IDENTIFICATION ON THE NETWORK/wmt-device-list.png>)
 
