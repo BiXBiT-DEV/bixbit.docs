@@ -1,3 +1,3 @@
 ---
-title: BiXBiT Firmware for ASICs
+title: Прошивка BiXBiT для ASIC-майнеров
 ---
