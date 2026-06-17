@@ -3,8 +3,6 @@ title: 4.3. Установка прошивки на КПУ H616
 ---
 ## 4.3. Установка прошивки на КПУ H616
 
-### 4.3.1. Установка прошивки BiXBiT поверх заводской версии прошивки
-
 #### **Этап 1. Загрузка образа промежуточной версии прошивки на SD-карту:**
 
 - **Шаг 1.** Подготовьте **SD-карту**: Рекомендуется использовать SD-карты объемом **от 2 до 16 ГБ** включительно. Полностью отформатируйте SD-карту с помощью «Управления дисками» Windows ([подробная инструкция по форматированию SD-карты](https://www.google.com/url?q=https://bixbit.io/ru/documentation/rukovodstvo-polzovatelia-whatsminer-asic/prilozhenie-3-vspomogatelnye-instruktsii%234-4-2-formatirovanie-sd-karty&sa=D&source=editors&ust=1781697778977306&usg=AOvVaw3Fa4ldVL2eHNp2CXz_sv-I)).
