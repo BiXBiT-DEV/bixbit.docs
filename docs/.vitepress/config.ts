@@ -82,7 +82,7 @@ export default defineConfig(
         description: 'Documentation',
         themeConfig: {
           nav: navEn,
-          outline: { label: 'On this page' },
+          outline: { label: 'On this page', level: [1, 6] },
           docFooter: { prev: 'Previous', next: 'Next' },
           sidebarMenuLabel: 'Menu',
           returnToTopLabel: 'Return to top',
@@ -101,7 +101,7 @@ export default defineConfig(
         description: 'Документация',
         themeConfig: {
           nav: navRu,
-          outline: { label: 'На этой странице' },
+          outline: { label: 'На этой странице', level: [1, 6] },
           docFooter: { prev: 'Назад', next: 'Далее' },
           sidebarMenuLabel: 'Меню',
           returnToTopLabel: 'Наверх',
