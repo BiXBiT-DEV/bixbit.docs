@@ -12,7 +12,8 @@ export const sidebarOptions = [
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    useFolderLinkFromIndexFile: true
+    useFolderLinkFromIndexFile: true,
+    sortMenusByFrontmatterOrder: true
   },
   {
     documentRootPath: '/docs',
@@ -24,7 +25,8 @@ export const sidebarOptions = [
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    useFolderLinkFromIndexFile: true
+    useFolderLinkFromIndexFile: true,
+    sortMenusByFrontmatterOrder: true
   }
 ] 
 

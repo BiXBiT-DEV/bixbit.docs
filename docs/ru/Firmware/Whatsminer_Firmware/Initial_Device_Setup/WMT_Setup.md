@@ -1,7 +1,8 @@
 ---
-title: 3.2. Настройка отображения данных в Whatsminer Tool
+title: Настройка отображения данных в Whatsminer Tool
+order: 2
 ---
-## 3.2. Настройка отображения данных
+## Настройка отображения данных
 
 - Нажмите кнопку **[Settings]** ①
 - В пункте **List Column Display Mode** выберите **Complete Mode** ②

@@ -25,7 +25,7 @@ content:
       node:
         filename: index.md
         hideDirs: nodes
-      fields: [title]
+      fields: [title, order]
       primary: title
       search: [title, body]
     fields:
@@ -33,6 +33,10 @@ content:
         label: Заголовок
         type: string
         required: true
+      - name: order
+        label: Порядок в меню
+        type: number
+        default: 0
       - name: body
         label: Содержимое
         type: rich-text
@@ -54,7 +58,7 @@ content:
       node:
         filename: index.md
         hideDirs: nodes
-      fields: [title]
+      fields: [title, order]
       primary: title
       search: [title, body]
     fields:
@@ -62,6 +66,10 @@ content:
         label: Title
         type: string
         required: true
+      - name: order
+        label: Sidebar order
+        type: number
+        default: 0
       - name: body
         label: Content
         type: rich-text
