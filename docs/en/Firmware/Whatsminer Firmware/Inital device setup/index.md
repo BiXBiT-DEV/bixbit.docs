@@ -1,3 +1,0 @@
----
-title: Inital Device Setup
----
