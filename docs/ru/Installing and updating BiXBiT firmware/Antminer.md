@@ -5,19 +5,64 @@ title: Antminer
 
 В скачанном архиве с прошивкой содержится файл **installer_tool.exe** – с помощью этой программы производится установка прошивки BiXBiT. Перед запуском файла требуется предварительно распаковать архив с прошивкой. Сделать это можно с помощью штатных средств Windows (для Windows 11), или любого стороннего архиватора, например, WinRAR.
 
+
+## Список совместимых моделей
+
+Antminer BHB42XXX
+Antminer H6HB70701
+Antminer HHB68XXX
+Antminer L11
+Antminer L7
+Antminer L9
+Antminer S19
+Antminer S19 Hydro
+Antminer S19 Pro
+Antminer S19 Pro Hyd.
+Antminer S19 Pro+ Hyd.
+Antminer S19 Pro-A
+Antminer S19 XP
+Antminer S19 XP+
+Antminer S19 XP+ Hyd.
+Antminer S19 XP+ Hydro
+Antminer S19a
+Antminer S19a Pro
+Antminer S19e XP Hyd.
+Antminer S19i
+Antminer S19j
+Antminer S19j Pro
+Antminer S19j Pro+
+Antminer S19j XP
+Antminer S19j+
+Antminer S19k Pro
+Antminer S21
+Antminer S21 Hyd.
+Antminer S21 Hydro
+Antminer S21 Pro
+Antminer S21 XP
+Antminer S21 XP Hyd.
+Antminer S21 XP Imm.
+Antminer S21+
+Antminer S21+ Hyd.
+Antminer S21+ Hydro
+Antminer S21e Hyd.
+Antminer S21e XP Hyd.
+Antminer S21Imm
+Antminer S21XPImm
+Antminer T19
+Antminer T21
+
 ## Запуск и первичная настройка установщика
 
 1. Откройте папку в которую был распакован архив и запустите файл installer_tool.exe
 2. В появившемся окне **Firmware File Selection** вы можете:
   - ввести в поле **Firmware File** свой **ID партнера** и нажать кнопку **Check Available FW versions** - в таком случае у вас появится возможность выбрать одну из доступных для вас версий прошивки и загрузить ее, нажав кнопку **Download** – загруженная таким образом прошивка будет в дальнейшем использоваться для установки
   - Нажать кнопку **Cancel** – так установщик будет использовать те файлы, которые были изначально в одном архиве с ним (локальные файлы)
-    ![image1.png](/images/image1.png)
+  ![image1.png](/images/image1.png)
 3. После откроется основное окно программы:
   ![image.png](/images/image-8.png)
 4. Нажмите на кнопку **IP List**, чтобы задать диапазон сканирования сети для поиска устройств, которые желаете прошить.
 5. В появившемся окне **Info**:
   - при нажатии кнопки **Да** начальный и конечный IP-адреса диапазона подсети, к которой вы подключены, автоматически добавятся к списку диапазонов установщика. Это может быть полезно если компьютер, с которого будут прошиваться устройства, находится в той же подсети, что и сами прошиваемые устройства  
-  
   - при нажатии кнопки **Нет** откроется пустое окно **Miner IP Management**, в котором нужно будет вручную ввести данные для сканирования сети
 6. Для ручного добавления диапазона сканирования сети выполните следующие шаги:
   - Start IP. Задайте начальный IP-адрес из сканируемого диапазона
