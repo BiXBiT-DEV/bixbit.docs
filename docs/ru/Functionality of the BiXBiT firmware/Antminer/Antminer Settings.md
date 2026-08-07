@@ -28,6 +28,16 @@ title: Раздел Settings
 17. **Max mining restarts in an hour before emegency mode** - функция переводит устройство в режим **Emergency**, если в течение часа устройство перезапустит майнинг заданное количество раз. На эту функцию не влияют перезапуски вызванные вручную пользователем
 18. **Max bad chips** - функция дающая возможность продолжить работу устройства с заданным процентом неисправных чипов. Данная функция является небезопасной, так как работа хешплат с неработающими чипами может быть нестабильной и привести к еще большим повреждениями
 
+### Настройка пулов:
+
+![image.png]([https:/raw.githubusercontent.com/bixbit-dev/bixbit.docs/cms-edit/docs/public/images/image-30.png](https:/raw.githubusercontent.com/bixbit-dev/bixbit.docs/cms-edit/docs/public/images/image-30.png))
+
+1. Нажмите на **[Settings]**, в левой части веб-интерфейса устройства.
+
+2. На вкладке настроек **[Setup]**, в разделе **POOLS** введите данные майнинг пула в соответствующие поля: **MINING ADDRESS**  - адрес/стратум пула, **MINING USER** - воркер, **PASSWORDS** - пароль (опционально)
+
+3. Нажмите **[Save]** для применения настроек.
+
 ## Вкладка Autotune
 
 ![Setting - Autotune marked.png](/images/setting-autotune-marked.png)
