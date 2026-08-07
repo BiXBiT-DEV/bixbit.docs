@@ -5,6 +5,8 @@ title: Раздел Settings
 
 ## Вкладка Setup
 
+На данной вкладке можно произвести детальную настройку прошивки опираясь на текущее состояние устройства. Так же, ниже подраздела Setup находится раздел Pools, в котором можно задать майнинг-пулы
+
 ![image.png](/images/image-35.png)
 
 1. **Mode** - выбор режима работы устройства. Normal - обычная работа устройства; Sleep - спящий режим
@@ -30,12 +32,10 @@ title: Раздел Settings
 
 ### Настройка пулов:
 
-![image.png]([https:/raw.githubusercontent.com/bixbit-dev/bixbit.docs/cms-edit/docs/public/images/image-30.png](https:/raw.githubusercontent.com/bixbit-dev/bixbit.docs/cms-edit/docs/public/images/image-30.png))
+![image.png](/images/image-36.png)
 
 1. Нажмите на **[Settings]**, в левой части веб-интерфейса устройства.
-
 2. На вкладке настроек **[Setup]**, в разделе **POOLS** введите данные майнинг пула в соответствующие поля: **MINING ADDRESS**  - адрес/стратум пула, **MINING USER** - воркер, **PASSWORDS** - пароль (опционально)
-
 3. Нажмите **[Save]** для применения настроек.
 
 ## Вкладка Autotune
