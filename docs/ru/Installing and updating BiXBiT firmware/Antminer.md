@@ -5,51 +5,55 @@ title: Antminer
 
 В скачанном архиве с прошивкой содержится файл **installer_tool.exe** – с помощью этой программы производится установка прошивки BiXBiT. Перед запуском файла требуется предварительно распаковать архив с прошивкой. Сделать это можно с помощью штатных средств Windows (для Windows 11), или любого стороннего архиватора, например, WinRAR.
 
-
 ## Список совместимых моделей
 
-Antminer BHB42XXX
-Antminer H6HB70701
-Antminer HHB68XXX
-Antminer L11
-Antminer L7
-Antminer L9
-Antminer S19
-Antminer S19 Hydro
-Antminer S19 Pro
-Antminer S19 Pro Hyd.
-Antminer S19 Pro+ Hyd.
-Antminer S19 Pro-A
-Antminer S19 XP
-Antminer S19 XP+
-Antminer S19 XP+ Hyd.
-Antminer S19 XP+ Hydro
-Antminer S19a
-Antminer S19a Pro
-Antminer S19e XP Hyd.
-Antminer S19i
-Antminer S19j
-Antminer S19j Pro
-Antminer S19j Pro+
-Antminer S19j XP
-Antminer S19j+
-Antminer S19k Pro
-Antminer S21
-Antminer S21 Hyd.
-Antminer S21 Hydro
-Antminer S21 Pro
-Antminer S21 XP
-Antminer S21 XP Hyd.
-Antminer S21 XP Imm.
-Antminer S21+
-Antminer S21+ Hyd.
-Antminer S21+ Hydro
-Antminer S21e Hyd.
-Antminer S21e XP Hyd.
-Antminer S21Imm
-Antminer S21XPImm
-Antminer T19
-Antminer T21
+
+|  |  |
+| ---------------------- | -------------------------- |
+| Модель устройства | Поддерживаемые модели плат |
+| Antminer BHB42XXX |  |
+| Antminer H6HB70701 |  |
+| Antminer HHB68XXX |  |
+| Antminer L11 |  |
+| Antminer L7 |  |
+| Antminer L9 |  |
+| Antminer S19 |  |
+| Antminer S19 Hydro |  |
+| Antminer S19 Pro |  |
+| Antminer S19 Pro Hyd. |  |
+| Antminer S19 Pro+ Hyd. |  |
+| Antminer S19 Pro-A |  |
+| Antminer S19 XP |  |
+| Antminer S19 XP+ |  |
+| Antminer S19 XP+ Hyd. |  |
+| Antminer S19 XP+ Hydro |  |
+| Antminer S19a |  |
+| Antminer S19a Pro |  |
+| Antminer S19e XP Hyd. |  |
+| Antminer S19i |  |
+| Antminer S19j |  |
+| Antminer S19j Pro |  |
+| Antminer S19j Pro+ |  |
+| Antminer S19j XP |  |
+| Antminer S19j+ |  |
+| Antminer S19k Pro |  |
+| Antminer S21 |  |
+| Antminer S21 Hyd. |  |
+| Antminer S21 Hydro |  |
+| Antminer S21 Pro |  |
+| Antminer S21 XP |  |
+| Antminer S21 XP Hyd. |  |
+| Antminer S21 XP Imm. |  |
+| Antminer S21+ |  |
+| Antminer S21+ Hyd. |  |
+| Antminer S21+ Hydro |  |
+| Antminer S21e Hyd. |  |
+| Antminer S21e XP Hyd. |  |
+| Antminer S21Imm |  |
+| Antminer S21XPImm |  |
+| Antminer T19 |  |
+| Antminer T21 |  |
+
 
 ## Запуск и первичная настройка установщика
 
