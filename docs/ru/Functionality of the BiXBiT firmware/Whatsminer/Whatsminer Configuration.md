@@ -72,7 +72,9 @@ title: Раздел Configuration
 
 Данный режим предназначен для подключения к устройству **дополнительного блока питания**.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kOgeGRJ6npc?si=vUFrW0v1bNYAk9fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9QC2ueL1E2g?si=4SeYcO4Fe5whI7g_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Startup Cooling Fan Speed %
 
