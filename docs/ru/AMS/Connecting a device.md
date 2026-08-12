@@ -3,7 +3,7 @@ title: Подключение ASIC-майнера к AMS
 ---
 # Подключение ASIC-майнера к AMS
 
-# Antminer ASIC
+## Antminer ASIC
 
 ### На прошивке BiXBiT
 
