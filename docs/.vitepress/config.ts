@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { navEn, navRu, withLocalizedSidebar } from './sidebar'
 
-const base = '/bixbit.docs/'
+const base = '/'
 
 const localSearchOptions = {
   locales: {
