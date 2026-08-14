@@ -5,7 +5,7 @@ title: Запись образа прошивки на SD-карту
 
 ## Antminer
 
-Информация по записи образа прошивки для Antminer ASIC находится в разделе: **[Установка и откат заводской прошивки](/ru/Additional%20instructions/Factory%20firmware%20installation%20and%20rollback.html#antminer)**
+Информация по записи образа прошивки для Antminer ASIC находится в разделе: **[Установка и откат заводской прошивки](/ru/additional_instructions/factory_firmware_installation_and_rollback.html#antminer)**
 
 ## Whatsminer
 
