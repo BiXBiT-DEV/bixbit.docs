@@ -3,6 +3,10 @@ title: Запись образа прошивки на SD-карту
 ---
 # Запись образа прошивки на SD-карту
 
+## Antminer
+
+Информация по записи образа прошивки для Antminer ASIC находится в разделе: **[Установка и откат заводской прошивки](/ru/Additional%20instructions/Factory%20firmware%20installation%20and%20rollback.html#antminer)**
+
 ## Whatsminer
 
 - **Шаг 1.** Запустите программу «**PhoenixCard**» (папка с программой «PhoenixCard» находится в архиве с прошивкой).
