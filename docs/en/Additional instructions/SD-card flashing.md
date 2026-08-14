@@ -5,7 +5,7 @@ title: Writing an image to the SD card
 
 ## Antminer
 
-
+Information on writing the firmware image for Antminer ASIC can be found in the section: **[Factory Firmware Installation and Rollback](/en/Additional%20instructions/Factory%20firmware%20installation%20and%20rollback.html#antminer)**
 
 ## Whatsminer
 
