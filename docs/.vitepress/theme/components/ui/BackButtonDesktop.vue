@@ -12,14 +12,14 @@ withDefaults(
 </script>
 
 <template>
-  <button class="back-button-desktop" type="button">
+  <a href="https://bixbit.io" class="back-button-desktop" type="button">
     <span class="back-button-desktop__icon">
       <slot name="icon">
         <ChevronLeftIcon class="back-button-desktop__icon" />
       </slot>
     </span>
     <span class="back-button-desktop__label">{{ label }}</span>
-  </button>
+  </a>
 </template>
 
 <style scoped>
