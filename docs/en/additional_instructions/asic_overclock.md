@@ -7,7 +7,7 @@ To overclock the miner, you need to install the **BiXBiT** firmware. You can rea
 
 ## Whatsminer ASIC
 
-The main overclocking settings for the device are located in the [Overclock](/en/functionality_of_the_BiXBiT_firmware/whatsminer/whatsminer_configuration.html#overclock-tab) section.
+The main overclocking settings for the device are located in the [Overclock](/functionality_of_the_bixbit_firmware/whatsminer/whatsminer_configuration.html#overclock-tab) section.
 
 In general, for overclocking an ASIC miner, we recommend using the generated profiles, as the device itself selects the most optimal settings during profile generation. However, if desired, you can set the overclocking settings manually. The basic recommendations for manual overclocking are described below.
 
