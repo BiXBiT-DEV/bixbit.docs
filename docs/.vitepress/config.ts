@@ -63,6 +63,20 @@ export default defineConfig(
       ['link', { rel: 'apple-touch-icon', href: `${base}favicon-512.png` }],
       ['link', { rel: 'mask-icon', href: `${base}images/logo.svg`, color: '#d9017a' }]
     ],
+    markdown: {
+      config(md) {
+        md.inline.ruler.before('emphasis', 'underline', (state, silent) => {
+          const match = /^\+\+(.+?)\+\+/.exec(state.src.slice(state.pos))
+          if (!match) return false
+          if (!silent) {
+            const token = state.push('html_inline', '', 0)
+            token.content = `<u>${md.renderInline(match[1])}</u>`
+          }
+          state.pos += match[0].length
+          return true
+        })
+      }
+    },
     themeConfig: {
       logo: {
         light: '/images/logo.svg',
