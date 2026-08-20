@@ -1,9 +1,7 @@
 ---
 title: Home
+order: 0
 ---
-
 # Home
 
-Documentation prototype.
-
-Documentation: [/docs](/docs).
+BiXBiT Product Documentation
