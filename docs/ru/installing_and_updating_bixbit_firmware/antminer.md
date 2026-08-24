@@ -1,5 +1,6 @@
 ---
 title: Antminer
+order: 0
 ---
 # Установка и обновление прошивки BiXBiT на устройствах Antminer
 
@@ -8,50 +9,46 @@ title: Antminer
 ## Список совместимых моделей
 
 
-| Модель устройства | Поддерживаемые модели плат |
-| ---------------------- | -------------------------- |
-| Antminer BHB42XXX |  |
-| Antminer H6HB70701 |  |
-| Antminer HHB68XXX |  |
-| Antminer L11 |  |
-| Antminer L7 |  |
-| Antminer L9 |  |
-| Antminer S19 |  |
-| Antminer S19 Hydro |  |
-| Antminer S19 Pro |  |
-| Antminer S19 Pro Hyd. |  |
-| Antminer S19 Pro+ Hyd. |  |
-| Antminer S19 Pro-A |  |
-| Antminer S19 XP |  |
-| Antminer S19 XP+ |  |
-| Antminer S19 XP+ Hyd. |  |
-| Antminer S19 XP+ Hydro |  |
-| Antminer S19a |  |
-| Antminer S19a Pro |  |
-| Antminer S19e XP Hyd. |  |
-| Antminer S19i |  |
-| Antminer S19j |  |
-| Antminer S19j Pro |  |
-| Antminer S19j Pro+ |  |
-| Antminer S19j XP |  |
-| Antminer S19j+ |  |
-| Antminer S19k Pro |  |
-| Antminer S21 |  |
-| Antminer S21 Hyd. |  |
-| Antminer S21 Hydro |  |
-| Antminer S21 Pro |  |
-| Antminer S21 XP |  |
-| Antminer S21 XP Hyd. |  |
-| Antminer S21 XP Imm. |  |
-| Antminer S21+ |  |
-| Antminer S21+ Hyd. |  |
-| Antminer S21+ Hydro |  |
-| Antminer S21e Hyd. |  |
-| Antminer S21e XP Hyd. |  |
-| Antminer S21Imm |  |
-| Antminer S21XPImm |  |
-| Antminer T19 |  |
-| Antminer T21 |  |
+| Модель Antminer | Список хэшплат |
+| :--- | :--- |
+| Antminer L11 | A3SL53801 |
+| Antminer L7 | BSL39601 |
+| Antminer L9 | BSL41601 |
+| Antminer S19 | BHB42801, BHB42803, BHB42811, BHB42821, BHB42831, BHB42841, NBS1902 |
+| Antminer S19 Hydro | HHB28601 |
+| Antminer S19 Pro | BHB42641, BHB42651 |
+| Antminer S19 Pro Hyd. | HHB42602 |
+| Antminer S19 Pro-A | NBP1901 |
+| Antminer S19 Pro+ Hyd. | HHB42601, HHB42631, HHB42701\*, HHB42711\*, TH401\* |
+| Antminer S19 XP | BHB56601, BHB56701, BHB56801, BHB56802, BHB56806 |
+| Antminer S19 XP+ | BHB68707, BHB68709 |
+| Antminer S19 XP+ Hyd. / Hydro | HHB68701, HHB68703, HHB68704 |
+| Antminer S19a | BHB28611 |
+| Antminer S19a Pro | BHB28501 |
+| Antminer S19e XP Hyd. | H6HB56702 |
+| Antminer S19i | NBS2003 |
+| Antminer S19j | BHB42701 |
+| Antminer S19j Pro | BHB42601, BHB42603, BHB42621, BHB42631 |
+| Antminer S19j Pro+ | BHB42611, BHB42612 |
+| Antminer S19j XP | BHB56804, BHB56807 |
+| Antminer S19j+ | BHB42701 |
+| Antminer S19k Pro | BHB56901, BHB56902, BHB56903, BHB56907, TS007 |
+| Antminer S21 | BHB68601, BHB68603, BHB68606 |
+| Antminer S21 Hyd. / Hydro | HHB68501, HHB68502, HHB68503, HHB68504, HHB68505, HHB68601, HHB68602 |
+| Antminer S21 Imm. | IHB68601 |
+| Antminer S21 Pro | A3HB70601, A3HB70602, A3HB70603 |
+| Antminer S21 XP | A3HB70501, A3HB70502, A3HB70503 |
+| Antminer S21 XP Hyd. | H6HB70501, H6HB70502, H6HB70601 |
+| Antminer S21 XP Imm. / XPImm | M1HB70602 |
+| Antminer S21+ | A3HB70701, A3HB70702, A3HB70703 |
+| Antminer S21+ Hyd. / Hydro | H6HB70701, H6HB70702, H6HB70704 |
+| Antminer S21e Hyd. | H6HB70801, H6HB70802 |
+| Antminer S21e XP Hyd. | H6HB70602 |
+| Antminer T19 | NBT1903 |
+| Antminer T21 | BHB68701, BHB68703, BHB68705 |
+| Antminer BHB42XXX | — |
+| Antminer H6HB70701 | — |
+| Antminer HHB68XXX | — |
 
 
 ## Запуск и первичная настройка установщика
