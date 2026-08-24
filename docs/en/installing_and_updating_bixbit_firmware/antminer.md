@@ -9,9 +9,8 @@ The downloaded firmware archive contains the file **installer_tool.exe** – thi
 ## List of Compatible Models
 
 
-
 | Antminer Model | Hashboard Model |
-| :--- | :--- |
+| ----------------------------- | -------------------------------------------------------------------- |
 | Antminer L11 | A3SL53801 |
 | Antminer L7 | BSL39601 |
 | Antminer L9 | BSL41601 |
@@ -20,7 +19,7 @@ The downloaded firmware archive contains the file **installer_tool.exe** – thi
 | Antminer S19 Pro | BHB42641, BHB42651 |
 | Antminer S19 Pro Hyd. | HHB42602 |
 | Antminer S19 Pro-A | NBP1901 |
-| Antminer S19 Pro+ Hyd. | HHB42601, HHB42631, HHB42701\*, HHB42711\*, TH401\* |
+| Antminer S19 Pro+ Hyd. | HHB42601, HHB42631, HHB42701, HHB42711, TH401 |
 | Antminer S19 XP | BHB56601, BHB56701, BHB56801, BHB56802, BHB56806 |
 | Antminer S19 XP+ | BHB68707, BHB68709 |
 | Antminer S19 XP+ Hyd. / Hydro | HHB68701, HHB68703, HHB68704 |
@@ -51,7 +50,13 @@ The downloaded firmware archive contains the file **installer_tool.exe** – thi
 | Antminer H6HB70701 | — |
 | Antminer HHB68XXX | — |
 
+### Known Issues
 
+- Operation of the S19 Pro+ Hyd. device with hashboards HHB42701, HHB42711, and TH401 is not guaranteed due to the lack of testing on devices with these hashboard models. If you encounter unstable operation on devices with the above-mentioned boards, please contact technical support.
+- Operation of Antminer S21+ Hydro, Antminer S21 XP Hyd., and Antminer S21e XP Hyd. devices at settings above factory defaults is not guaranteed due to the lack of stress testing for these devices. If you encounter unstable operation, please contact technical support.
+- On devices with CV control boards, the Restore factory settings function resets the firmware to the factory version.
+- Installation on the L11 device with firmware FR-1.3(251211-L11&L11 Pro) or newer is not available.
+- Switching the network connection type on the device from Static to DHCP causes the device to freeze. This can only be resolved by powering the device off and on (reboot).
 
 ## Running and Initial Configuration of the Installer
 
