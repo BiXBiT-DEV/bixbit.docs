@@ -33,6 +33,14 @@ content:
         label: Заголовок
         type: string
         required: true
+      - name: description
+        label: SEO-описание
+        type: string
+        description: Кратко опишите содержание страницы для поисковой выдачи (до 160 символов).
+      - name: ogImage
+        label: Изображение для предпросмотра
+        type: string
+        description: Полный URL изображения для карточки ссылки в мессенджерах и соцсетях.
       - name: order
         label: Порядок в меню
         type: number
@@ -66,6 +74,14 @@ content:
         label: Title
         type: string
         required: true
+      - name: description
+        label: SEO description
+        type: string
+        description: Briefly describe the page for search results (up to 160 characters).
+      - name: ogImage
+        label: Social preview image
+        type: string
+        description: Full image URL for link previews in messengers and social networks.
       - name: order
         label: Sidebar order
         type: number

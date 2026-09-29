@@ -2,6 +2,20 @@ import { defineConfig } from 'vitepress'
 import { navEn, navRu, withLocalizedSidebar } from './sidebar'
 
 const base = '/'
+const siteUrl = 'https://docs.bixbit.io'
+
+function getCanonicalUrl(relativePath: string) {
+  const path = relativePath
+    .replace(/^en\//, '')
+    .replace(/index\.md$/, '')
+    .replace(/\.md$/, '.html')
+
+  return new URL(path || '/', `${siteUrl}/`).href
+}
+
+function getAbsoluteUrl(url: string) {
+  return new URL(url, `${siteUrl}/`).href
+}
 
 const localSearchOptions = {
   locales: {
@@ -57,7 +71,37 @@ const localSearchOptions = {
 export default defineConfig(
   withLocalizedSidebar({
     base,
+    sitemap: {
+      hostname: siteUrl
+    },
     rewrites: (id) => (id.startsWith('en/') ? id.slice(3) : id),
+    transformPageData(pageData) {
+      const title = pageData.title
+      const description = pageData.description
+      const ogImage = pageData.frontmatter.ogImage
+
+      pageData.frontmatter.head ??= []
+      pageData.frontmatter.head.push(
+        ['link', { rel: 'canonical', href: getCanonicalUrl(pageData.relativePath) }],
+        ['meta', { property: 'og:title', content: title }],
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:locale', content: pageData.relativePath.startsWith('ru/') ? 'ru_RU' : 'en_US' }]
+      )
+
+      if (description) {
+        pageData.frontmatter.head.push([
+          'meta',
+          { property: 'og:description', content: description }
+        ])
+      }
+
+      if (typeof ogImage === 'string' && ogImage) {
+        pageData.frontmatter.head.push([
+          'meta',
+          { property: 'og:image', content: getAbsoluteUrl(ogImage) }
+        ])
+      }
+    },
     head: [
       ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon-512.png` }],
       ['link', { rel: 'apple-touch-icon', href: `${base}favicon-512.png` }],
