@@ -1,5 +1,8 @@
 ---
 title: Whatsminer
+description: "Whatsminer firmware installation and update step-by-step guide:
+  upload the firmware file, run the upgrade, reboot the miner, and confirm the
+  new version."
 order: 0
 ---
 # Installing and Updating BiXBiT Firmware on Whatsminer Devices
