@@ -1,5 +1,6 @@
 ---
 title: Basic ASIC Miner Configuration
+order: 0
 ---
 # Basic ASIC Miner Configuration
 
@@ -97,7 +98,7 @@ To get started, you need to determine the **IP address** of the ASIC miner assig
 4. On the control panel, press and hold the **IP Report** button until it beeps (about 5 seconds).
   ![image.png](/images/image-21.png)
 5. The IP address will be displayed on your screen.
-  ![image.png](/images/image-22.png)
+  ![IP-Reporter.png](/images/ip-reporter-1.png)
 6. Enter the obtained IP address into your browser's address bar.
 7. Log in to the device's web interface using the default credentials - root/root.
 
@@ -108,6 +109,7 @@ You can change the device's IP address or choose a different IP assignment metho
 2. In the Protocol field, select the IP address assignment method.
 3. If you select **Static**, enter the IP address, subnet mask, gateway, and DNS server.
 4. Click **[Save]**.
+
 :::
 
 ## Configuring Pools and Workers
@@ -127,7 +129,6 @@ You can change the device's IP address or choose a different IP assignment metho
 - Click **[Start Upgrade]** ④.
 - After the dialog box appears, click **[OK]** to complete the configuration.
 ![image.png](/images/image-23.png)
-
 - To hide the pool configuration form, click the **[ Pools ]** button ① again.
 
 ::: info
@@ -167,17 +168,17 @@ After changing pools, you need to **reboot** the miner.
 2. In the **IP Ranges** section, set the IP address range for scanning that includes your device's IP address. To do this, click the **[+]** button, which will open the **IP Range Editor** dialog window. Set the starting and ending IP addresses, then click the **[OK]** button.
   ![image.png](/images/image-26.png)
 3. After setting up, saving, and selecting the IP range using the **IP Ranges** function, click **[Scan]** or **[Monitor]** to start scanning:
-   - **[Scan]** – starts a scan of the selected ranges (**one-time** snapshot of the range).
-   - **[Monitor]** – **continuously** scans the selected IP ranges at the specified **Monitor Interval**.
+  - **[Scan]** – starts a scan of the selected ranges (**one-time** snapshot of the range).
+  - **[Monitor]** – **continuously** scans the selected IP ranges at the specified **Monitor Interval**.
 4. Wait for your device to be detected and for the network scan to finish. Then you can proceed to configure the pools. Enter the required data in the corresponding fields:
   ![image.png](/images/image-28.png)
-   - **Pool 1/2/3** - pool address/stratum.
-   - **SubAccount** - worker.
-   - **PWD** - password (optional).
-   - **Worker Suffix** - suffix configuration options:
-     - **[IP]** – automatically adds the device's IP address to the worker name. The number of automatically added octets is configured in the BTC Tools settings.
-     - **[No Change]** – suffix configuration will not be changed (default).
-     - **[Empty]** – without a suffix.
+  - **Pool 1/2/3** - pool address/stratum.
+  - **SubAccount** - worker.
+  - **PWD** - password (optional).
+  - **Worker Suffix** - suffix configuration options:
+    - **[IP]** – automatically adds the device's IP address to the worker name. The number of automatically added octets is configured in the BTC Tools settings.
+    - **[No Change]** – suffix configuration will not be changed (default).
+    - **[Empty]** – without a suffix.
 
 #### Configuration via the Device's WEB Interface on Stock Firmware:
 
@@ -193,3 +194,4 @@ After changing pools, you need to **reboot** the miner.
 1. Click on **[Settings]** on the left side of the web interface.
 2. On the **[Setup]** settings tab, in the **POOLS** section, enter the mining pool data in the corresponding fields: **MINING ADDRESS** - pool address/stratum, **MINING USER** - worker, **PASSWORDS** - password (optional).
 3. Click **[Save]** to apply the settings.
+

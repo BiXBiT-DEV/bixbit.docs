@@ -1,11 +1,12 @@
 ---
 title: Настройка DNS
+order: 0
 ---
 # Настройка DNS в случае проблем с подключением к AMS
 
 ## Antminer
 
-Арес DNS сервера можно указать на устройстве только в случае настройки протокола на **[Static](/ru/functionality_of_the_bixbit_firmware/antminer/antminer_ip_settings.html)**.
+Адрес DNS сервера можно указать на устройстве только в случае настройки протокола на **[Static](/ru/functionality_of_the_bixbit_firmware/antminer/antminer_ip_settings.html)**.
 
 Необходимо в поле DNS Server первым указать адрес: **95.163.222.17**. При желании, через запятую, можно добавить еще один адрес DNS сервера, например, **8.8.8.8.** 
 
@@ -13,7 +14,7 @@ title: Настройка DNS
 
 ## Whatsminer
 
-Арес DNS сервера можно указать на устройстве только в случае настройки протокола **[Static Address](/ru/functionality_of_the_bixbit_firmware/whatsminer/whatsminer_configuration.html#настроики-сети).**
+Адрес DNS сервера можно указать на устройстве только в случае настройки протокола **[Static Address](/ru/functionality_of_the_bixbit_firmware/whatsminer/whatsminer_configuration.html#настроики-сети).**
 
 Необходимо в поле Use Custom DNS Servers первым указать адрес: **95.163.222.17**. При желании можно добавить еще один адрес DNS сервера, например, **8.8.8.8**
 
