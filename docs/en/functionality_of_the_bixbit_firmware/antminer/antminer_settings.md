@@ -1,5 +1,9 @@
 ---
-title: Settings Section
+title: "Antminer Firmware Settings: Autotune & Pools | BiXBiT Docs"
+description: "Antminer Settings in BiXBiT firmware: operating mode, fan and
+  temperature limits, pools, autotune, Profile Switcher, proxy and Hotel Fee
+  tabs explained"
+order: 0
 ---
 # Settings Section
 
@@ -7,7 +11,7 @@ title: Settings Section
 
 On this tab, you can perform detailed firmware configuration based on the current state of the device. Also, below the Setup subsection is the Pools section, where you can set up mining pools.
 
-![image.png](/images/image-35.png)
+![Antminer Settings, Setup tab in BiXBiT firmware: 18 options from Mode and Liquid cooling to fan, temp limits and bad chips](/images/image-35.png)
 
 1. **Mode** — selection of the device operating mode. Normal — normal device operation; Sleep — sleep mode.
 2. **Liquid Cooling** — a function that disables fan checks for subsequent immersion of the device in an immersion bath or use of a custom cooling system.
@@ -21,7 +25,7 @@ On this tab, you can perform detailed firmware configuration based on the curren
 10. **Minimum number of working hashboards** — the minimum number of hashboards required for the device to operate. If a hashboard shuts down during device operation and the total number of working hashboards falls below this setting, the device will reboot.
 11. **Startup cooling fan speed** — the maximum fan speed at device startup.
 12. **Fan mode** — fan operating mode:
-    - **Auto** — automatic speed adjustment depending on the device temperature.
+  - **Auto** — automatic speed adjustment depending on the device temperature.
     - **Manual** — manually set the fan speed percentage.
 13. **Fan speed in manual mode** — percentage of maximum fan speed in **Fan mode: Manual**.
 14. **Target chip temp in fan auto mode** — in **Fan mode: Auto**, the device will attempt to maintain the set temperature by adjusting fan speed.
@@ -32,7 +36,7 @@ On this tab, you can perform detailed firmware configuration based on the curren
 
 ### Pool Configuration:
 
-![image.png](/images/image-36.png)
+![POOLS block on the Antminer Setup tab: Mining Address, Mining User and Passwords fields for Pool](/images/image-36.png)
 
 1. Click on **[Settings]** on the left side of the web interface.
 2. On the **[Setup]** settings tab, in the **POOLS** section, enter the mining pool data in the corresponding fields: **MINING ADDRESS** — pool address/stratum, **MINING USER** — worker, **PASSWORDS** — password (optional).
@@ -40,7 +44,7 @@ On this tab, you can perform detailed firmware configuration based on the curren
 
 ## Autotune Tab
 
-![Setting - Autotune marked.png](/images/setting-autotune-marked.png)
+![BiXBiT Antminer Autotune tab: profile, repeat period, advanced options, Freq MHz, voltages, regenerate and delete buttons](/images/setting-autotune-marked.png)
 
 1. **Autotune profile** — the boot profile and the profile for which autotuning will be performed, if necessary. Used for overclocking or undervolting the device.
 2. **Autotune repeat period, minutes** — sets how often autotuning is triggered in minutes after the last successful autotune completes.
@@ -57,7 +61,7 @@ On this tab, you can perform detailed firmware configuration based on the curren
 
 The **Profile Switcher** function allows changing the overclocking profile depending on changes in the device temperature.
 
-![Setting - Profile Switcher marked.png](/images/setting-profile-switcher-marked.png)
+![Antminer Profile Switcher tab: enable switcher, maximum profile, chip temps to lower and raise profile (°C), Ignore PWM](/images/setting-profile-switcher-marked.png)
 
 1. **Enable switcher** — enables the **Profile Switcher** function.
 2. **Maximum profile** — the maximum profile to which switching is possible.
@@ -69,7 +73,7 @@ The **Profile Switcher** function allows changing the overclocking profile depen
 
 This function allows using an intermediate proxy server through which mining traffic will be routed.
 
-![Setting - Proxy marked.png](/images/setting-proxy-marked.png)
+![Antminer Proxy tab in BiXBiT firmware: proxy type SOCKS5, host with port, user and password fields](/images/setting-proxy-marked.png)
 
 1. Proxy type — selects the proxy server type.
 2. Host — proxy server address and port.
@@ -82,10 +86,11 @@ This function allows specifying a pool and percentage for additional deductions.
 
 Example: in the screenshot below, the function is enabled, pool connection details are set, and the deduction percentage is 25%. This means that the device's hashrate will be split between two pools as follows: 25% will go to the Hotel Fee pool, and 75% (100% - 25%) will go to the main pools specified in the Setup-Pools tab.
 
-![Setting - HotelFee marked.png](/images/setting-hotelfee-marked.png)
+![Antminer Hotel Fee tab in BiXBiT firmware:](/images/setting-hotelfee-marked.png)
 
 1. Enabled — enables the function.
 2. Pool address — the pool address for deductions.
 3. Pool user — the worker name on this pool for deductions.
 4. Password — worker password (optional).
 5. Percent — the deduction percentage.
+
