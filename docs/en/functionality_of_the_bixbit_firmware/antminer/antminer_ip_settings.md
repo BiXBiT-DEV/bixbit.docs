@@ -1,11 +1,15 @@
 ---
-title: IP Settings Section
+title: "Antminer Firmware: IP Settings (DHCP/Static) | BiXBiT Docs"
+description: "Set DHCP or a static IP on Antminer with BiXBiT firmware:
+  hostname, protocol, IP address, subnet mask, gateway and DNS servers in the IP
+  Settings section."
+order: 0
 ---
 # IP Settings Section
 
 In this section, you can configure automatic IP address assignment for the device, or set a static IP address.
 
-![IP Settings.png](/images/ip-settings.png)
+![BiXBiT firmware IP Settings on Antminer: network info, hostname, DHCP/Static protocol, IP, subnet mask, gateway, DNS](/images/ip-settings.png)
 
 1. **Network information** — information about the current connection (device MAC address, device IP address, subnet mask).
 2. **Hostname** — the device's name on the network. The device will be displayed under this name on the router's local network.
@@ -14,3 +18,4 @@ In this section, you can configure automatic IP address assignment for the devic
 5. **Subnet mask** — the subnet mask. Filled in when the Static protocol is configured.
 6. **Gateway** — the gateway address (most often the first address in the subnet). Filled in when the Static protocol is configured.
 7. **DNS Server** — the DNS server address; you can specify several separated by commas. Filled in when the Static protocol is configured.
+
