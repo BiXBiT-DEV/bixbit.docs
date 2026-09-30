@@ -1,5 +1,9 @@
 ---
-title: Configuring DNS
+title: Configure DNS for AMS on Antminer & Whatsminer | BiXBiT Docs
+description: "Fix AMS connection issues by setting a custom DNS server on
+  Antminer and Whatsminer with BiXBiT firmware: static IP required, DNS field
+  and entry format."
+order: 0
 ---
 # Configuring DNS in Case of Connection Issues with AMS
 
