@@ -1,5 +1,9 @@
 ---
-title: Factory Firmware Installation and Rollback
+title: Antminer/Whatsminer Factory Firmware Rollback | BiXBiT Docs
+description: "Roll back Antminer or Whatsminer to factory firmware before
+  installing BiXBiT: SD or USB image by control board, WhatsMinerTool .bin or
+  PhoenixCard SD card."
+order: 0
 ---
 # Factory Firmware Installation and Rollback
 
@@ -28,9 +32,9 @@ For Amlogic or Xilinx control board models, you can use universal firmware image
 ### Preparing the Storage Device and Loading the Firmware Image:
 
 1. Connect the flash drive to your computer or laptop and format it (using the FAT32 file system).
-  ![image.png](/images/image-37.png)
+  ![Windows Format dialog for a 16 GB flash drive (F:): FAT32 file system, Quick Format checked, Start button](/images/image-37.png)
 2. Copy the contents of the downloaded firmware archive to the root of the flash drive.
-  ![image.png](/images/image-38.png)
+  ![universal_aml.zip files copied to the flash drive root: aml_sdc_burn.ini, aml_sdc_burn.UBOOT.ENC, aml_upgrade_package_enc.img](/images/image-38.png)
 
 ### Installing the Firmware on the Device:
 
@@ -48,16 +52,15 @@ For Amlogic or Xilinx control board models, you can use universal firmware image
 #### Preparation
 
 - **Step 1.** Download the firmware file from the [official website](https://www.whatsminer.com/src/views/firmware-download.html#Firmware/) (in the "Firmware" section, select "M3x & M5x & M6x series" or "M2X series" depending on your device model and download the **“.bin”** firmware file (e.g., "Whatsminer-all-xxxxxxxx.xx.bin").
-
 - **Step 2.** Install the latest version of **WhatsMinerTool**. Using old versions of the program may cause the firmware installation to fail. You can download the latest version of WhatsMinerTool from [this link](https://www.whatsminer.com/src/views/firmware-download.html#Tool "download WhatsminerTool").
 
-![image.png](/images/image-76.png)
+![Whatsminer support site, Firmwares Download: M3x & M5x & M6x series selected, Download button for the .bin firmware file](/images/image-76.png)
 
 #### Installing the Firmware
 
 Run **WhatsMinerTool** and set a scan range that includes the IP address of the device for firmware installation. Start the scan and make sure the device appears in the list.
 
-![image.png](/images/image-75.png)
+![WhatsMinerTool Upgrade: Select File, pick Whatsminer-M3x-all-20250321.14.bin, Open, tick the miner, Start Upgrade](/images/image-75.png)
 
 - **Step 1:** Click **[Upgrade]**.
 - **Step 2:** Click **[Select File]**.
@@ -71,7 +74,8 @@ Run **WhatsMinerTool** and set a scan range that includes the IP address of the 
 **Preparing for Installation**
 
 - **Step 1.** Go to the [Whatsminer website](https://www.whatsminer.com/src/views/firmware-download.html#Firmware/), in the **"SD-card flashing program"** section, select the section corresponding to the control board model installed on your device and download the firmware archive. Extract its contents to a separate folder.
-  ![image.png](/images/image-77.png)
+
+  ![Whatsminer support site, Firmwares Download: SD-card flashing program by control board (H616, H6os, H6, H3), Download](/images/image-77.png)
 - **Step 2.** Prepare the **SD card**: It is recommended to use SD cards with a capacity from **2 GB to 16 GB** inclusive. **Fully format the SD card** using Disk Management (right-click on the Start button, select Disk Management, default file system format **FAT32**).
 - **Step 3.** Using the **"PhoenixCard"** program (the folder with the "PhoenixCard" program is located in the firmware archive), write the **“.img”** image of the downloaded factory firmware to the **SD card**.
 
@@ -82,3 +86,4 @@ Run **WhatsMinerTool** and set a scan range that includes the IP address of the 
 3. **Step 3.** After the flashing process is complete, only the green indicator will be lit. Wait a few seconds, then disconnect the power cable again.
 4. **Step 4.** Make sure the indicators have completely turned off, then remove the SD card.
 5. **Step 5.** Reconnect power.
+
