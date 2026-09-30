@@ -1,9 +1,13 @@
 ---
-title: Dashboard Section
+title: "Antminer Firmware: Dashboard Section | BiXBiT Docs"
+description: "Antminer Dashboard in BiXBiT firmware: uptime, real-time and
+  average hashrate, board and chip temps, power, efficiency, fan speed,
+  per-board stats and pools"
+order: 0
 ---
 # Dashboard Section
 
-![image.png](/images/image-34.png)
+![iXBiT firmware Dashboard on Antminer S19: uptime, hashrate, temps, power, efficiency, fans, profile chart, boards, pools](/images/image-34.png)
 
 This section contains general information about the current operation of the device:
 
@@ -15,3 +19,4 @@ This section contains general information about the current operation of the dev
 6. **Current device profile** — shows the current device profile. The charts in this widget display hashrate, temperatures, consumption, and fan speed over 2 hours, 1 day, and 1 week.
 7. **Boards** — a widget with information for each hashboard of the device. Displays the number of hardware errors, current and ideal hashrate, temperatures of the hottest board and chip sensors, board voltage, consumption, and chip frequency.
 8. **Pools** — pool statistics. Displays the current mining pools, their status, and statistics for each.
+
