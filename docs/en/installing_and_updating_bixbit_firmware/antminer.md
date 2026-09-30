@@ -1,5 +1,8 @@
 ---
-title: Antminer
+title: Install & Update Antminer Firmware | BiXBiT Docs
+description: "Install and update BiXBiT firmware on Antminer S19, S21, T21 and
+  L7 with installer_tool.exe: compatible hashboards, known issues, IP scan and
+  bulk flashing."
 order: 0
 ---
 # Installing and Updating BiXBiT Firmware on Antminer Devices
@@ -49,6 +52,7 @@ The downloaded firmware archive contains the file **installer_tool.exe** – thi
 | Antminer BHB42XXX | — |
 | Antminer H6HB70701 | — |
 | Antminer HHB68XXX | — |
+
 
 ### Known Issues
 
