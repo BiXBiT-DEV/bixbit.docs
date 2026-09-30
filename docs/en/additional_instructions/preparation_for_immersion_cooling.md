@@ -1,5 +1,9 @@
 ---
-title: Preparing an ASIC Miner for Immersion Cooling
+title: Prepare Whatsminer for Immersion Cooling | BiXBiT Docs
+description: "Prepare a Whatsminer for immersion cooling on BiXBiT firmware:
+  remove fans, enable Liquid Cooling, disable PSU fan checks or flash the PSU
+  with AirToLiquid."
+order: 0
 ---
 # Preparing for Immersion Cooling
 
@@ -10,7 +14,8 @@ title: Preparing an ASIC Miner for Immersion Cooling
 - Flash your device with BiXBiT firmware corresponding to your device model.
 - Disconnect and remove the main fans from the device ①,②.
 - Open the power supply cover and remove its fan ③.
-![image.png](/images/image-39.png)
+
+  ![Whatsminer prepared for immersion: front and rear fan openings with fans removed](/images/image-39.png)
 - Clean the device casing and boards from dust and dirt.
 - Submerge the device in the immersion fluid.
 
@@ -20,39 +25,21 @@ To disable the fan checks on the device itself, navigate to **Configuration** > 
 
 - Activate the **[Liquid Cooling] ①** checkbox.
 - Save and apply the settings by clicking **[Save & Apply] ②**.
-![image.png](/images/image-40.png)
+
+  ![BiXBiT firmware on Whatsminer, Overclock tab: enable the Liquid Cooling checkbox](/images/image-40.png)
 
 ### Disabling Power Supply Fan Checks
 
 #### Disabling PSU Fan Checks for M3X, M5X, M6X, and M7X Series Devices
 
-<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; font-family: sans-serif; width: 100%;">
-  <thead>
-    <tr style="background-color: #f2f2f2; text-align: left;">
-      <th style="width: 40%;">Device Series</th>
-      <th style="width: 60%;">Methods for Disabling Power Supply Fans</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>M3X, M5X, M6X</strong></td>
-      <td>Use the Disable Power Fan function</td>
-    </tr>
-    <tr>
-      <td rowspan="3">
-        <strong>M2X</strong><br>
-        (<strong>M3X, M5X, M6X</strong> if Disable Power Fan fails)
-      </td>
-      <td>Update the PSU firmware automatically using the <strong>Upgrade PSU Firmware</strong> function</td>
-    </tr>
-    <tr>
-      <td>Update the PSU firmware automatically or manually using the <strong>Air To Liquid Tool</strong> utility</td>
-    </tr>
-    <tr>
-      <td>Use a <strong>fan emulator</strong> (dummy plug)</td>
-    </tr>
-  </tbody>
-</table>
+
+| Device Series | Methods for Disabling Power Supply Fans |
+| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| **M3X, M5X, M6X** | Use the Disable Power Fan function |
+| **M2X** (**M3X, M5X, M6X** if Disable Power Fan fails) | Update the PSU firmware automatically using the **Upgrade PSU Firmware** function |
+| Update the PSU firmware automatically or manually using the **Air To Liquid Tool** utility |  |
+| Use a **fan emulator** (dummy plug) |  |
+
 
 ::: warning
 Disabling power supply fan checks is done exclusively for immersion cooling purposes.
@@ -62,7 +49,8 @@ Disabling power supply fan checks is done exclusively for immersion cooling purp
 - Go to **Configuration > Miner Configuration**.
 - Select the **PSU Firmware** tab.
 - To disable the PSU fan check, click the **[Disable Power Fan]** button.
-![image.png](/images/image-41.png)
+
+  ![BiXBiT firmware PSU Control tab on Whatsminer (PSU P732A): Disable Power Fan button turns off the PSU fan check](/images/image-41.png)
 
 ::: warning
 The device should restart automatically. If it does not, perform a **Reboot** of the device.
@@ -86,41 +74,48 @@ Open the device's web interface.
 - Go to **Configuration > CGMiner Configuration**.
 - Select the **PSU Control** tab.
 - To automatically update the PSU firmware, click the **[Upgrade PSU Firmware]** button.
-![image.png](/images/image-42.png)
+
+  ![BiXBiT firmware on a Whatsminer M2x, PSU Control tab (PSU P21D): Upgrade PSU Firmware button for immersion mode](/images/image-42.png)
 
 ##### Option 2: Updating PSU Firmware Using the Air To Liquid Tool Utility
 
 - Go to [BiXBiT](https://bixbit.tech/ru).
 - In the page header, select the "Firmware" section, and in the "WhatsPower Firmware" subsection, click on the corresponding power supply model for your miner.
-![image.png](/images/image-43.png)
+
+  ![BiXBiT website Firmware menu with the WhatsPower PSU firmware list: p222b, p222c, p221c, p21D, p21](/images/image-43.png)
 - The archive download will begin. Once the download is complete, extract the internal file with the **.bin** extension from the archive.
 
 PSU Flashing Process:
 
 - **Step 1.** Run the **AirToLiquidTool** and click the **[Setting]** button.
-![image.png](/images/image-44.png)
+
+  ![AirToLiquid 1.5.7 toolbar with the Setting button highlighted](/images/image-44.png)
 - **Step 2.** In the **Fw Upgrade manual/auto** setting, select **Manual**. (If a file for your PSU model is not available, use **auto** mode.)
-![image.png](/images/image-45.png)
+
+  ![AirToLiquid Setting Dialog: Fw Upgrade manual/auto set to Manual](/images/image-45.png)
 - **Step 3.** Click **[Miner IP]**. In the dialog that appears, add a scan range that includes the IP address of the device whose PSU you plan to flash. Select the added scan range and click **[OK]**.
-![image.png](/images/image-46.png)
+
+  ![AirToLiquid Miner IP Management: scan range 192.168.10.1-192.168.10.255 (comment Farm1) added and selected](/images/image-46.png)
 - **Step 4.** Start the scan by clicking the **[Start]** button.
 - **Step 5.** Perform the following actions in order:
-![image.png](/images/image-47.png)
+
+  ![AirToLiquid: UpgradePower, Select File, pick whatspower-p21-rm-fan-err.bin, tick the M21S miner, Start Upgrade](/images/image-47.png)
   - ① Click **[UpgradePower]**.
   - ② In the menu that appears, click **[Select File]** (If Fw Upgrade is set to auto, file selection is not required).
   - ③ Select the downloaded PSU firmware file and click **[Open]**.
   - ④ Check the **checkbox for the device** whose PSU you plan to flash.
   - ⑤ Click the **[StartUpgrade]** button.
 - **Step 6.** Confirm the start of the flashing process in the dialog box that appears by clicking [OK].
-![image.png](/images/image-50.png)
+
+  ![AirToLiquid confirmation to upgrade the selected power supply firmware, warning that the warranty will be cleared](/images/image-50.png)
 
 During the PSU flashing process, the **Status** column will display the current stage: **Transfering**, **Upgrading**.
 
-![image.png](/images/image-52.png)
+![AirToLiquid device list: M21S_V22 at 192.168.10.57 shows status Upgrading while the PSU is flashed](/images/image-52.png)
 
 If the PSU flashing process completes successfully, the **Status** column will display **Success**.
 
-![image.png](/images/image-53.png)
+![AirToLiquid device list: M21S_V22 at 192.168.10.57 shows status Success after PSU flashing](/images/image-53.png)
 
 ::: info
 If it is not possible to flash the PSU or disable the fan presence check function at the previous stages, you must install a fan emulator (dummy plug) into the corresponding connector for that fan.
