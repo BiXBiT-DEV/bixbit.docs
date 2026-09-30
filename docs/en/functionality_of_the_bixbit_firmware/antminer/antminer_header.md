@@ -1,9 +1,13 @@
 ---
-title: Device Top Control Panel
+title: "Antminer Firmware: Top Control Panel | BiXBiT Docs"
+description: "Top panel of BiXBiT firmware for Antminer: device status, model,
+  control board and PSU, Locate Miner, Stock FW rollback, factory reset, reboot
+  and sleep."
+order: 0
 ---
 # Device Top Control Panel
 
-![image.png](/images/image-33.png)
+![BiXBiT firmware top panel on Antminer S19: status, model, control board, PSU, Locate miner, Stock FW, action icons, language](/images/image-33.png)
 
 This panel allows you to view the current device status and perform basic device management:
 
@@ -18,3 +22,4 @@ This panel allows you to view the current device status and perform basic device
 9. Restart Miner — a function that restarts the mining process on the device.
 10. Sleep — a function that puts the device into sleep mode.
 11. Web interface language switch.
+
