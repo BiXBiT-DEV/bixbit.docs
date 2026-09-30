@@ -1,5 +1,9 @@
 ---
-title: Configuration Section
+title: "Whatsminer Firmware: Configuration Section | BiXBiT Docs"
+description: "Whatsminer Configuration in BiXBiT firmware: network, pools,
+  overclock profiles, Profile Switcher, Hotel Fee, PSU control, boards, temp
+  limits and proxy."
+order: 0
 ---
 # Configuration Section
 
@@ -9,7 +13,7 @@ In this section, you can view network statistics and change the network settings
 
 ### Statistics
 
-![{FDA74569-4E91-440D-B193-8303E932648A}.png](/images/fda74569-4e91-440d-b193-8303e932648a.png)
+![Whatsminer Interfaces overview: LAN (eth0) status with uptime, MAC address, RX/TX traffic, IPv4 and the Edit button](/images/fda74569-4e91-440d-b193-8303e932648a.png)
 
 - **Uptime** — the uptime of the current connection to the router.
 - **MAC-Address** — the device's MAC address.
@@ -27,7 +31,7 @@ To configure a static address, perform the following steps in order:
 
 Next, you need to specify the settings for the static **IP address** in the fields:
 
-![{7612826C-C6C6-429B-9A32-0B25F224EEBA}.png](/images/7612826c-c6c6-429b-9a32-0b25f224eeba.png)
+![Whatsminer Interfaces - LAN: Static address protocol with IPv4 address, netmask, gateway, broadcast and custom DNS](/images/7612826c-c6c6-429b-9a32-0b25f224eeba.png)
 
 - **IPv4 address** — the IP address of your ASIC miner on the local network.
 - **IPv4 netmask** — the subnet mask in which the IP address specified above should reside.
@@ -43,7 +47,7 @@ This subsection contains all the mining settings for the device.
 
 On this tab, you can specify connection details for pools. Up to 3 pools are supported.
 
-![image.png](/images/image-57.png)
+![Whatsminer Pool tab in BiXBiT firmware: Coin Type BTC, Pool 1–3 addresses, workers and passwords, Save & Apply](/images/image-57.png)
 
 - **Coin Type** — any supported by your pool based on the SHA-256 algorithm.
 - **Pool 1/2/3** — the pool address. To specify your own pool, select the --custom-- option and enter the pool address in the same field.
@@ -54,7 +58,7 @@ On this tab, you can specify connection details for pools. Up to 3 pools are sup
 
 This tab contains various options intended for overclocking the device.
 
-![image.png](/images/image-58.png)
+![Whatsminer Overclock tab: Liquid Cooling, Additional PSU, fan speed and mode, current profile, Advanced Options](/images/image-58.png)
 
 #### Liquid Cooling
 
@@ -72,13 +76,13 @@ When this checkbox is activated, the device's fans are no longer checked by soft
 
 This mode is intended for connecting an **additional power supply** to the device.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kOgeGRJ6npc?si=vUFrW0v1bNYAk9fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9QC2ueL1E2g?si=tqdFmj6rYZERgj0V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+&nbsp;
 
 #### Startup Cooling Fan Speed %
 
-This parameter is intended to set the fan speed (as a percentage) from the moment the purge ends (fan speed at 100%) to the moment the device starts operating. It determines the speed at which the device begins cooling. <u>It does not disable the initial device purge — so it will still be noisy at startup.</u>
+This parameter is intended to set the fan speed (as a percentage) from the moment the purge ends (fan speed at 100%) to the moment the device starts operating. It determines the speed at which the device begins cooling. ++It does not disable the initial device purge — so it will still be noisy at startup.++
 
 #### Fan Mode
 
@@ -125,7 +129,7 @@ During the overclocking process, it is necessary to monitor the chip temperature
 
 This temperature can be seen in the **ChipTemp** column of the **WhatsMinerTool** utility:
 
-![image.png](/images/image-59.png)
+![WhatsMinerTool ChipTemp column: 116.0_72.1_93.8 is the maximum, minimum and average chip temperature](/images/image-59.png)
 
 In the utility settings, you must first set the **List Column Display Mode** parameter to "**Complete Mode**"; otherwise, the **ChipTemp** column will not be displayed.
 
@@ -156,7 +160,7 @@ Deletes the autotune results. (This button may be absent if the device has never
 
 **Profile Switcher** is a function for automatically changing profiles when specified chip temperatures are reached. To use this function, you specify the values at which the profile will be switched, either up or down. In **Maximum Profile**, you specify the maximum profile above which the device will not raise the overclocking profile. Each time the profile is switched, the device will reboot and run Autotune on the new profile.
 
-![image.png](/images/image-61.png)
+![Whatsminer Profile Switcher tab: enable, maximum profile, max chip temp thresholds to lower/raise profile, Ignore PWM](/images/image-61.png)
 
 - **Enable Profile Switcher** — checkbox to enable/disable the Profile Switcher option.
 - **Maximum Profile** — the maximum profile to which the device can switch.
@@ -168,7 +172,7 @@ Deletes the autotune results. (This button may be absent if the device has never
 
 This function allows specifying a pool and percentage for additional deductions. When enabled, the specified percentage of hashrate will go to the address specified on this tab.
 
-![Скриншот сделанный 2026-08-12 в 12.40.16.png](/images/skrinshot-sdelannyj-2026-08-12-v-124016.png)
+![Whatsminer Hotel Fee tab: Enabled, pool URL with stratum+tcp and port, user, password and Fee set to 45](/images/skrinshot-sdelannyj-2026-08-12-v-124016.png)
 
 Example: in the screenshot above, the function is enabled, the pool connection details are set, and the deduction percentage is 45%. This means that the device's hashrate will be split between two pools as follows: 45% will go to the Hotel Fee pool, and 55% (100% - 45%) will go to the main pools specified on the **Configuration - Miner Configuration - Pool** tab.
 
@@ -182,7 +186,7 @@ Example: in the screenshot above, the function is enabled, the pool connection d
 
 On this tab, you can flash the power supply firmware and disable the power supply fan checks for immersion cooling purposes.
 
-![image.png](/images/image-62.png)
+![Whatsminer PSU Control tab: PSU firmware info, Upgrade PSU Firmware and Enable/Disable Power Fan buttons for immersion](/images/image-62.png)
 
 More details can be found [here](https://bixbit-dev.github.io/bixbit.docs/ru/Additional%20instructions/Preparation%20for%20immersion%20cooling.html#%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8-%D0%B2%D0%B5%D0%BD%D1%82%D0%B8%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F).
 
@@ -190,7 +194,7 @@ More details can be found [here](https://bixbit-dev.github.io/bixbit.docs/ru/Add
 
 On this tab, you can disable hashboard slots on the device. It displays the number of slots, the reason for their disablement if any, as well as auto-shutdown options for boards on errors.
 
-![Скриншот сделанный 2026-08-12 в 13.00.37.png](/images/skrinshot-sdelannyj-2026-08-12-v-130037.png)
+![Whatsminer Boards tab: slots 0–2 enabled, Auto Disable Slots on Errors, recovery reboot settings, Limit Boards Power](/images/skrinshot-sdelannyj-2026-08-12-v-130037.png)
 
 - **Auto Disable Slots on Errors** — intended for automatically disabling boards. If a board fails to start after exceeding the startup attempt limit (the device reboots the number of times set in **Max Number of Recovery Reboots**. If the board does not start, it is disabled).
 - **Recovery Reboot Counter** — a counter for the number of device reboots related to board errors.
@@ -201,7 +205,7 @@ On this tab, you can disable hashboard slots on the device. It displays the numb
 
 This function is used to manage device operation depending on the ambient temperature.
 
-![Скриншот сделанный 2026-08-12 в 13.28.45.png](/images/skrinshot-sdelannyj-2026-08-12-v-132845.png)
+![Whatsminer Env Temp Limits tab: Mining Resume Env Temp 35 and Mining Suspend Env Temp 45 with default, min, max](/images/skrinshot-sdelannyj-2026-08-12-v-132845.png)
 
 - **Mining Resume Env Temp** — this field indicates the ambient temperature at which the device will exit the "**Suspended: High Env. Temp**" mode.
 - **Mining Suspend Env Temp** — this field indicates the ambient temperature at which the device enters Suspended mode. The status will then display "**Suspended: High Env. Temp**".
@@ -210,7 +214,7 @@ This function is used to manage device operation depending on the ambient temper
 
 The **Cool Temp** setting determines to what temperature the boards will be cooled during miner startup. All temperatures are in degrees Celsius. The specific value depends on the mode selected in the Cool Temp Mode field.
 
-![image.png](/images/image-65.png)
+![Whatsminer Cool Temp tab: Cool Temp Mode dropdown with Default, Env Temp and Manual options](/images/image-65.png)
 
 - **Default** — uses the default temperature value (similar to the stock firmware).
 - **Manual** — the temperature value is set manually.
@@ -220,9 +224,10 @@ The **Cool Temp** setting determines to what temperature the boards will be cool
 
 This function allows using an intermediate proxy server through which mining traffic will be routed.
 
-![Скриншот сделанный 2026-08-12 в 13.38.52.png](/images/skrinshot-sdelannyj-2026-08-12-v-133852.png)
+![Whatsminer Proxy tab in BiXBiT firmware: type SOCKS5, host with port, user and password fields](/images/skrinshot-sdelannyj-2026-08-12-v-133852.png)
 
 - Type — selects the proxy server type. Currently, only SOCKS5 is supported.
 - Host — proxy server address and port.
 - User — username for authorization on the proxy server.
 - Password — password for authorization on the proxy server.
+
