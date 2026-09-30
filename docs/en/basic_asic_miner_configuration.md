@@ -1,5 +1,8 @@
 ---
-title: Basic ASIC Miner Configuration
+title: "Basic ASIC Miner Setup: IP Address and Pools | BiXBiT Docs"
+description: Connect an Antminer or Whatsminer, find its IP with WhatsMinerTool
+  or IP Reporter, then set pools and workers in BTC Tools, WhatsMinerTool or the
+  web UI
 order: 0
 ---
 # Basic ASIC Miner Configuration
@@ -56,16 +59,19 @@ If the device turns on, but the Ethernet indicators do not work — make sure th
 - Run the **WhatsMinerTool** utility.
 - Click the **[ IP Monitor ]** button ①.
 - In the "**Detect and Bind IP**" window that opens, click the **[ Start ]** button ②.
-![image.png](/images/image-13.png)
+
+  ![WhatsMinerTool 9.2.1: IP Monitor button](/images/image-13.png)
 - On the device's control panel, press and hold the **IP found** button until the green and red LEDs blink together several times.
-![image.png](/images/image-14.png)
+
+  ![Whatsminer control board panel: the IP Found button highlighted next to the ETH port and status LEDs](/images/image-14.png)
 - A line with your miner should appear in the Detect and Bind IP window. Pay attention to the **Source IP** column (e.g., 192.168.10.142) — remember this address.
-![image.png](/images/image-15.png)
+
+  ![WhatsMinerTool Detect and Bind IP window: the Source IP column with the detected miner's IP address](/images/image-15.png)
 - Close this window and confirm closing (click **[OK]** in the pop-up window).
 
 Now you need to add the network scan range for the **WhatsMinerTool** utility:
 
-![image.png](/images/image-16.png)
+![WhatsMinerTool Miner IP Management](/images/image-16.png)
 
 - Click **[Miner IP]** to open the **Miner IP Management** window ①.
 If there are already any entries in this window, you can delete them, modify them, or simply add new ones.
@@ -80,25 +86,26 @@ If there are already any entries in this window, you can delete them, modify the
 **Now you can start the network scan:**
 
 - In the main utility window, click **[ Start ]** ①.
-![image.png](/images/image-17.png)
+
+  ![WhatsMinerTool main window: the Start button (1) that launches the network scan for Whatsminer devices](/images/image-17.png)
 
 The button will change its name to "**Monitoring**", the scan will start, and after a while, the found devices will be displayed in the list.
 
-![image.png](/images/image-18.png)
+![WhatsMinerTool in Monitoring mode: found Whatsminer miners with IP, Running status, model, hashrate and power columns](/images/image-18.png)
 
 ### For Antminer Devices:
 
 To get started, you need to determine the **IP address** of the ASIC miner assigned by the router/modem. To do this:
 
 1. Go to the link ​[BITMAIN Shop](https://service.bitmain.com/support/download), in the two dropdown lists select **Others** ① and **IP-reporter** ②. Then download the [IP Reporter.zip](http://Reporter.zip) archive by clicking the **Download** button ③.
-  ![image.png](/images/image-19.png)
+  ![Bitmain Firmware List page](/images/image-19.png)
 2. Run the **IPReporter.exe** utility.
-  ![image.png](/images/image-20.png)
+  ![Bitmain IP Reporter window](/images/image-20.png)
 3. Click the **[Start]** button ①.
 4. On the control panel, press and hold the **IP Report** button until it beeps (about 5 seconds).
-  ![image.png](/images/image-21.png)
+  ![Antminer S19 control board: IP Report button, Ethernet port, Reset button, red Fault and green Normal LEDs labeled](/images/image-21.png)
 5. The IP address will be displayed on your screen.
-  ![IP-Reporter.png](/images/ip-reporter-1.png)
+  ![IP Reporter Confirmation dialog showing the Antminer IP address](/images/ip-reporter-1.png)
 6. Enter the obtained IP address into your browser's address bar.
 7. Log in to the device's web interface using the default credentials - root/root.
 
@@ -128,7 +135,8 @@ You can change the device's IP address or choose a different IP assignment metho
 - Select the IP addresses of the devices on which you want to apply the entered pool settings. You can select multiple devices ③.
 - Click **[Start Upgrade]** ④.
 - After the dialog box appears, click **[OK]** to complete the configuration.
-![image.png](/images/image-23.png)
+
+  ![WhatsMinerTool Pools form: pool, worker, suffix and password fields](/images/image-23.png)
 - To hide the pool configuration form, click the **[ Pools ]** button ① again.
 
 ::: info
@@ -151,7 +159,8 @@ This method is suitable for devices with stock firmware and BiXBiT firmware.
 - To set up the pool, in the dropdown menu for **Pool 1** ②, select **--custom--**.
 An input field will appear instead of the dropdown menu.
 - Fill in the newly appeared field, as well as **Pool1 worker** and **Pool1 password** ③.
-![image.png](/images/image-24.png)
+
+  ![Whatsminer web UI: CGMiner Configuration menu](/images/image-24.png)
 - If necessary, set up **Pool 2** and **Pool 3** in the same way.
 - Click **[ Save & Apply ]** to save the settings.
 
@@ -164,14 +173,14 @@ After changing pools, you need to **reboot** the miner.
 #### Configuration via BTC Tools:
 
 1. Download the latest version of BTC Tools: [https://btc-tools.org/](https://btc-tools.org/). After downloading the archive, extract its contents into a separate folder. Launch BTC Tools by double-clicking on **“BTCTools-vx.x.x.exe”**.
-  ![image.png](/images/image-25.png)
+  ![BTC Tools v1.3.4: IP Ranges list](/images/image-25.png)
 2. In the **IP Ranges** section, set the IP address range for scanning that includes your device's IP address. To do this, click the **[+]** button, which will open the **IP Range Editor** dialog window. Set the starting and ending IP addresses, then click the **[OK]** button.
-  ![image.png](/images/image-26.png)
+  ![BTC Tools IP Range Editor: range 192.168.1.1–192.168.1.255](/images/image-26.png)
 3. After setting up, saving, and selecting the IP range using the **IP Ranges** function, click **[Scan]** or **[Monitor]** to start scanning:
   - **[Scan]** – starts a scan of the selected ranges (**one-time** snapshot of the range).
   - **[Monitor]** – **continuously** scans the selected IP ranges at the specified **Monitor Interval**.
 4. Wait for your device to be detected and for the network scan to finish. Then you can proceed to configure the pools. Enter the required data in the corresponding fields:
-  ![image.png](/images/image-28.png)
+  ![BTC Tools after the scan](/images/image-28.png)
   - **Pool 1/2/3** - pool address/stratum.
   - **SubAccount** - worker.
   - **PWD** - password (optional).
@@ -183,13 +192,13 @@ After changing pools, you need to **reboot** the miner.
 #### Configuration via the Device's WEB Interface on Stock Firmware:
 
 1. Click on **[Settings]** on the left side of the web interface.
-  ![image.png](/images/image-29.png)
+  ![Antminer S21 Pro stock firmware Settings page](/images/image-29.png)
 2. Enter the mining pool data in the corresponding fields: **Mining Address** - pool address/stratum, **Miner Name** - worker, **Password** - password (optional).
 3. Click **[Save]** to apply the settings.
 
 #### Configuration via the Device's WEB Interface on BiXBiT Firmware:
 
-![image.png](/images/image-30.png)
+![BiXBiT firmware for Antminer](/images/image-30.png)
 
 1. Click on **[Settings]** on the left side of the web interface.
 2. On the **[Setup]** settings tab, in the **POOLS** section, enter the mining pool data in the corresponding fields: **MINING ADDRESS** - pool address/stratum, **MINING USER** - worker, **PASSWORDS** - password (optional).
