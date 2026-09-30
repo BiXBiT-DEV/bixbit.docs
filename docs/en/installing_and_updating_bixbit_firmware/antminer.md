@@ -68,9 +68,10 @@ The downloaded firmware archive contains the file **installer_tool.exe** – thi
 2. In the **Firmware File Selection** window that appears, you can:
   - Enter your **partner ID** in the **Firmware File** field and click the **Check Available FW versions** button. You will then be able to select one of the available firmware versions and download it by clicking the **Download** button – the firmware downloaded this way will be used for installation.
   - Click the **Cancel** button – the installer will then use the files that were originally in the same archive with it (local files).
-   ![image1.png](/images/image1.png)
+   
+    ![Antminer installer Firmware File Selection: Check available FW versions, version 0.9.9.3 listed, Download or Cancel](/images/image1.png)
 3. The main program window will then open:
-  ![image.png](/images/image-8.png)
+  ![Antminer Firmware Installer main window with local files: IP List, Scan, device list, Installation Settings, Install](/images/image-8.png)
 4. Click the **IP List** button to set the network scan range for finding the devices you want to flash.
 5. In the **Info** window that appears:
   - If you click **Yes**, the starting and ending IP addresses of the subnet you are connected to will be automatically added to the installer's range list. This can be useful if the computer from which the devices will be flashed is on the same subnet as the devices being flashed.
@@ -88,21 +89,22 @@ When adding multiple ranges, be careful that the IP addresses in them do not ove
 :::
 
 7. Select the required ranges using the checkboxes and click **OK**.
-  ![image.png](/images/image-10.png)
+  ![Installer Miner IP Management: range 192.168.66.1-192.168.66.255, HTTP user root, HTTP port 80, SSH port 22, Ok](/images/image-10.png)
 8. After that, in the main program window, click the **Scan** button and wait for the network scan to complete.
 
 ## Installing BiXBiT Firmware on Devices
 
 1. Use the checkboxes to select the devices you want to flash.
 2. In the **Installation Settings** block, you can additionally specify the following options before flashing:
-  ![image.png](/images/image-11.png)
+  ![Installation Settings: Parallel installs (1-10) set to 3, two Force install checkboxes, Firmware Install Options button](/images/image-11.png)
   - **Parallel Installs** – specify the number of devices to flash simultaneously (from 1 to 10).
   - The **Force install on new firmware version** checkbox allows you to install an older version of BiXBiT firmware compared to the one already installed on the device.
   - The **Force install to unknown device models** checkbox allows you to try installing the firmware even if the device model was not correctly identified.
   - When you click the **Firmware Install Options** button, a field will appear for entering the **AMS key (AMS API key)** – if you enter it, the devices will appear in AMS almost immediately after the firmware installation, and you will not need to set the API key additionally.
-   ![image8.png](/images/image8.png)
+   
+    ![Firmware Install Options dialog with the AMS Key field for adding miners to AMS during installation](/images/image8.png)
 3. Click the **Install** button. If the device is flashed successfully, a message with the content **“Done. Code: Success: OK!”** or **“Done. Code: CV: Installed”** will appear in the Progress field. After that, you can close the program.
-  ![image.png](/images/image-12.png)
+  ![Antminer Firmware Installer: Antminer S19 XP (AMLogic) flashed, Progress shows Done. Code: Success: OK!](/images/image-12.png)
 
 ::: warning
 Important: after installing the firmware on devices with CVtek boards, it is recommended to use the “CV Monitoring” button – this will automatically restore the BiXBiT firmware on such devices after they are rebooted:
