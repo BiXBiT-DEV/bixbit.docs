@@ -33,6 +33,10 @@ content:
         label: Заголовок
         type: string
         required: true
+      - name: seoTitle
+        label: SEO-заголовок
+        type: string
+        description: Заголовок вкладки и поисковой выдачи. Если пусто — используется поле «Заголовок».
       - name: description
         label: SEO-описание
         type: string
@@ -74,6 +78,10 @@ content:
         label: Title
         type: string
         required: true
+      - name: seoTitle
+        label: SEO title
+        type: string
+        description: Browser tab and search result title. If empty, the Title field is used.
       - name: description
         label: SEO description
         type: string
