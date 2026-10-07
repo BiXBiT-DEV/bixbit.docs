@@ -76,9 +76,17 @@ export default defineConfig(
     },
     rewrites: (id) => (id.startsWith('en/') ? id.slice(3) : id),
     transformPageData(pageData) {
-      const title = pageData.title
+      const seoTitle = typeof pageData.frontmatter.seoTitle === 'string'
+        ? pageData.frontmatter.seoTitle.trim()
+        : ''
+      const title = seoTitle || pageData.title
       const description = pageData.description
       const ogImage = pageData.frontmatter.ogImage
+
+      if (seoTitle) {
+        pageData.title = seoTitle
+        pageData.titleTemplate = ':title'
+      }
 
       pageData.frontmatter.head ??= []
       pageData.frontmatter.head.push(
