@@ -1,5 +1,6 @@
 ---
-title: "Whatsminer Overclocking: Manual Settings | BiXBiT Docs"
+title: ASIC Miner Overclocking and Related Features
+seoTitle: "Whatsminer Overclocking: Manual Settings | BiXBiT Docs"
 description: "How to overclock a Whatsminer on BiXBiT firmware: autotune logic,
   PSU Power Limit, Target Voltage and Frequency, reference formulas and an M32
   worked example."
@@ -59,6 +60,5 @@ Thus:
 - **Minimum Voltage** = **1392** **- 100** ~= **1300**
 - **Maximum Voltage** = **1392** **+ 100** ~= **1500**
 - **PSU Power Max** = **3755 + 100** ~= **3850**
-
   ![Whatsminer Advanced Options with the M32 example values: Target Frequency 890, Target Voltage 1392, PSU Power Limit 3755](/images/image-74.png)
 
