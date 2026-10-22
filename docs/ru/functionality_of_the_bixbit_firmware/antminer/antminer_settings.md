@@ -12,7 +12,7 @@ order: 0
 
 На данной вкладке можно произвести детальную настройку прошивки опираясь на текущее состояние устройства. Так же, ниже подраздела Setup находится раздел Pools, в котором можно задать майнинг-пулы
 
-![image.png](/images/image-35.png)
+![Вкладка Setup в Settings прошивки BiXBiT для Antminer: 18 опций от Mode и Liquid cooling до вентиляторов, лимитов и чипов](/images/image-35.png)
 
 1. **Mode** - выбор режима работы устройства. Normal - обычная работа устройства; Sleep - спящий режим
 2. **Liquid Cooling** - функция, отключающая проверку вентиляторов для дальнейшего погружения устройства в иммерсионную ванну или использования кастомной системы охлаждения
@@ -37,7 +37,7 @@ order: 0
 
 ### Настройка пулов:
 
-![image.png](/images/image-36.png)
+![Блок POOLS на вкладке Setup для Antminer: поля Mining Address, Mining User и Passwords для Pool 1, 2 и 3](/images/image-36.png)
 
 1. Нажмите на **[Settings]**, в левой части веб-интерфейса устройства.
 2. На вкладке настроек **[Setup]**, в разделе **POOLS** введите данные майнинг пула в соответствующие поля: **MINING ADDRESS**  - адрес/стратум пула, **MINING USER** - воркер, **PASSWORDS** - пароль (опционально)
@@ -45,7 +45,7 @@ order: 0
 
 ## Вкладка Autotune
 
-![Setting - Autotune marked.png](/images/setting-autotune-marked.png)
+![Вкладка Autotune прошивки BiXBiT для Antminer: профиль, период, расширенные опции, частота, напряжения, кнопки профилей](/images/setting-autotune-marked.png)
 
 1. **Autotune profile** - загрузочный профиль и профиль для которого, при необходимости, будет выполнен автотюн. Используется для разгона или даунвольта устройства.
 2. **Autotune repeat period, minutes** - устанавливает периодичность запуска автотюна в минутах после завершения последнего успешного автотюна.
@@ -62,7 +62,7 @@ order: 0
 
 Функция **Profile Switcher** позволяет изменять профиль разгона в зависимости от изменения температур устройства
 
-![Setting - Profile Switcher marked.png](/images/setting-profile-switcher-marked.png)
+![Вкладка Profile Switcher для Antminer: включение, максимальный профиль, температуры понижения и повышения профиля, Ignore PWM](/images/setting-profile-switcher-marked.png)
 
 1. **Enable switcher** - включить функцию **Profile Switcher**
 2. **Maximum profile** - максимальный  профиль,  - на который возможно переключение
@@ -74,7 +74,7 @@ order: 0
 
 Данная функция позволяет использовать промежуточный прокси-сервер, через который будет направляться трафик майнинга 
 
-![Setting - Proxy marked.png](/images/setting-proxy-marked.png)
+![Вкладка Proxy прошивки BiXBiT для Antminer: тип прокси SOCKS5, хост с портом, пользователь и пароль](/images/setting-proxy-marked.png)
 
 1. Proxy type - выбор типа прокси сервера
 2. Host - адрес прокси-сервера и порт
@@ -87,7 +87,7 @@ order: 0
 
 Пример: на представленном ниже скришоте функция включена, заданы данные для подключения к пулу и процент отчислений (25%). Значит, что хешрейт устройства поделится на два пула в следующем соотношении: 25% уйдет на пул Hotel Fee, 75% (100%-25%) - уйдет на основные пулы, указанные на вкладке Setup-Pools
 
-![Setting - HotelFee marked.png](/images/setting-hotelfee-marked.png)
+![Вкладка Hotel Fee прошивки BiXBiT для Antminer: Enabled, адрес пула, воркер, пароль и Percent = 25](/images/setting-hotelfee-marked.png)
 
 1. Enabled - включить функцию
 2. Pool address - адрес пула для отчислений
