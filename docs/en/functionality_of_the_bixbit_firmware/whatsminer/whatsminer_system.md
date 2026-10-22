@@ -1,5 +1,6 @@
 ---
-title: "Whatsminer Firmware: System Section | BiXBiT Docs"
+title: System Section
+seoTitle: "Whatsminer Firmware: System Section | BiXBiT Docs"
 description: "System section of BiXBiT firmware for Whatsminer: set the device
   time, time zone and NTP servers, change the account password, and reboot the
   miner."
