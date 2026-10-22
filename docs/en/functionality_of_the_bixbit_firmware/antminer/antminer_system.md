@@ -1,5 +1,6 @@
 ---
-title: "Antminer Firmware: System Section | BiXBiT Docs"
+title: System Section
+seoTitle: "Antminer Firmware: System Section | BiXBiT Docs"
 description: "System section of BiXBiT firmware for Antminer: change the web
   interface password or install stock firmware from a BMU file, with an option
   to clear logs."
