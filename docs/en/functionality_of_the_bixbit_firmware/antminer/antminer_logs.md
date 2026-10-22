@@ -1,5 +1,6 @@
 ---
-title: "Antminer Firmware: Miner Log Section | BiXBiT Docs"
+title: Miner Log Section
+seoTitle: "Antminer Firmware: Miner Log Section | BiXBiT Docs"
 description: "Miner Log section of BiXBiT firmware for Antminer: view device
   logs since the last boot on the Current tab, or download full logs for
   selected dates."
