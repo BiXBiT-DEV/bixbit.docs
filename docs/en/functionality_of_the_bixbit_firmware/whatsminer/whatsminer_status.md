@@ -1,5 +1,6 @@
 ---
-title: "Whatsminer Firmware: Status Section | BiXBiT Docs"
+title: Status Section
+seoTitle: "Whatsminer Firmware: Status Section | BiXBiT Docs"
 description: "Whatsminer Status in BiXBiT firmware: miner summary, hashboards,
   pools, errors and events, API, system and miner logs, processes, memory and
   network overview."
