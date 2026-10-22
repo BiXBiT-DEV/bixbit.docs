@@ -1,5 +1,6 @@
 ---
-title: "Antminer Firmware: Top Control Panel | BiXBiT Docs"
+title: Device Top Control Panel
+seoTitle: "Antminer Firmware: Top Control Panel | BiXBiT Docs"
 description: "Top panel of BiXBiT firmware for Antminer: device status, model,
   control board and PSU, Locate Miner, Stock FW rollback, factory reset, reboot
   and sleep."
