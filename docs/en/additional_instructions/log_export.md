@@ -1,5 +1,6 @@
 ---
-title: Export Logs from Antminer and Whatsminer | BiXBiT Docs
+title: Log Export
+seoTitle: Export Logs from Antminer and Whatsminer | BiXBiT Docs
 description: "Export Antminer and Whatsminer logs for troubleshooting: download
   them from the BiXBiT firmware web interface or use WhatsMinerTool Remote Ctrl
   > Export Log."
@@ -30,7 +31,6 @@ If your device experiences crashes or errors, you can export its logs to analyze
 - **Step 4:** Confirm by clicking **[OK]**.
 - **Step 5:** In the dialog box that opens, select the directory where you want to save the logs.
 - **Step 6:** Click **[OK]** to start the log export process.
-
   ![Browse for Folder dialog: LOGS folder selected as the log export directory](/images/image-80.png)
 
 During the export, the **[Remote Ctrl]** button will be renamed to **[Stop]**. You can click it if you want to interrupt the log export process.
