@@ -1,5 +1,9 @@
 ---
 title: Базовая настройка ASIC-майнера
+seoTitle: "Базовая настройка ASIC: IP-адрес и пулы | BiXBiT Docs"
+description: "Подключение Antminer и Whatsminer: поиск IP-адреса в
+  WhatsMinerTool или IP Reporter, настройка пулов и воркеров в BTC Tools,
+  WhatsMinerTool и веб-интерфейсе."
 order: 0
 ---
 # Базовая настройка ASIC-майнера
