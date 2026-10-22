@@ -33,9 +33,9 @@ order: 0
 ### Подготовка накопителя и загрузка образа прошивки на него:
 
 1. Подключите флешку к компьютеру или ноутбуку, отформатируйте её (формат файловой системы FAT32).
-  ![image.png](/images/image-37.png)
+  ![Окно форматирования флешки 16GB (F:) в Windows: файловая система FAT32, отмечено Quick Format, кнопка Start](/images/image-37.png)
 2. Скопируйте содержимое скачанного архива с прошивкой, в корень флешки.
-  ![image.png](/images/image-38.png)
+  ![Содержимое архива universal_aml.zip в корне флешки: aml_sdc_burn.ini, aml_sdc_burn.UBOOT.ENC, aml_upgrade_package_enc.img](/images/image-38.png)
 
 ### Установка прошивки на устройство:
 
@@ -56,13 +56,13 @@ order: 0
 
 **Шаг 2.** Установите последнюю версию **WhatsMinerTool,** использование старых версий программы может стать причиной неудачной установки прошивки. Скачать последнюю версию WhatsMinerTool вы можете [по данной ссылке](https://www.whatsminer.com/src/views/firmware-download.html#Tool "скачать WhatsminerTool").
 
-![image.png](/images/image-76.png)
+![Сайт Whatsminer, Firmwares Download: раздел M3x & M5x & M6x series и кнопка Download для файла прошивки .bin](/images/image-76.png)
 
 #### Установка прошивки
 
 Запустите **WhatsMinerTool** и задайте диапазон сканирования, включающий IP-адрес устройства для установки прошивки. Запустите сканирование и убедитесь, что устройство отображается в списке.
 
-![image.png](/images/image-75.png)
+![WhatsMinerTool, Upgrade: Select File, файл Whatsminer-M3x-all-20250321.14.bin, Open, отметить майнер, Start Upgrade, шаги 1-6](/images/image-75.png)
 
 - **Шаг 1:** Нажмите **[Upgrade]**.
 - **Шаг 2:** Нажмите **[Select File]**.
@@ -76,7 +76,7 @@ order: 0
 **Подготовка к установке**
 
 - **Шаг 1.** Перейдите на [сайт Whatminer](https://www.whatsminer.com/src/views/firmware-download.html#Firmware/), в разделе **"SD-card flashing program"**, выберите раздел соответствующий модели КПУ установленной на вашем устройстве и скачайте архив с прошивкой, разархивируйте его содержимое в отдельную папку.
-  ![image.png](/images/image-77.png)
+  ![Сайт Whatsminer, Firmwares Download: SD-card flashing program по моделям КПУ (H616, H6os, H6, H3), кнопка Download](/images/image-77.png)
 - **Шаг 2**. Подготовьте **SD-карту**: Рекомендуется использовать SD-карты объемом от **2 до 16 ГБ** включительно. Полностью **отформатируйте SD-карту** с помощью «Управления дисками» щелкните правой кнопкой мыши по кнопке «Пуск», выберите «Управление дисками», формат файловой системы по умолчанию **FAT32**.
 - **Шаг 3.** Используя программу «**PhoenixCard**» (папка с программой «**PhoenixCard**» находится в архиве с прошивкой), загрузите “**.img**” образ, скачанной заводской прошивки на **SD-карту**.
 
