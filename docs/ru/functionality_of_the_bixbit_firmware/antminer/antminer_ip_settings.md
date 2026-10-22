@@ -1,5 +1,10 @@
 ---
 title: Раздел IP Settings
+seoTitle: "Прошивка Antminer: раздел IP Settings | BiXBiT Docs"
+description: "Как настроить DHCP или статический IP на Antminer с прошивкой
+  BiXBiT: имя хоста, протокол, IP-адрес, маска подсети, шлюз и DNS-серверы в
+  разделе IP Settings."
+order: 0
 ---
 # Раздел IP Settings
 
