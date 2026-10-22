@@ -1,5 +1,9 @@
 ---
 title: Настройка DNS
+seoTitle: Настройка DNS для подключения к AMS | BiXBiT Docs
+description: "Как решить проблемы подключения к AMS: настройка DNS-сервера на
+  Antminer и Whatsminer с прошивкой BiXBiT, статический IP, поле DNS и формат
+  записи."
 order: 0
 ---
 # Настройка DNS в случае проблем с подключением к AMS
