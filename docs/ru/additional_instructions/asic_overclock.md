@@ -1,5 +1,10 @@
 ---
 title: Разгон ASIC-майнера и другие функции связанные с разгоном
+seoTitle: "Разгон Whatsminer: ручная настройка | BiXBiT Docs"
+description: "Как разогнать Whatsminer на прошивке BiXBiT: логика автотюна, PSU
+  Power Limit, Target Voltage и Target Frequency, формулы расчёта и пример для
+  M32."
+order: 0
 ---
 # Разгон ASIC-майнера и другие функции связанные с разгоном
 
