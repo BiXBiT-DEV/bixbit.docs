@@ -1,5 +1,6 @@
 ---
 title: Whatsminer
+seoTitle: Install & Update Whatsminer Firmware | BiXBiT Docs
 order: 0
 ---
 # Installing and Updating BiXBiT Firmware on Whatsminer Devices
