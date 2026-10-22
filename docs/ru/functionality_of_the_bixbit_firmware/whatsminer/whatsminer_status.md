@@ -12,7 +12,7 @@ order: 0
 
 В данном подразделе собрана текущая информация о работе устройства. Так же, здесь доступны:
 
-![image.png](/images/image-54.png)
+![Whatsminer, Miner Status: Mining и кнопки Restart Miner, Download Logs и Toggle Led](/images/image-54.png)
 
 - Кнопка **Restart Miner** - перезапуск процесса майнинга без перезагрузки самого устройства
 - Кнопка **Download Logs** - скачать логи с устройства (аналог функции **Export log** в **Whatsminer Tool**)
@@ -20,25 +20,25 @@ order: 0
 
 ### Summary
 
-![Скриншот сделанный 2026-08-10 в 15.11.35.png](/images/skrinshot-sdelannyj-2026-08-10-v-151135.png)
+![Whatsminer, Summary: время работы, THSav, принятые и отклонённые шары, Liquid Cooling, напряжение, мощность, температура БП](/images/skrinshot-sdelannyj-2026-08-10-v-151135.png)
 
 ### Devices
 
-![Скриншот сделанный 2026-08-10 в 15.12.27.png](/images/skrinshot-sdelannyj-2026-08-10-v-151227.png)
+![Whatsminer, таблица Devices: частота и хешрейт THSav, THS1m, THS15m по хешплатам SM0–SM2 и итог](/images/skrinshot-sdelannyj-2026-08-10-v-151227.png)
 
-![Скриншот сделанный 2026-08-10 в 15.14.07.png](/images/skrinshot-sdelannyj-2026-08-10-v-151407.png)
+![Whatsminer, Devices: UpfreqCompleted, EffectiveChips, температура платы и чипов (min-avg-max) для SM0–SM2](/images/skrinshot-sdelannyj-2026-08-10-v-151407.png)
 
 ### Pools
 
-![Скриншот сделанный 2026-08-10 в 15.14.54.png](/images/skrinshot-sdelannyj-2026-08-10-v-151454.png)
+![Whatsminer, таблица Pools: URL, активность, воркер, статус Alive/Dead, сложность, принятые, отклонённые и stale-шары](/images/skrinshot-sdelannyj-2026-08-10-v-151454.png)
 
 ### Errors
 
-![image.png](/images/image-56.png)
+![Whatsminer, таблица Errors: ошибки вентиляторов 110, 111, 130, 131 и 2010 (все пулы отключены) с временем](/images/image-56.png)
 
 ### Events
 
-![Скриншот сделанный 2026-08-10 в 15.21.20.png](/images/skrinshot-sdelannyj-2026-08-10-v-152120.png)
+![Whatsminer, таблица Events: E013 смена пароля пула, действие Pools Change, счётчик, время, источник btminer](/images/skrinshot-sdelannyj-2026-08-10-v-152120.png)
 
 ## Подразделы Miner API Log, System Log, Miner Log, Processes
 
@@ -53,13 +53,13 @@ order: 0
 
 ### System
 
-![Скриншот сделанный 2026-08-10 в 15.32.54.png](/images/skrinshot-sdelannyj-2026-08-10-v-153254.png)
+![Whatsminer, Overview, System: модель M31S+_V80, плата H616, версии прошивки и BiXBiT, ядро, аптайм и нагрузка](/images/skrinshot-sdelannyj-2026-08-10-v-153254.png)
 
 ### Memory
 
-![Скриншот сделанный 2026-08-10 в 15.33.13.png](/images/skrinshot-sdelannyj-2026-08-10-v-153313.png)
+![Whatsminer, Overview, Memory: доступная, свободная и буферизованная память в kB с процентом](/images/skrinshot-sdelannyj-2026-08-10-v-153313.png)
 
 ### Network
 
-![Скриншот сделанный 2026-08-10 в 15.33.41.png](/images/skrinshot-sdelannyj-2026-08-10-v-153341.png)
+![Whatsminer, Overview, Network: статус IPv4 WAN по DHCP — адрес, маска, шлюз, DNS и активные соединения](/images/skrinshot-sdelannyj-2026-08-10-v-153341.png)
 
