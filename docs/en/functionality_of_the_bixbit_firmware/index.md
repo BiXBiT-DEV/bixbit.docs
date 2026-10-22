@@ -1,5 +1,6 @@
 ---
-title: Additional Features of BiXBiT Firmware | BiXBiT Docs
+title: Additional BiXBiT Firmware Features
+seoTitle: Additional Features of BiXBiT Firmware | BiXBiT Docs
 description: "Reference for the BiXBiT firmware web interface on Antminer and
   Whatsminer: dashboard, status, pools, autotune, profiles, network, logs and
   system settings"
