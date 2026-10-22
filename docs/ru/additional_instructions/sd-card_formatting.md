@@ -33,7 +33,7 @@ order: 0
 - Выберите «**Удалить том...**».
 ![image.png](/images/image-95.png)
 - Подтвердите удаление тома.
-![image.png](/images/image-97.png)
+  ![image.png](/images/image-97.png)
 - **Повторите для всех томов**, пока всё пространство карты не получит статус «Не распределена».
 ![image.png](/images/image-96.png)
 
@@ -41,15 +41,15 @@ order: 0
 
 - Нажмите правой кнопкой мыши **по нераспределенному пространству SD-карты**.
 - Выберите «**Создать простой том...**».
-![image.png](/images/image-98.png)
+  ![image.png](/images/image-98.png)
 - В открывшемся мастере нажимайте «**Далее**» на каждом этапе:
-![image.png](/images/image-100.png)
+  ![image.png](/images/image-100.png)
 - Укажите максимальный размер тома.
 ![image.png](/images/image-89.png)
 - Назначьте букву диска (например, F)
 ![image.png](/images/image-90.png)
 - Выберите файловую систему **FAT32** и включите «**Быстрое форматирование**»
-![image.png](/images/image-101.png)
+  ![image.png](/images/image-101.png)
 - Нажмите «Готово» для завершения
 ![image.png](/images/image-92.png)
 
