@@ -1,5 +1,10 @@
 ---
 title: Запись образа прошивки на SD-карту
+seoTitle: Запись прошивки Whatsminer на SD (PhoenixCard) | BiXBiT Docs
+description: "Как записать образ прошивки Whatsminer (.img) на SD-карту в
+  PhoenixCard: выбрать диск и образ, режим Product, нажать Burn и проверить
+  результат записи."
+order: 0
 ---
 # Запись образа прошивки на SD-карту
 
