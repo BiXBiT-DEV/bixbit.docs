@@ -1,5 +1,10 @@
 ---
 title: Раздел Configuration
+seoTitle: "Прошивка Whatsminer: раздел Configuration | BiXBiT Docs"
+description: "Раздел Configuration прошивки BiXBiT для Whatsminer: сеть, пулы,
+  профили разгона, Profile Switcher, Hotel Fee, управление БП, платы,
+  температуры и прокси."
+order: 0
 ---
 # Раздел Configuration
 
@@ -72,13 +77,13 @@ title: Раздел Configuration
 
 Данный режим предназначен для подключения к устройству **дополнительного блока питания**.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kOgeGRJ6npc?si=vUFrW0v1bNYAk9fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9QC2ueL1E2g?si=tqdFmj6rYZERgj0V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+&nbsp;
 
 #### Startup Cooling Fan Speed %
 
-Данный параметр предназначен для настройки скорости вращения кулеров (в процентах) с момента окончания продувки (обороты кулеров – 100%) до момента начала работы устройства. С какой скорости устройство начинает охлаждение. <u>Не отключает начальную продувку устройства – то есть, шуметь при запуске будет в любом случае.</u>
+Данный параметр предназначен для настройки скорости вращения кулеров (в процентах) с момента окончания продувки (обороты кулеров – 100%) до момента начала работы устройства. С какой скорости устройство начинает охлаждение. ++Не отключает начальную продувку устройства – то есть, шуметь при запуске будет в любом случае.++
 
 #### Fan Mode
 
@@ -164,7 +169,9 @@ title: Раздел Configuration
 - **Maximum Profile** – максимальный профиль на который может переключиться устройство.
 - **Lower Profile if Max Chip Temp Above** – температура понижения профиля. При достижении данной температуры **одним из чипов**, устройство понизит профиль до предыдущего.
 - **Raise Profile if Max Chip Temp Below** – температура повышения профиля. При охлаждении **самых горячих чипов** до данной температуры, устройство **повысит профиль** до следующего.
-- **Ignore PWM** – игнорировать обороты кулеров. В случае, если температурный режим подходит для повышения профиля, устройство сделает это даже при высоких оборотах кулеров. 
+- **Ignore PWM** – игнорировать обороты кулеров. В случае, если температурный режим подходит для повышения профиля, устройство сделает это даже при высоких оборотах кулеров.
+
+
 
 ### Вкладка Hotel Fee
 
