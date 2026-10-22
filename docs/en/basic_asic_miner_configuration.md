@@ -60,10 +60,13 @@ If the device turns on, but the Ethernet indicators do not work — make sure th
 - Run the **WhatsMinerTool** utility.
 - Click the **[ IP Monitor ]** button ①.
 - In the "**Detect and Bind IP**" window that opens, click the **[ Start ]** button ②.
+
   ![WhatsMinerTool 9.2.1: IP Monitor button](/images/image-13.png)
 - On the device's control panel, press and hold the **IP found** button until the green and red LEDs blink together several times.
+
   ![Whatsminer control board panel: the IP Found button highlighted next to the ETH port and status LEDs](/images/image-14.png)
 - A line with your miner should appear in the Detect and Bind IP window. Pay attention to the **Source IP** column (e.g., 192.168.10.142) — remember this address.
+
   ![WhatsMinerTool Detect and Bind IP window: the Source IP column with the detected miner's IP address](/images/image-15.png)
 - Close this window and confirm closing (click **[OK]** in the pop-up window).
 
@@ -84,6 +87,7 @@ If there are already any entries in this window, you can delete them, modify the
 **Now you can start the network scan:**
 
 - In the main utility window, click **[ Start ]** ①.
+
   ![WhatsMinerTool main window: the Start button (1) that launches the network scan for Whatsminer devices](/images/image-17.png)
 
 The button will change its name to "**Monitoring**", the scan will start, and after a while, the found devices will be displayed in the list.
@@ -132,6 +136,7 @@ You can change the device's IP address or choose a different IP assignment metho
 - Select the IP addresses of the devices on which you want to apply the entered pool settings. You can select multiple devices ③.
 - Click **[Start Upgrade]** ④.
 - After the dialog box appears, click **[OK]** to complete the configuration.
+
   ![WhatsMinerTool Pools form: pool, worker, suffix and password fields](/images/image-23.png)
 - To hide the pool configuration form, click the **[ Pools ]** button ① again.
 
@@ -155,6 +160,7 @@ This method is suitable for devices with stock firmware and BiXBiT firmware.
 - To set up the pool, in the dropdown menu for **Pool 1** ②, select **--custom--**.
 An input field will appear instead of the dropdown menu.
 - Fill in the newly appeared field, as well as **Pool1 worker** and **Pool1 password** ③.
+
   ![Whatsminer web UI: CGMiner Configuration menu](/images/image-24.png)
 - If necessary, set up **Pool 2** and **Pool 3** in the same way.
 - Click **[ Save & Apply ]** to save the settings.
