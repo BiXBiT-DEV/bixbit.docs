@@ -1,5 +1,6 @@
 ---
-title: Antminer/Whatsminer Factory Firmware Rollback | BiXBiT Docs
+title: Factory Firmware Installation and Rollback
+seoTitle: Antminer/Whatsminer Factory Firmware Rollback | BiXBiT Docs
 description: "Roll back Antminer or Whatsminer to factory firmware before
   installing BiXBiT: SD or USB image by control board, WhatsMinerTool .bin or
   PhoenixCard SD card."
@@ -74,7 +75,6 @@ Run **WhatsMinerTool** and set a scan range that includes the IP address of the 
 **Preparing for Installation**
 
 - **Step 1.** Go to the [Whatsminer website](https://www.whatsminer.com/src/views/firmware-download.html#Firmware/), in the **"SD-card flashing program"** section, select the section corresponding to the control board model installed on your device and download the firmware archive. Extract its contents to a separate folder.
-
   ![Whatsminer support site, Firmwares Download: SD-card flashing program by control board (H616, H6os, H6, H3), Download](/images/image-77.png)
 - **Step 2.** Prepare the **SD card**: It is recommended to use SD cards with a capacity from **2 GB to 16 GB** inclusive. **Fully format the SD card** using Disk Management (right-click on the Start button, select Disk Management, default file system format **FAT32**).
 - **Step 3.** Using the **"PhoenixCard"** program (the folder with the "PhoenixCard" program is located in the firmware archive), write the **“.img”** image of the downloaded factory firmware to the **SD card**.
