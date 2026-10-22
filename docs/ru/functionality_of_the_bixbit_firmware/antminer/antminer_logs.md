@@ -1,5 +1,10 @@
 ---
 title: Раздел Miner Log
+seoTitle: "Прошивка Antminer: раздел Miner Log | BiXBiT Docs"
+description: "Раздел Miner Log прошивки BiXBiT для Antminer: просмотр логов
+  устройства с момента загрузки на вкладке Current и скачивание полных логов за
+  нужные даты."
+order: 0
 ---
 # Раздел Miner Log
 
