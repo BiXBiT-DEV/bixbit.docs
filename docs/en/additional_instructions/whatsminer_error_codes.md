@@ -1,5 +1,6 @@
 ---
-title: "Whatsminer Error Codes: List and Fixes | BiXBiT Docs "
+title: Whatsminer ASIC Error Codes
+seoTitle: "Whatsminer Error Codes: List and Fixes | BiXBiT Docs"
 description: "Whatsminer error codes 110 to 8410 with causes and fixes: fans,
   power supply, temperature sensors, EEPROM, hashboards, control board, pools
   and water flow."
