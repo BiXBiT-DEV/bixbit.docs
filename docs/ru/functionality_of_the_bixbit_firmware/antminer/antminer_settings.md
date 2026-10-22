@@ -1,5 +1,10 @@
 ---
 title: Раздел Settings
+seoTitle: "Прошивка Antminer: раздел Settings и автотюн | BiXBiT Docs"
+description: "Раздел Settings прошивки BiXBiT для Antminer: режим работы,
+  вентиляторы и температурные лимиты, пулы, автотюн, Profile Switcher, прокси и
+  Hotel Fee."
+order: 0
 ---
 # Раздел Settings
 
