@@ -1,5 +1,10 @@
 ---
 title: Раздел Dashboard
+seoTitle: "Прошивка Antminer: раздел Dashboard | BiXBiT Docs"
+description: "Раздел Dashboard прошивки BiXBiT для Antminer: аптайм, текущий и
+  средний хешрейт, температуры плат и чипов, потребление, эффективность,
+  вентиляторы и пулы."
+order: 0
 ---
 # Раздел Dashboard
 
