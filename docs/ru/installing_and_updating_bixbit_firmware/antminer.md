@@ -1,5 +1,9 @@
 ---
 title: Antminer
+seoTitle: Установка и обновление прошивки Antminer | BiXBiT Docs
+description: "Как установить и обновить прошивку BiXBiT на Antminer S19, S21,
+  T21 и L7 через installer_tool.exe: совместимые хэш-платы, известные проблемы,
+  массовая прошивка."
 order: 0
 ---
 # Установка и обновление прошивки BiXBiT на устройствах Antminer
