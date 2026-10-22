@@ -1,5 +1,6 @@
 ---
-title: "Whatsminer Firmware: Configuration Section | BiXBiT Docs"
+title: Configuration Section
+seoTitle: "Whatsminer Firmware: Configuration Section | BiXBiT Docs"
 description: "Whatsminer Configuration in BiXBiT firmware: network, pools,
   overclock profiles, Profile Switcher, Hotel Fee, PSU control, boards, temp
   limits and proxy."
