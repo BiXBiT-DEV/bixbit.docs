@@ -1,5 +1,6 @@
 ---
-title: Prepare Whatsminer for Immersion Cooling | BiXBiT Docs
+title: Preparing an ASIC Miner for Immersion Cooling
+seoTitle: Prepare Whatsminer for Immersion Cooling | BiXBiT Docs
 description: "Prepare a Whatsminer for immersion cooling on BiXBiT firmware:
   remove fans, enable Liquid Cooling, disable PSU fan checks or flash the PSU
   with AirToLiquid."
@@ -14,7 +15,6 @@ order: 0
 - Flash your device with BiXBiT firmware corresponding to your device model.
 - Disconnect and remove the main fans from the device ①,②.
 - Open the power supply cover and remove its fan ③.
-
   ![Whatsminer prepared for immersion: front and rear fan openings with fans removed](/images/image-39.png)
 - Clean the device casing and boards from dust and dirt.
 - Submerge the device in the immersion fluid.
@@ -25,7 +25,6 @@ To disable the fan checks on the device itself, navigate to **Configuration** > 
 
 - Activate the **[Liquid Cooling] ①** checkbox.
 - Save and apply the settings by clicking **[Save & Apply] ②**.
-
   ![BiXBiT firmware on Whatsminer, Overclock tab: enable the Liquid Cooling checkbox](/images/image-40.png)
 
 ### Disabling Power Supply Fan Checks
@@ -49,7 +48,6 @@ Disabling power supply fan checks is done exclusively for immersion cooling purp
 - Go to **Configuration > Miner Configuration**.
 - Select the **PSU Firmware** tab.
 - To disable the PSU fan check, click the **[Disable Power Fan]** button.
-
   ![BiXBiT firmware PSU Control tab on Whatsminer (PSU P732A): Disable Power Fan button turns off the PSU fan check](/images/image-41.png)
 
 ::: warning
@@ -74,31 +72,25 @@ Open the device's web interface.
 - Go to **Configuration > CGMiner Configuration**.
 - Select the **PSU Control** tab.
 - To automatically update the PSU firmware, click the **[Upgrade PSU Firmware]** button.
-
   ![BiXBiT firmware on a Whatsminer M2x, PSU Control tab (PSU P21D): Upgrade PSU Firmware button for immersion mode](/images/image-42.png)
 
 ##### Option 2: Updating PSU Firmware Using the Air To Liquid Tool Utility
 
 - Go to [BiXBiT](https://bixbit.tech/ru).
 - In the page header, select the "Firmware" section, and in the "WhatsPower Firmware" subsection, click on the corresponding power supply model for your miner.
-
   ![BiXBiT website Firmware menu with the WhatsPower PSU firmware list: p222b, p222c, p221c, p21D, p21](/images/image-43.png)
 - The archive download will begin. Once the download is complete, extract the internal file with the **.bin** extension from the archive.
 
 PSU Flashing Process:
 
 - **Step 1.** Run the **AirToLiquidTool** and click the **[Setting]** button.
-
   ![AirToLiquid 1.5.7 toolbar with the Setting button highlighted](/images/image-44.png)
 - **Step 2.** In the **Fw Upgrade manual/auto** setting, select **Manual**. (If a file for your PSU model is not available, use **auto** mode.)
-
   ![AirToLiquid Setting Dialog: Fw Upgrade manual/auto set to Manual](/images/image-45.png)
 - **Step 3.** Click **[Miner IP]**. In the dialog that appears, add a scan range that includes the IP address of the device whose PSU you plan to flash. Select the added scan range and click **[OK]**.
-
   ![AirToLiquid Miner IP Management: scan range 192.168.10.1-192.168.10.255 (comment Farm1) added and selected](/images/image-46.png)
 - **Step 4.** Start the scan by clicking the **[Start]** button.
 - **Step 5.** Perform the following actions in order:
-
   ![AirToLiquid: UpgradePower, Select File, pick whatspower-p21-rm-fan-err.bin, tick the M21S miner, Start Upgrade](/images/image-47.png)
   - ① Click **[UpgradePower]**.
   - ② In the menu that appears, click **[Select File]** (If Fw Upgrade is set to auto, file selection is not required).
@@ -106,7 +98,6 @@ PSU Flashing Process:
   - ④ Check the **checkbox for the device** whose PSU you plan to flash.
   - ⑤ Click the **[StartUpgrade]** button.
 - **Step 6.** Confirm the start of the flashing process in the dialog box that appears by clicking [OK].
-
   ![AirToLiquid confirmation to upgrade the selected power supply firmware, warning that the warranty will be cleared](/images/image-50.png)
 
 During the PSU flashing process, the **Status** column will display the current stage: **Transfering**, **Upgrading**.
