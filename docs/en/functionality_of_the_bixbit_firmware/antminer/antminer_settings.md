@@ -1,5 +1,6 @@
 ---
-title: "Antminer Firmware Settings: Autotune & Pools | BiXBiT Docs"
+title: Settings Section
+seoTitle: "Antminer Firmware Settings: Autotune & Pools | BiXBiT Docs"
 description: "Antminer Settings in BiXBiT firmware: operating mode, fan and
   temperature limits, pools, autotune, Profile Switcher, proxy and Hotel Fee
   tabs explained"
