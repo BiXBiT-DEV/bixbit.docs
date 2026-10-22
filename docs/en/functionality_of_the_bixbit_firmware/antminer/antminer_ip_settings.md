@@ -1,5 +1,6 @@
 ---
-title: "Antminer Firmware: IP Settings (DHCP/Static) | BiXBiT Docs"
+title: IP Settings Section
+seoTitle: "Antminer Firmware: IP Settings (DHCP/Static) | BiXBiT Docs"
 description: "Set DHCP or a static IP on Antminer with BiXBiT firmware:
   hostname, protocol, IP address, subnet mask, gateway and DNS servers in the IP
   Settings section."
