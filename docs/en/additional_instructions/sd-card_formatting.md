@@ -15,12 +15,14 @@ This guide will help you properly format your SD card to the FAT32 file system u
 - Connect the SD card to your computer and ensure it is detected by the system.
 - Back up all important data — formatting will erase all contents.
 - If you are using a microSD adapter, make sure the write-protection switch is unlocked.
+
   ![microSD adapter with the Lock write-protection switch circled: make sure it is unlocked before formatting](/images/image-114.png)
 
 ### Step 1: Opening "Disk Management"
 
 - Right-click on the Start button (Windows logo).
 - Select "Disk Management".
+
   ![Windows 11 Start button right-click menu with Disk Management highlighted](/images/image-115.png)
 
 ### Step 2: Deleting Existing Partitions/Volumes
@@ -33,16 +35,20 @@ If the card has any existing partitions:
 
 - Right-click on each allocated partition/volume.
 - Select **"Delete Volume..."**.
+
   ![Disk Management: right-click an SD card partition and choose Delete Volume...](/images/image-117.png)
 - Confirm the volume deletion.
+
   ![Delete simple volume warning that all data on it will be erased, Yes button](/images/image-118.png)
 - If the SD card has multiple volumes, repeat for all volumes until the entire card space shows the status "Unallocated".
+
   ![Disk Management: all 7.50 GB of the SD card (Disk 1) now shows as Unallocated](/images/image-119.png)
 
 ### Step 3: Creating a New Partition/Volume
 
 - Right-click on the unallocated space of the SD card.
 - Select **"New Simple Volume..."**.
+
   ![Disk Management: right-click the unallocated SD card space and choose New Simple Volume](/images/image-120.png)
 - In the volume wizard that opens:
   1. Click **"Next >"** on each step.
