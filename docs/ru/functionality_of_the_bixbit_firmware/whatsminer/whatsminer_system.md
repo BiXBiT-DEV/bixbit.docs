@@ -1,5 +1,10 @@
 ---
 title: Раздел System
+seoTitle: "Прошивка Whatsminer: раздел System | BiXBiT Docs"
+description: "Раздел System прошивки BiXBiT для Whatsminer: настройка времени,
+  часового пояса и NTP-серверов, смена пароля учетной записи и перезагрузка
+  устройства."
+order: 0
 ---
 # Раздел System
 
