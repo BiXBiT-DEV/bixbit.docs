@@ -1,5 +1,10 @@
 ---
 title: Раздел Status
+seoTitle: "Прошивка Whatsminer: раздел Status | BiXBiT Docs"
+description: "Раздел Status прошивки BiXBiT для Whatsminer: сводка, хешплаты,
+  пулы, ошибки и события, логи Miner API, System и Miner, процессы, память и
+  сеть устройства."
+order: 0
 ---
 # Раздел Status
 
