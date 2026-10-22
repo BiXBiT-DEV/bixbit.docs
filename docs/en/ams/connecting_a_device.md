@@ -14,6 +14,7 @@ To connect devices to AMS, you first need to perform the following steps:
 - Create a **Workspace** in your AMS personal account
 - In the created space, go to the "**Workspace**" tab
 - Copy the **API key**. This key will be used to connect devices later.
+
   ![Automate Monitoring System workspace settings, General tab: API KEY field with copy button, workspace title and description](/images/image-71.png)
 
 ## Antminer ASIC
