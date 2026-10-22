@@ -10,17 +10,17 @@ order: 0
 
 Перед выбором способа прошивки проверьте модель установленной контрольной платы. Это можно сделать с помощью **WhatsminerTool**:
 
-![image.png](/images/image.png)
+![WhatsMinerTool, вкладка Monitoring: в Version Info видна модель платы управления (H616) и дата прошивки в формате ГГГГММДД](/images/image.png)
 
 или посмотреть во вкладке Status -> Overview в веб-интерфейсе ASIC'а:
 
-![image.png](/images/image-1.png)
+![Веб-интерфейс Whatsminer, Status: в Hardware Info — модель платы управления (H616), в Firmware Version — дата прошивки](/images/image-1.png)
 
 ## Если на Вашем устройстве контрольная плата H3, H6, H6os
 
 Запустите **WhatsMinerTool** и задайте диапазон сканирования, включающий IP-адрес устройства для установки прошивки. Запустите сканирование и убедитесь, что устройство отображается в списке.
 
-![image.png](/images/image-2.png)
+![WhatsMinerTool, Upgrade для плат H3/H6/H6os: Select File, файл Whatsminer-ALL-Models .bin, отметить майнер, Start Upgrade](/images/image-2.png)
 
 - **Шаг 1:** Нажмите **[Upgrade]** ①.
 - **Шаг 2:** Нажмите **[Select File]** ②.
@@ -58,7 +58,7 @@ order: 0
 
 #### **Этап 1. Установка промежуточной версии прошивки:**
 
-![image.png](/images/image-3.png)
+![WhatsMinerTool, Upgrade: выбор промежуточного файла Whatsminer-ALL-Models_CustomCleanupBefore1.8_h616.bin, шаги 1–6](/images/image-3.png)
 
 - Шаг 1: Нажмите **[Upgrade]** ①.
 - Шаг 2: Нажмите **[Select File]** ②.
@@ -70,7 +70,7 @@ order: 0
 ::: info
 Отображение статуса **Success** в столбце **Status** обновляемого устройства свидетельствует об успешном завершении процесса установки. Далее устройство автоматически перезапустится. После успешной установки промежуточного файла версия прошивки будет отображаться с припиской **“CustomNeedUpgrade”**
 
-![image.png](/images/image-5.png)
+![WhatsMinerTool: статус Success и приписка CustomNeedUpgrade в Version Info после установки промежуточной прошивки](/images/image-5.png)
 
 :::
 
@@ -78,7 +78,7 @@ order: 0
 
 #### **Этап 2. Установка основной версии прошивки:**
 
-![image.png](/images/image-4.png)
+![WhatsMinerTool, Upgrade, этап 2: выбор основного файла прошивки Whatsminer-ALL-Models .bin, шаги 1–6](/images/image-4.png)
 
 - **Шаг 1:** Нажмите **[Upgrade]** ①.
 - **Шаг 2:** Нажмите **[Select File]** ②.
@@ -95,7 +95,7 @@ order: 0
 
 Запустите **WhatsMinerTool** и задайте диапазон сканирования, включающий IP-адрес устройства для установки прошивки. Запустите сканирование и убедитесь, что устройство отображается в списке.
 
-![image.png](/images/image-6.png)
+![WhatsMinerTool, Upgrade: обновление прошивки BiXBiT 1.8.0.x файлом Whatsminer-ALL-Models .bin, шаги 1–6](/images/image-6.png)
 
 - **Шаг 1:** Нажмите **[Upgrade]** ①.
 - **Шаг 2:** Нажмите **[Select File]** ②.
