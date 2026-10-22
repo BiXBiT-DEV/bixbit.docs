@@ -1,5 +1,10 @@
 ---
 title: Раздел System
+seoTitle: "Прошивка Antminer: раздел System | BiXBiT Docs"
+description: "Раздел System прошивки BiXBiT для Antminer: смена пароля
+  веб-интерфейса и установка заводской прошивки из bmu-файла с очисткой логов
+  (чекбокс Clear logs)."
+order: 0
 ---
 # Раздел System
 
