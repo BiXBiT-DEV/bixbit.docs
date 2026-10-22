@@ -1,5 +1,6 @@
 ---
-title: "Antminer Firmware: Dashboard Section | BiXBiT Docs"
+title: Dashboard Section
+seoTitle: "Antminer Firmware: Dashboard Section | BiXBiT Docs"
 description: "Antminer Dashboard in BiXBiT firmware: uptime, real-time and
   average hashrate, board and chip temps, power, efficiency, fan speed,
   per-board stats and pools"
