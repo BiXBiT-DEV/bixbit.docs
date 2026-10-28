@@ -100,3 +100,48 @@ content:
         options:
           format: markdown
           switcher: true
+
+  - name: docs_es
+    label: Documentación ES
+    type: collection
+    path: docs/es
+    format: yaml-frontmatter
+    subfolders: true
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      layout: tree
+      node:
+        filename: index.md
+        hideDirs: nodes
+      fields: [title, order]
+      primary: title
+      search: [title, body]
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: seoTitle
+        label: Título SEO
+        type: string
+        description: Título de la pestaña del navegador y de los resultados de búsqueda. Si está vacío, se usa el campo Título.
+      - name: description
+        label: Descripción SEO
+        type: string
+        description: Describe brevemente la página para los resultados de búsqueda (hasta 160 caracteres).
+      - name: ogImage
+        label: Imagen de vista previa
+        type: string
+        description: URL completa de la imagen para vistas previas en mensajeros y redes sociales.
+      - name: order
+        label: Orden en el menú
+        type: number
+        default: 0
+      - name: body
+        label: Contenido
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
