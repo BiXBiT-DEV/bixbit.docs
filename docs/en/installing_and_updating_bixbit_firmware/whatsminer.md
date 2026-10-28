@@ -59,7 +59,7 @@ Run **WhatsMinerTool** and set a scan range that includes the IP address of the 
 
 - Step 1: Click **[Upgrade]** ①.
 - Step 2: Click **[Select File]** ②.
-- Step 3: In the pop-up window, select the file **"bixbit_before_1.8.bin"** ③ from the archive you previously downloaded and extracted.
+- Step 3: In the pop-up window, select the file **"Whatsminer-ALL-Models_CustomCleanupBefore1.8_h616.bin"** ③ from the archive you previously downloaded and extracted.
 - Step 4: Confirm the file selection by clicking **[Open]** ④.
 - Step 5: Check the box to the left of the IP address of the device ⑤ whose firmware you want to update. You can select multiple devices if they have ++**outdated BiXBiT firmware**++ installed.
 - Step 6: Click the **[Start Upgrade]** button ⑥ to start the update process. In the dialog box that appears, click **[OK]**.
