@@ -95,7 +95,7 @@ Run **WhatsMinerTool** and set a scan range that includes the IP address of the 
 - **Step 2:** Click **[Select File]** ②.
 - **Step 3:** In the pop-up window, select the file **"Whatsminer-ALL-Models_X.X.X.X.bin"** ③ from the archive you previously downloaded and extracted (**X.X.X.X** is the firmware version).
 - **Step 4:** Confirm the file selection by clicking **[Open]** ④.
-- **Step 5:** Check the box to the left of the IP address of the device ⑤ whose firmware you want to update. You can select multiple devices if they had the intermediate firmware version installed.
+- **Step 5:** Check the box to the left of the IP address of the device ⑤ whose firmware you want to update. You can select multiple devices if firmware version **1.8.X.X** is installed on them.
 - **Step 6:** Click the **[Start Upgrade]** button ⑥ to start the update process. In the dialog box that appears, click **[OK]**.
 
 ::: info
